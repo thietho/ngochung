@@ -9,8 +9,8 @@ Options -Indexes
 
 
 RewriteEngine On
-RewriteRule ^images/smartweb_([a-zA-Z0-9_]*)/root/([a-zA-Z0-9_]*)/([^?]*)$ eimagick.php?site=$1&type=root&path=$2/$3 [L,QSA]
-RewriteRule ^images/smartweb_([a-zA-Z0-9_]*)/([a-zA-Z0-9_]*)-([0-9]*)x([0-9]*)/([a-zA-Z0-9_]*)/([^?]*)$ eimagick.php?site=$1&type=$2&width=$3&height=$4&path=$5/$6 [L,QSA]
+RewriteRule ^images/smartweb_([a-zA-Z0-9_]*)/root/([a-zA-Z0-9_]*)/([^?]*)$ image.php?site=$1&type=root&path=$2/$3 [L,QSA]
+RewriteRule ^images/smartweb_([a-zA-Z0-9_]*)/([a-zA-Z0-9_]*)-([0-9]*)x([0-9]*)/([a-zA-Z0-9_]*)/([^?]*)$ image.php?site=$1&type=$2&width=$3&height=$4&path=$5/$6 [L,QSA]
 
 RewriteRule ^download/smartweb_([a-zA-Z0-9_]*)/root/([a-zA-Z0-9_]*)/([^?]*)$ download.php?site=$1&type=root&path=$2/$3 [L,QSA]
 RewriteRule ^download/smartweb_([a-zA-Z0-9_]*)/([a-zA-Z0-9_]*)-([0-9]*)x([0-9]*)/([a-zA-Z0-9_]*)/([^?]*)$ download.php?site=$1&type=$2&width=$3&height=$4&path=$5/$6 [L,QSA]

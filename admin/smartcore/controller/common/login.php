@@ -21,12 +21,12 @@ class ControllerCommonLogin extends Controller
         $this->safemode();
 
         if ($this->user->isLogged()) {
-            $this->redirect($this->url->http('kotra/movies'));
+            $this->redirect($this->url->http('core/sitemap'));
             return;
         }
 
         if (($this->request->post) && ($this->validate())) {
-            $this->redirect($this->url->http('kotra/movies'));
+            $this->redirect($this->url->http('core/sitemap'));
             return;
         }
 

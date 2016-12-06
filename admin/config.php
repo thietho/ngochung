@@ -2,11 +2,11 @@
 // CONFIG DOMAIN
 $base_domain = 'localhost:81'; //ex: google.com
 $domain = 'localhost:81'; //ex: www.google.com
-$main_http_server = "http://$domain/kotra/admin/";
-$root_http_server = "http://$domain/kotra/admin/";
-$root_https_server = "https://$domain/kotra/admin/";
-$file_server = "http://$domain/kotra/admin/fileserver/";
-$image_server = "http://$domain/kotra/admin/fileserver/";
+$main_http_server = "http://$domain/ngochung/admin/";
+$root_http_server = "http://$domain/ngochung/admin/";
+$root_https_server = "https://$domain/ngochung/admin/";
+$file_server = "http://$domain/ngochung/admin/fileserver/";
+$image_server = "http://$domain/ngochung/fileserver/";
 
 
 //Set language for website
@@ -56,4 +56,4 @@ define('DIR_MODIFICATION_SYSTEM', DIR_SERVERROOT . 'system_setting/');
 define('DIR_LOGS', DIR_SERVERROOT . 'logs/');
 
 //
-define('DIR_FILE','fileserver/file_default/file/');
+define('DIR_FILE','../fileserver/file_default/file/');

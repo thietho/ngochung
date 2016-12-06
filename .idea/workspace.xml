@@ -1,0 +1,909 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3bfcc36a-a5b5-49cb-a245-a6c1950a3801" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/fileserver/smartweb_default/default/css/jquery.nestable.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/fileserver/smartweb_default/default/js/jquery.nestable.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/smartcore/controller/core/sitemap.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/smartcore/model/core/sitemap.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/smartcore/template/default/view/core/sitemap_form.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/smartcore/template/default/view/core/sitemap_list.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/smartcore/template/default/view/core/sitemap_table.tpl" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\admin\smartcore_setting\default\cachedb\cache.Language_getDataLanguage_en.1480472488" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\default_default.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\default_default_fix_40x40.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\default_default_fix_50x50.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\default_default_png_0x64.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_banner 1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_banner 1_png_0x64.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_banner_2014-Happy-Teacher-Day-(Cover)-(1)_fix_1080x358.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_banner_2014-Happy-Teacher-Day-(Cover)-(1)_png_0x64.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_banner_47_ronin_to_hop_cua_nhung_dieu_an_tuong_6416_fix_1080x358.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_banner_47_ronin_to_hop_cua_nhung_dieu_an_tuong_6416_png_0x64.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_banner_Con Ma 1024_fix_1080x358.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_banner_Con Ma 1024_png_0x64.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_banner_Con Ma 214.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_banner_Con Ma 214_png_0x64.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_banner_Con Ma 262.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_banner_Con Ma 262_png_0x64.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_banner_Dam Bich 262.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_banner_Dam Bich 262_png_0x64.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_banner_banner 1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_banner_banner 1_png_0x64.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_banner_banner fututech21.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_banner_banner fututech21_png_0x64.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_movies_1_47_ronin_to_hop_cua_nhung_dieu_an_tuong_6416.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_movies_1_47_ronin_to_hop_cua_nhung_dieu_an_tuong_6416_fix_50x50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_movies_1_47_ronin_to_hop_cua_nhung_dieu_an_tuong_6416_png_0x64.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_movies_1_Con Ma 1024.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_movies_1_Con Ma 1024_png_0x64.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_movies_1_Con Ma 262.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_movies_1_Con Ma 262_png_0x64.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_movies_1_Em Ba Noi 262.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_movies_1_Em Ba Noi 262_png_0x64.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_movies_1_banner 1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_movies_1_banner 1_fix_100x100.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_movies_1_banner 1_png_0x64.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_movies_2_Con Ma 214.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_movies_2_Con Ma 214_png_0x64.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_movies_2_Con Ma 262_fix_50x50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_movies_2_Con Ma 262_png_0x64.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_movies_2_ConMaNhaHoVuong22.mp4" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_movies_2_banner 4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_movies_2_banner 4_png_0x64.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_movies_2_banner fututech1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_movies_2_banner fututech1_png_0x64.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_movies_3_Dam Bich 262_fix_50x50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_movies_3_Dam Bich 262_png_0x64.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_movies_3_banner fututech2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_movies_3_banner fututech2_png_0x64.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_movies_4_704pq02x2xn242e604s24oi3j3_2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_movies_4_704pq02x2xn242e604s24oi3j3_2_png_0x64.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_movies_4_Hoang Tu 262_fix_50x50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_movies_4_Hoang Tu 262_png_0x64.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_movies_5_Con Ma 262.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_movies_5_Con Ma 262_png_0x64.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_movies_5_Hay Khong 1024_fix_50x50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_movies_5_Hay Khong 1024_png_0x64.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_movies_5_Hay Khong 262.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_movies_5_Hay Khong 262_png_0x64.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_news_1_noi-com-dien-cuckoo-18-lit-cr1062-hong-e7T61W_fix_503x333.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_news_1_noi-com-dien-cuckoo-18-lit-cr1062-hong-e7T61W_png_0x64.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_news_2_6001020_fix_503x333.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_news_2_6001020_png_0x64.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_news_undefined_layout-kotra-2.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_news_undefined_layout-kotra-2_png_0x64.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_product_1_20160712192318_big.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_product_1_20160712192318_big_fix_450x450.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_product_1_20160712192318_big_fix_503x236.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_product_1_20160712192318_big_png_0x64.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_product_1_20160712192318_big_png_450x0.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_product_1_20160712192325_big.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_product_1_20160712192325_big_png_0x64.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_product_1_20160712192336_big.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_product_1_20160712192336_big_png_0x64.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_product_1_20160712192347_big.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_product_1_20160712192347_big_png_0x64.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_product_1_503x236_fix_503x236.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_product_1_503x236_png_0x64.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_product_1_Em Ba Noi 214.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_product_1_Em Ba Noi 214_png_0x64.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_product_1_The wave 262.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_product_1_The wave 262_png_0x64.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_product_1_noi-com-dien-cuckoo-18-lit-cr1062-hong-e7T61W.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_product_1_noi-com-dien-cuckoo-18-lit-cr1062-hong-e7T61W_png_0x64.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_product_2_layout-kotra-2.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_product_2_layout-kotra-2_png_0x64.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_product_2_vn_UA78KS9000KXXV_002_Back_black_10059593090521.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_product_2_vn_UA78KS9000KXXV_002_Back_black_10059593090521_png_0x64.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_product_2_vn_UA78KS9000KXXV_015_Black_black_10059394074024.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_product_2_vn_UA78KS9000KXXV_015_Black_black_10059394074024_png_0x64.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_product_2_vn_UA78KS9000KXXV_016_Black_black.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_product_2_vn_UA78KS9000KXXV_016_Black_black_png_0x64.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_product_2_vn_UA78KS9000KXXV_018_Black_black.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_product_2_vn_UA78KS9000KXXV_018_Black_black_png_0x64.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_product_2_vn_UA78KS9000KXXV_022_Black_black_fix_450x450.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_product_2_vn_UA78KS9000KXXV_022_Black_black_fix_503x236.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_product_2_vn_UA78KS9000KXXV_022_Black_black_png_0x64.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_product_4_daugoichothucung_fix_503x236.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_product_4_daugoichothucung_png_0x64.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_product_5_noi-com-dien-cuckoo-18-lit-cr1062-hong-e7T61W_fix_503x236.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_product_5_noi-com-dien-cuckoo-18-lit-cr1062-hong-e7T61W_png_0x64.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_product_6_6001020_fix_503x236.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_product_6_6001020_png_0x64.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_product_temp1479870532907_LMHT 1024.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_product_temp1479870532907_LMHT 1024_png_0x64.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_product_temp1479966631341_vn_UA78KS9000KXXV_022_Black_black.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_product_temp1479966631341_vn_UA78KS9000KXXV_022_Black_black_png_0x64.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_product_temp1479967235036_daugoichothucung.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_product_temp1479967235036_daugoichothucung_png_0x64.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_product_temp1479967755502_noi-com-dien-cuckoo-18-lit-cr1062-hong-e7T61W.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_product_temp1479967755502_noi-com-dien-cuckoo-18-lit-cr1062-hong-e7T61W_png_0x64.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_product_temp1479971455581_6001020.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_product_temp1479971455581_6001020_png_0x64.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_product_undefined_layout-kotra-2.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_product_undefined_layout-kotra-2_png_0x64.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_product_undefined_noi-com-dien-cuckoo-18-lit-cr1062-hong-e7T61W.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\fileserver\file_default\file\cache\upload_product_undefined_noi-com-dien-cuckoo-18-lit-cr1062-hong-e7T61W_png_0x64.png" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fileserver/file_default/file/cache/upload_banner_2014-Happy-Teacher-Day-(Cover)-(1).jpg" afterPath="$PROJECT_DIR$/fileserver/file_default/file/cache/upload_banner_2014-Happy-Teacher-Day-(Cover)-(1).jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fileserver/file_default/file/cache/upload_banner_47_ronin_to_hop_cua_nhung_dieu_an_tuong_6416.jpg" afterPath="$PROJECT_DIR$/fileserver/file_default/file/cache/upload_banner_47_ronin_to_hop_cua_nhung_dieu_an_tuong_6416.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fileserver/file_default/file/cache/upload_banner_Con Ma 1024.jpg" afterPath="$PROJECT_DIR$/fileserver/file_default/file/cache/upload_banner_Con Ma 1024.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fileserver/file_default/file/cache/upload_movies_2_Con Ma 262.jpg" afterPath="$PROJECT_DIR$/fileserver/file_default/file/cache/upload_movies_2_Con Ma 262.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fileserver/file_default/file/cache/upload_movies_3_Dam Bich 262.jpg" afterPath="$PROJECT_DIR$/fileserver/file_default/file/cache/upload_movies_3_Dam Bich 262.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fileserver/file_default/file/cache/upload_movies_4_Hoang Tu 262.jpg" afterPath="$PROJECT_DIR$/fileserver/file_default/file/cache/upload_movies_4_Hoang Tu 262.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fileserver/file_default/file/cache/upload_movies_5_Hay Khong 1024.jpg" afterPath="$PROJECT_DIR$/fileserver/file_default/file/cache/upload_movies_5_Hay Khong 1024.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fileserver/file_default/file/cache/upload_news_1_noi-com-dien-cuckoo-18-lit-cr1062-hong-e7T61W.png" afterPath="$PROJECT_DIR$/fileserver/file_default/file/cache/upload_news_1_noi-com-dien-cuckoo-18-lit-cr1062-hong-e7T61W.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fileserver/file_default/file/cache/upload_news_2_6001020.jpg" afterPath="$PROJECT_DIR$/fileserver/file_default/file/cache/upload_news_2_6001020.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fileserver/file_default/file/cache/upload_product_1_503x236.png" afterPath="$PROJECT_DIR$/fileserver/file_default/file/cache/upload_product_1_503x236.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fileserver/file_default/file/cache/upload_product_2_vn_UA78KS9000KXXV_022_Black_black.jpg" afterPath="$PROJECT_DIR$/fileserver/file_default/file/cache/upload_product_2_vn_UA78KS9000KXXV_022_Black_black.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fileserver/file_default/file/cache/upload_product_4_daugoichothucung.png" afterPath="$PROJECT_DIR$/fileserver/file_default/file/cache/upload_product_4_daugoichothucung.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fileserver/file_default/file/cache/upload_product_5_noi-com-dien-cuckoo-18-lit-cr1062-hong-e7T61W.png" afterPath="$PROJECT_DIR$/fileserver/file_default/file/cache/upload_product_5_noi-com-dien-cuckoo-18-lit-cr1062-hong-e7T61W.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fileserver/file_default/file/cache/upload_product_6_6001020.jpg" afterPath="$PROJECT_DIR$/fileserver/file_default/file/cache/upload_product_6_6001020.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fileserver/.htaccess" afterPath="$PROJECT_DIR$/fileserver/.htaccess" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/config.php" afterPath="$PROJECT_DIR$/admin/config.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/dbconfig.php" afterPath="$PROJECT_DIR$/admin/dbconfig.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fileserver/image.php" afterPath="$PROJECT_DIR$/fileserver/image.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/index.php" afterPath="$PROJECT_DIR$/admin/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/smartcore/controller/common/login.php" afterPath="$PROJECT_DIR$/admin/smartcore/controller/common/login.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/smartcore/template/default/view/common/mainmenu.tpl" afterPath="$PROJECT_DIR$/admin/smartcore/template/default/view/common/mainmenu.tpl" />
+    </list>
+    <ignored path="ngochung.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="ngochung" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="sitemap.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/smartcore/model/core/sitemap.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-24.846153" vertical-offset="612" max-vertical-offset="2686">
+              <caret line="74" column="18" selection-start-line="74" selection-start-column="18" selection-end-line="74" selection-end-column="18" />
+              <folding>
+                <marker date="1481034300483" expanded="true" signature="245:334" placeholder="Select `site..." />
+                <marker date="1481034300483" expanded="true" signature="546:616" placeholder="Select count..." />
+                <marker date="1481034300483" expanded="true" signature="796:849" placeholder="Select * fro..." />
+                <marker date="1481034300483" expanded="true" signature="1303:1379" placeholder="Select max(p..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sitemap.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/smartcore/controller/core/sitemap.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-6.1445785" vertical-offset="867" max-vertical-offset="4131">
+              <caret line="81" column="79" selection-start-line="81" selection-start-column="66" selection-end-line="81" selection-end-column="79" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sitemap_form.tpl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/smartcore/template/default/view/core/sitemap_form.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-40.846153" vertical-offset="162" max-vertical-offset="1598">
+              <caret line="72" column="29" selection-start-line="72" selection-start-column="16" selection-end-line="72" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sitemap_list.tpl" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/admin/smartcore/template/default/view/core/sitemap_list.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.59799" vertical-offset="255" max-vertical-offset="2703">
+              <caret line="43" column="51" selection-start-line="43" selection-start-column="51" selection-end-line="43" selection-end-column="51" />
+              <folding>
+                <element signature="n#style#0;n#button#1;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#textarea#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="true" />
+    </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/admin/dbconfig.php" />
+        <option value="$PROJECT_DIR$/admin/config.php" />
+        <option value="$PROJECT_DIR$/fileserver/.htaccess" />
+        <option value="$PROJECT_DIR$/fileserver/image.php" />
+        <option value="$PROJECT_DIR$/admin/smartcore/template/default/view/common/mainmenu.tpl" />
+        <option value="$PROJECT_DIR$/admin/index.php" />
+        <option value="$PROJECT_DIR$/admin/smartcore/controller/common/login.php" />
+        <option value="$PROJECT_DIR$/admin/smartcore/template/default/view/core/sitemap_form.tpl" />
+        <option value="$PROJECT_DIR$/admin/smartcore/controller/core/sitemap.php" />
+        <option value="$PROJECT_DIR$/admin/smartcore/model/core/sitemap.php" />
+        <option value="$PROJECT_DIR$/admin/smartcore/template/default/view/core/sitemap_list.tpl" />
+      </list>
+    </option>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1296" />
+    <option name="height" value="1000" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="2" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ngochung" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ngochung" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ngochung" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ngochung" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ngochung" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fileserver" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ngochung" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ngochung" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fileserver" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="file_default" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="file" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ngochung" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ngochung" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ngochung" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ngochung" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smartcore" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="template" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="default" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="view" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ngochung" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ngochung" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smartcore" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="template" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="default" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="view" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ngochung" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ngochung" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smartcore" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="template" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="default" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ngochung" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ngochung" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smartcore" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ngochung" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ngochung" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smartcore" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ngochung" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ngochung" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smartcore" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ngochung" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ngochung" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smartcore" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ngochung" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ngochung" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smartcore" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ngochung" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ngochung" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smartcore" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ngochung" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ngochung" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fileserver" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ngochung" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ngochung" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fileserver" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smartweb_default" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="default" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ngochung" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ngochung" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fileserver" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smartweb_default" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="default" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ngochung" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ngochung" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fileserver" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smartweb_default" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="default" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../choxom" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\xampp\htdocs\ngochung\admin\fileserver\smartweb_default\default\js" />
+      <recent name="D:\xampp\htdocs\ngochung\admin\fileserver\smartweb_default\default\css" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\xampp\htdocs\ngochung\admin\smartcore\template\default\view\core" />
+      <recent name="D:\xampp\htdocs\ngochung\admin\smartcore\model\core" />
+      <recent name="D:\xampp\htdocs\ngochung\admin\smartcore\controller\core" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <method />
+    </configuration>
+    <list size="0" />
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3bfcc36a-a5b5-49cb-a245-a6c1950a3801" name="Default" comment="" />
+      <created>1481027489154</created>
+      <option name="number" value="Default" />
+      <updated>1481027489154</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/admin/dbconfig.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1218638" vertical-offset="0" max-vertical-offset="837">
+          <caret line="6" column="34" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fileserver/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.24" vertical-offset="0" max-vertical-offset="2244">
+          <caret line="12" column="109" selection-start-line="12" selection-start-column="109" selection-end-line="12" selection-end-column="109" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fileserver/eimagick.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.20631067" vertical-offset="102" max-vertical-offset="2465">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fileserver/image.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.052184466" vertical-offset="417" max-vertical-offset="2261">
+          <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.16504854" vertical-offset="0" max-vertical-offset="1088">
+          <caret line="8" column="40" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/smartcore/template/default/view/common/mainmenu.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="442">
+          <caret line="11" column="107" selection-start-line="11" selection-start-column="107" selection-end-line="11" selection-end-column="107" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-20.26923" vertical-offset="0" max-vertical-offset="748">
+          <caret line="31" column="38" selection-start-line="31" selection-start-column="38" selection-end-line="31" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/smartcore/controller/common/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.56869775" vertical-offset="0" max-vertical-offset="1462">
+          <caret line="28" column="58" selection-start-line="28" selection-start-column="58" selection-end-line="28" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/fileserver/smartweb_default/default/js/jquery.nestable.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8279">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/fileserver/smartweb_default/default/css/jquery.nestable.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1887">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/smartcore/controller/core/sitemap.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.1445785" vertical-offset="867" max-vertical-offset="4131">
+          <caret line="81" column="79" selection-start-line="81" selection-start-column="66" selection-end-line="81" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/smartcore/model/core/sitemap.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-24.846153" vertical-offset="612" max-vertical-offset="2686">
+          <caret line="74" column="18" selection-start-line="74" selection-start-column="18" selection-end-line="74" selection-end-column="18" />
+          <folding>
+            <marker date="1481034300483" expanded="true" signature="245:334" placeholder="Select `site..." />
+            <marker date="1481034300483" expanded="true" signature="546:616" placeholder="Select count..." />
+            <marker date="1481034300483" expanded="true" signature="796:849" placeholder="Select * fro..." />
+            <marker date="1481034300483" expanded="true" signature="1303:1379" placeholder="Select max(p..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/smartcore/template/default/view/core/sitemap_form.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-40.846153" vertical-offset="162" max-vertical-offset="1598">
+          <caret line="72" column="29" selection-start-line="72" selection-start-column="16" selection-end-line="72" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/smartcore/template/default/view/core/sitemap_list.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.59799" vertical-offset="255" max-vertical-offset="2703">
+          <caret line="43" column="51" selection-start-line="43" selection-start-column="51" selection-end-line="43" selection-end-column="51" />
+          <folding>
+            <element signature="n#style#0;n#button#1;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#textarea#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
+

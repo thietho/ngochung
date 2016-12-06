@@ -29,7 +29,7 @@ $controller->addPreAction(new Action('page/login/checkLogin'));
 if (isset($request->get['route'])) {
 	$action = new Action($request->get['route']);
 } else {
-	$action = new Action('kotra/movies');
+	$action = new Action('core/sitemap');
 }
 
 // Dispatch

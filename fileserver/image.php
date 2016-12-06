@@ -10,13 +10,23 @@ define("DIR_WEBFILE", "");
 define("WATERLOGO_POSITION", "BottomRight"); //TopLeft, TopRight, BottomLeft, BottomRight
 require_once("system/library/image.php");
 require_once("system/helper/image.php");
+$path1 = '';
+$isimage = true;
+if(file_exists(DIR_FILE . $path))
+{
 
-
-if ($path == "" || $resizetype == "" || !file_exists(DIR_FILE . $path)) {
-    $path = 'default/default.png';
+    $fileinfo = pathinfo(DIR_FILE . $path);
+    $imagetype = array('png','jpg','gif','jpeg','bmp');
+    $ext = strtolower($fileinfo['extension']);
+    if(!in_array($ext,$imagetype))
+    {
+        $path1 = 'icon/48px/'.$ext.'.png';
+        $isimage = false;
+    }
 }
 
-if ($path != "" && $resizetype != "" && file_exists(DIR_FILE . $path)) {
+
+if ($path != "" && $resizetype != "" && file_exists(DIR_FILE . $path) && $isimage == true) {
 
     $fileTime = filemtime(DIR_FILE . $path);
     if (isset($_SERVER['HTTP_IF_MODIFIED_SINCE']) && (strtotime($_SERVER['HTTP_IF_MODIFIED_SINCE']) == filemtime(DIR_FILE . $path))) {
@@ -82,8 +92,8 @@ if ($path != "" && $resizetype != "" && file_exists(DIR_FILE . $path)) {
 } else {
 
 
-    $file = DIR_FILE . 'default/default.png';
-
+    //$file = DIR_FILE . 'default/default.png';
+    $file = DIR_FILE . $path1;
     $info = getimagesize($file);
     $imageinfor = array(
         "width" => $info[0],
