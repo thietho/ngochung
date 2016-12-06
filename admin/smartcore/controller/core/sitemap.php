@@ -31,13 +31,8 @@ class ControllerCoreSitemap extends Controller
         $data_childs = @$this->model_core_sitemap->getChild($id);
         $sitemap = @$this->model_core_sitemap->getItem($id);
         $str ='<li class="dd-item" data-id="'.$sitemap['sitemapid'].'">';
-        //$btnEdit = '<a href="?route=core/sitemap/update&sitemapid='.$sitemap['sitemapid'].'">Edit</a>';
-        //$btnAddChild = '<a href="?route=core/sitemap/insert&sitemapparent='.$sitemap['sitemapid'].'">Add child</a>';
-        //$btnEditContent = '<a href="?route=module/information&sitemapid=cat'.$sitemap['sitemapid'].'">Edit content</a>';
-        //$btnRemove = '<a>Remove</a>';
-        //$str .= '<div class="dd-handle">'.$sitemap['sitemapname']." ".$btnEdit." ".$btnAddChild." ".$btnEditContent." ".$btnRemove.'</div>';
-        $str .= '<div class="dd-handle hl-cat" data-toggle="modal" data-target="#myModal" sitemapid="'.$sitemap['sitemapid'].'" sitemapname="'.$sitemap['sitemapname'].'">'.$sitemap['sitemapname'].'</div>';
-        //$str .= '<div class="dd-handle dd3-handle"></div><div class="dd3-content">'.$sitemap['sitemapname']." ".$btnEdit." ".$btnAddChild." ".$btnEditContent." ".$btnRemove.'</div>';
+        $str .= '<div class="dd-handle hl-cat" data-toggle="modal" data-target="#myModal" id="'.$sitemap['id'].'" sitemapid="'.$sitemap['sitemapid'].'" sitemapname="'.$sitemap['sitemapname'].'" module="'.$sitemap['module'].'">'.$sitemap['sitemapname'].' - '. $this->document->module[$sitemap['module']] .'</div>';
+
 
         if(count($data_childs))
         {
@@ -189,10 +184,13 @@ class ControllerCoreSitemap extends Controller
 
     public function delete()
     {
-        $id = $this->request->get['id'];
+        $sitemapid = $this->request->get['sitemapid'];
 
-        $this->model_core_sitemap->delete($id);
-        $this->data['output'] = "true";
+        $fdel = $this->model_core_sitemap->delete($sitemapid);
+        if($fdel)
+            $this->data['output'] = "Xóa thành công!";
+        else
+            $this->data['output'] = "Không xóa được, bạn phải xóa con trước!";
         $this->template = "common/output.tpl";
         $this->render();
     }
@@ -222,10 +220,20 @@ class ControllerCoreSitemap extends Controller
         $this->errors = array();
 
         if ("" == $data['sitemapid']) {
-			$this->errors['sitemapid'] = "sitemapid not empty";
+			$this->errors['sitemapid'] = "Site Map ID not empty";
 		}
+        else
+        {
+            if($data['id'] == '')
+            {
+                $sitemap = $this->model_core_sitemap->getItem($data['sitemapid']);
+                if(count($sitemap))
+                    $this->errors['sitemapid'] = "Site Map ID has used";
+            }
+
+        }
 		if ("" == $data['sitemapname']) {
-			$this->errors['sitemapname'] = "sitemapname not empty";
+			$this->errors['sitemapname'] = "Site Map Name not empty";
 		}
 
 		
@@ -234,5 +242,19 @@ class ControllerCoreSitemap extends Controller
             return false;
         }
         return true;
+    }
+    public function createID()
+    {
+        $sitemapname = urldecode($this->request->get['sitemapname']);
+        $sitemapid = $this->common->utf8_to_ascii($sitemapname);
+        $arr = explode(' ',strtolower($sitemapid));
+        foreach($arr as $key => $str)
+        {
+            $arr[$key] = preg_replace('/[^A-Za-z0-9\-]/', '', $str);
+        }
+        $sitemapid = implode('-',$arr);
+        $this->data['output'] = $sitemapid;
+        $this->template = "common/output.tpl";
+        $this->render();
     }
 }

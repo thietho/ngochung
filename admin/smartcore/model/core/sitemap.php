@@ -8,7 +8,13 @@ class ModelCoreSitemap extends Model
 		'module', 
 		'pos'
     );
-
+    public function getId($id)
+    {
+        $query = $this->db->query("Select `sitemap`.*
+									from `sitemap`
+									where id ='" . $id . "' ");
+        return $query->row;
+    }
     public function getItem($sitemapid)
     {
         $query = $this->db->query("Select `sitemap`.*
@@ -146,8 +152,10 @@ class ModelCoreSitemap extends Model
         {
             $where = "sitemapid = '" . $sitemapid . "'";
             $this->db->deleteData("sitemap", $where);
+            return true;
         }
-
+        else
+            return false;
     }
 }
 ?>

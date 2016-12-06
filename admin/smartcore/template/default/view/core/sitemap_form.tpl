@@ -18,14 +18,7 @@
                 <input type="hidden" name="sitemapparent" id="sitemapparent" value="<?php echo $item['sitemapparent'] ?>">
                 <input type="hidden" name="pos" id="pos" value="<?php echo $item['pos'] ?>">
                 <div class="col-md-6 col-md-offset-3">
-                    <div class="form-group">
-						<label class="col-md-3 control-label">Site Map ID</label>
-						<div class="col-md-9">
-							<input type="text" class="form-control input-control"
-                                       name="sitemapid" id="sitemapid" placeholder="Site Map ID"
-                                       value="<?php echo $item['sitemapid'] ?>">
-						</div>
-					</div>
+
 					<div class="form-group">
 						<label class="col-md-3 control-label">Site Map Name</label>
 						<div class="col-md-9">
@@ -34,13 +27,24 @@
                                        value="<?php echo $item['sitemapname'] ?>">
 						</div>
 					</div>
-
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">Site Map ID</label>
+                        <div class="col-md-9">
+                            <input type="text" class="form-control input-control"
+                                   name="sitemapid" id="sitemapid" placeholder="Site Map ID"
+                                   value="<?php echo $item['sitemapid'] ?>">
+                        </div>
+                    </div>
 					<div class="form-group">
 						<label class="col-md-3 control-label">Module</label>
 						<div class="col-md-9">
-							<input type="text" class="form-control input-control"
-                                       name="module" id="module" placeholder="Module"
-                                       value="<?php echo $item['module'] ?>">
+
+                            <select class="form-control" name="module" id="module">
+                                <option value=""></option>
+                                <?php foreach($this->document->module as $module => $name){ ?>
+                                <option value="<?php echo $module?>"><?php echo $name?></option>
+                                <?php } ?>
+                            </select>
 						</div>
 					</div>
 
@@ -65,7 +69,12 @@
 <!-- END PAGE CONTAINER -->
 
 <script type="application/javascript">
-
+    $('#frmSitemap #module').val("<?php echo $item['module']?>");
+    $('#frmSitemap #sitemapname').change(function () {
+        $.get('?route=core/sitemap/createID&sitemapname='+ encodeURI($('#frmSitemap #sitemapname').val()), function (html) {
+            $('#frmSitemap #sitemapid').val(html);
+        })
+    });
     <?php if($_GET['type'] != 'popup'){ ?>
         $('#btnSaveSitemap').click(function(){
             showLoading();

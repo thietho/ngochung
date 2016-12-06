@@ -21,6 +21,14 @@ final class Document
     public $sitemapid = '';
     public $breadcrumbs = '';
     public $route = '';
+    public $module = array(
+        'homepage' => 'Home page',
+        'module/infomation' => 'Infomation',
+        'module/product' => 'Product',
+        'module/news' => 'News',
+        'module/contact' => 'Contact',
+        'addon' => 'Add on'
+    );
     public $status = array(
         'active' => 'Active',
         'deactive' => 'Deactive'

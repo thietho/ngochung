@@ -55,6 +55,7 @@
                 <p>Some text in the modal.</p>
             </div>
             <div class="modal-footer">
+                <button type="button" class="btn btn-default" id="btnCatManagement">Quản lý nội dung</button>
                 <button type="button" class="btn btn-default" id="btnCatEdit">Chỉnh sửa</button>
                 <button type="button" class="btn btn-default" id="btnCatAddChild">Thêm con</button>
 
@@ -84,10 +85,16 @@
     });
     $('.hl-cat').click(function(e) {
         $('.modal-body').html($(this).attr('sitemapname'));
+        $('#btnCatManagement').attr('sitemapid',$(this).attr('sitemapid'));
+        $('#btnCatManagement').attr('module',$(this).attr('module'));
+        $('#btnCatManagement').attr('id',$(this).attr('id'));
         $('#btnCatEdit').attr('sitemapid',$(this).attr('sitemapid'));
         $('#btnCatAddChild').attr('sitemapid',$(this).attr('sitemapid'));
         $('#btnCatEditConten').attr('sitemapid',$(this).attr('sitemapid'));
         $('#btnCatDel').attr('sitemapid',$(this).attr('sitemapid'));
+    });
+    $('#btnCatManagement').click(function(e) {
+        window.location = '?route='+$(this).attr('module')+'&sitemapid='+ $(this).attr('id');
     });
     $('#btnCatEdit').click(function(e) {
         window.location = '?route=core/sitemap/update&sitemapid='+ $(this).attr('sitemapid');
@@ -143,7 +150,7 @@
                         $('.hl-message').html('<h1>Lưu thành công!!!<h1>');
 
                     }
-                    //window.location.reload();
+                    window.location.reload();
 
                 }
 
