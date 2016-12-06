@@ -1,35 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3bfcc36a-a5b5-49cb-a245-a6c1950a3801" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/system/library/common.php" afterPath="$PROJECT_DIR$/admin/system/library/common.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/system/library/document.php" afterPath="$PROJECT_DIR$/admin/system/library/document.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/logs/log.txt" afterPath="$PROJECT_DIR$/admin/logs/log.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/smartcore/template/default/view/common/mainmenu.tpl" afterPath="$PROJECT_DIR$/admin/smartcore/template/default/view/common/mainmenu.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/smartcore/controller/core/sitemap.php" afterPath="$PROJECT_DIR$/admin/smartcore/controller/core/sitemap.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/smartcore/model/core/sitemap.php" afterPath="$PROJECT_DIR$/admin/smartcore/model/core/sitemap.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/smartcore/template/default/view/core/sitemap_form.tpl" afterPath="$PROJECT_DIR$/admin/smartcore/template/default/view/core/sitemap_form.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/smartcore/template/default/view/core/sitemap_list.tpl" afterPath="$PROJECT_DIR$/admin/smartcore/template/default/view/core/sitemap_list.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="D:\xampp\htdocs\ngochung\admin\smartcore\controller\kotra\movies.php" afterPath="$PROJECT_DIR$/admin/smartcore/controller/module/movies.php" />
-      <change type="MOVED" beforePath="D:\xampp\htdocs\ngochung\admin\smartcore\controller\kotra\news.php" afterPath="$PROJECT_DIR$/admin/smartcore/controller/module/news.php" />
-      <change type="MOVED" beforePath="D:\xampp\htdocs\ngochung\admin\smartcore\controller\kotra\product.php" afterPath="$PROJECT_DIR$/admin/smartcore/controller/module/product.php" />
-      <change type="MOVED" beforePath="D:\xampp\htdocs\ngochung\admin\smartcore\controller\kotra\setting.php" afterPath="$PROJECT_DIR$/admin/smartcore/controller/module/setting.php" />
-      <change type="MOVED" beforePath="D:\xampp\htdocs\ngochung\admin\smartcore\model\kotra\movies.php" afterPath="$PROJECT_DIR$/admin/smartcore/model/module/movies.php" />
-      <change type="MOVED" beforePath="D:\xampp\htdocs\ngochung\admin\smartcore\model\kotra\news.php" afterPath="$PROJECT_DIR$/admin/smartcore/model/module/news.php" />
-      <change type="MOVED" beforePath="D:\xampp\htdocs\ngochung\admin\smartcore\model\kotra\product.php" afterPath="$PROJECT_DIR$/admin/smartcore/model/module/product.php" />
-      <change type="MOVED" beforePath="D:\xampp\htdocs\ngochung\admin\smartcore\model\kotra\setting.php" afterPath="$PROJECT_DIR$/admin/smartcore/model/module/setting.php" />
-      <change type="MOVED" beforePath="D:\xampp\htdocs\ngochung\admin\smartcore\template\default\view\kotra\movies_form.tpl" afterPath="$PROJECT_DIR$/admin/smartcore/template/default/view/module/movies_form.tpl" />
-      <change type="MOVED" beforePath="D:\xampp\htdocs\ngochung\admin\smartcore\template\default\view\kotra\movies_list.tpl" afterPath="$PROJECT_DIR$/admin/smartcore/template/default/view/module/movies_list.tpl" />
-      <change type="MOVED" beforePath="D:\xampp\htdocs\ngochung\admin\smartcore\template\default\view\kotra\movies_table.tpl" afterPath="$PROJECT_DIR$/admin/smartcore/template/default/view/module/movies_table.tpl" />
-      <change type="MOVED" beforePath="D:\xampp\htdocs\ngochung\admin\smartcore\template\default\view\kotra\news_form.tpl" afterPath="$PROJECT_DIR$/admin/smartcore/template/default/view/module/news_form.tpl" />
-      <change type="MOVED" beforePath="D:\xampp\htdocs\ngochung\admin\smartcore\template\default\view\kotra\news_list.tpl" afterPath="$PROJECT_DIR$/admin/smartcore/template/default/view/module/news_list.tpl" />
-      <change type="MOVED" beforePath="D:\xampp\htdocs\ngochung\admin\smartcore\template\default\view\kotra\news_table.tpl" afterPath="$PROJECT_DIR$/admin/smartcore/template/default/view/module/news_table.tpl" />
-      <change type="MOVED" beforePath="D:\xampp\htdocs\ngochung\admin\smartcore\template\default\view\kotra\product_form.tpl" afterPath="$PROJECT_DIR$/admin/smartcore/template/default/view/module/product_form.tpl" />
-      <change type="MOVED" beforePath="D:\xampp\htdocs\ngochung\admin\smartcore\template\default\view\kotra\product_list.tpl" afterPath="$PROJECT_DIR$/admin/smartcore/template/default/view/module/product_list.tpl" />
-      <change type="MOVED" beforePath="D:\xampp\htdocs\ngochung\admin\smartcore\template\default\view\kotra\product_table.tpl" afterPath="$PROJECT_DIR$/admin/smartcore/template/default/view/module/product_table.tpl" />
-      <change type="MOVED" beforePath="D:\xampp\htdocs\ngochung\admin\smartcore\template\default\view\kotra\setting.tpl" afterPath="$PROJECT_DIR$/admin/smartcore/template/default/view/module/setting.tpl" />
-    </list>
+    <list default="true" id="3bfcc36a-a5b5-49cb-a245-a6c1950a3801" name="Default" comment="" />
     <ignored path="ngochung.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -544,6 +516,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../mylanbeauty" />
+    <property name="FullScreen" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
