@@ -13,11 +13,11 @@ class ControllerCoreSitemap extends Controller
     function __construct()
     {
         $this->load->model("core/sitemap");
-        $data_childs = @$this->model_core_sitemap->getChild('');
+        $data_childs = @$this->model_core_sitemap->getChild(0);
         @$this->data['tree'] ="";
         foreach($data_childs as $child)
         {
-            @$this->data['tree'] .= @$this->getTree($child['sitemapid']);
+            @$this->data['tree'] .= @$this->getTree($child['id']);
         }
     }
 
@@ -30,10 +30,8 @@ class ControllerCoreSitemap extends Controller
 
         $data_childs = @$this->model_core_sitemap->getChild($id);
         $sitemap = @$this->model_core_sitemap->getItem($id);
-        $str ='<li class="dd-item" data-id="'.$sitemap['sitemapid'].'">';
+        $str ='<li class="dd-item" data-id="'.$sitemap['id'].'">';
         $str .= '<div class="dd-handle hl-cat" data-toggle="modal" data-target="#myModal" id="'.$sitemap['id'].'" sitemapid="'.$sitemap['sitemapid'].'" sitemapname="'.$sitemap['sitemapname'].'" module="'.$sitemap['module'].'">'.$sitemap['sitemapname'].' - '. $this->document->module[$sitemap['module']] .'</div>';
-
-
         if(count($data_childs))
         {
 
@@ -41,7 +39,7 @@ class ControllerCoreSitemap extends Controller
             foreach($data_childs as $child)
             {
 
-                $str .= @$this->getTree($child['sitemapid']);
+                $str .= @$this->getTree($child['id']);
 
             }
             $str.='</ol>';
@@ -57,7 +55,7 @@ class ControllerCoreSitemap extends Controller
         print_r($dataobj);
         foreach($dataobj as $key => $obj)
         {
-            $this->model_core_sitemap->updateCol($obj->id,'sitemapparent','');
+            $this->model_core_sitemap->updateCol($obj->id,'sitemapparent',0);
             $this->model_core_sitemap->updateCol($obj->id,'pos',$key);
             @$this->travelTree($obj);
         }
@@ -67,13 +65,11 @@ class ControllerCoreSitemap extends Controller
     }
     private function travelTree($note)
     {
-        echo "id:".$note->id;
         if(count($note->children))
         {
-            echo "<br>childs:";
             foreach($note->children as $key => $child)
             {
-                echo $child->id;
+                echo $child->id."-".$note->id."<br>";
                 @$this->model_core_sitemap->updateCol($child->id,'sitemapparent',$note->id);
                 @$this->model_core_sitemap->updateCol($child->id,'pos',$key);
                 @$this->travelTree($child);
@@ -154,8 +150,13 @@ class ControllerCoreSitemap extends Controller
     private function getForm()
     {
         $id = $this->request->get['sitemapid'];
+        $this->data['readonly'] = '';
         if ($id) {
             $this->data['item'] = $this->model_core_sitemap->getItem($id);
+            $this->data['readonly'] = 'readonly';
+            $this->data['item']['summary'] = $this->model_core_sitemap->getItemValue($id,'summary');
+            $this->data['item']['image'] = $this->model_core_sitemap->getItemValue($id,'image');
+            $this->data['item']['description'] = $this->model_core_sitemap->getItemValue($id,'description');
         }
         else
         {
@@ -200,6 +201,10 @@ class ControllerCoreSitemap extends Controller
         $data = $this->request->post;
         if ($this->validate($data)) {
             $data['id'] = $this->model_core_sitemap->save($data);
+            //Save info
+            $this->model_core_sitemap->saveItemInfo($data['id'],'summary',$data['summary']);
+            $this->model_core_sitemap->saveItemInfo($data['id'],'image',$data['image']);
+            $this->model_core_sitemap->saveItemInfo($data['id'],'description',$data['description']);
             $data['errors'] = array();
             $data['errorstext'] = '';
 

@@ -88,6 +88,7 @@ class Language {
         }
         if ($cacheData == "") {
             $query = $this->db->query("SELECT * FROM language");
+            if(count($query->rows))
             foreach ($query->rows as $result) {
                 $data[$result['code']] = array('languageid' => $result['languageid'], 'name' => $result['name'], 'code' => $result['code'], 'locale' => $result['locale'], 'directory' => $result['directory'], 'filename' => $result['filename']);
             }

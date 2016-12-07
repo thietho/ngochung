@@ -2,8 +2,8 @@ body
 {
     margin: 0;
     padding: 0;
-    font-family: 'fontawesome', 'Tahoma', sans-serif;
-    background: #E6E6E7;
+    font-family: 'fontawesome', 'Arial', sans-serif;
+    background: #205334;
 }
 a
 {
@@ -28,8 +28,8 @@ p
 }
 #elife-page
 {
-    width: 1080px;
-    height: 1920px;
+    width: 946px;
+
     margin: 0 auto;
     overflow: hidden;
 }
@@ -56,13 +56,26 @@ p
 #elife-header
 {
     background:url("../image/bg-header.png") no-repeat;
-    height: 150px;
+    height: 148px;
 }
-#elife-header #datetime
+#elife-menu
 {
-    font-size: 1.3em;
-    margin-top: 20px;
-    margin-right: 40px;
+    height: 36px;
+    background: url("../image/bg-menu.jpg") repeat-x;
+}
+#elife-menu ul
+{
+    padding: 0;
+    margin: 0;
+}
+#elife-menu ul li
+{
+    display: inline-block;
+    padding: 8px 20px;
+}
+#elife-menu ul li a
+{
+    color: #fff;
 }
 #elife-banner
 {
@@ -71,66 +84,10 @@ p
     padding-bottom: 4px;
     height: 358px;
 }
-#elife-video
-{
-    margin-top: 46px;
-}
-#elife-video #event
-{
-    width: 390px;
-}
-#elife-video #event img
-{
-    margin-left: 20px;
-    margin-bottom: 15px !important;
-}
-#elife-video #event img:last-child
-{
-    margin-bottom: 0;
-}
-#elife-video #video
-{
-    margin-right: 11px;
-}
-#elife-video #video #player
-{
-    background: #000000;
-}
-#elife-take-photo
-{
-    margin-top: 49px;
-    margin-left: 20px;
-}
-#elife-camera #listframe
-{
-    margin-left: 20px;
-}
-#elife-camera #camera
-{
 
-}
-#elife-camera #camera #boder
-{
-    background: #3a3a3c;
-    padding: 9px 10px;
-    border: #666668 1px solid;
-}
-#elife-camera #stiker
-{
-
-}
-#elife-camera #stiker .stikeritem
-{
-    width: 142px;
-    height: 92px;
-    background: #6d6e71;
-    margin: 10px 18px;
-    border: #373739 1px solid;
-}
 #elife-footer
 {
     height: 57px;
-    background: url("../image/bg-footer.png") repeat-x;
     margin-top: 48px;
 
 }

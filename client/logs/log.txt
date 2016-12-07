@@ -11,3 +11,4 @@
 2016-11-18 17:36:31 - PHP Warning:  json_decode() expects parameter 1 to be string, array given in D:\xampp\htdocs\kotra\client\smartcore\controller\kotra\banner.php on line 29
 2016-11-18 17:36:59 - PHP Warning:  json_decode() expects parameter 1 to be string, array given in D:\xampp\htdocs\kotra\client\smartcore\controller\kotra\banner.php on line 29
 2016-11-24 14:23:06 - PHP Warning:  Invalid argument supplied for foreach() in D:\xampp\htdocs\kotra\client\system\library\language.php on line 91
+2016-12-07 22:00:46 - PHP Warning:  Invalid argument supplied for foreach() in D:\xampp\htdocs\ngochung\client\system\library\language.php on line 91

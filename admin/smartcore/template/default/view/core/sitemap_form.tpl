@@ -32,7 +32,7 @@
                         <div class="col-md-9">
                             <input type="text" class="form-control input-control"
                                    name="sitemapid" id="sitemapid" placeholder="Site Map ID"
-                                   value="<?php echo $item['sitemapid'] ?>">
+                                   value="<?php echo $item['sitemapid'] ?>" <?php echo $readonly?>>
                         </div>
                     </div>
 					<div class="form-group">
@@ -47,7 +47,35 @@
                             </select>
 						</div>
 					</div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">Summary</label>
+                        <div class="col-md-9">
 
+                            <textarea class="form-control input-control" name="summary" id="summary"><?php echo $item['summary'] ?></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">Image(503x333)</label>
+                        <div class="col-md-9">
+                            <input type="hidden" name="image" id="image" value="<?php echo $item['image']?>">
+                            <img id="imgimage" width="auto" height="64" src="<?php echo DIR_USERIMAGE ?>autosize-0x64/<?php echo $item['image'] ?>" />
+
+                            <button type="button" class="btn btn-sm btn-default btn-bg btn-success" id="btnSelectImage">Select</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="form-group">
+                        <label class="control-label">Description</label>
+                        <?php if($item['id'] != ''){ ?>
+                        <button type="button" class="btn btn-sm btn-default btn-bg btn-success" id="btnSelectFileDescription">Select</button>
+                        <?php } ?>
+                        <div class="col-md-12">
+                            <textarea class="form-control input-control" name="description" id="description"><?php echo $item['description'] ?></textarea>
+
+                        </div>
+                    </div>
                 </div>
             </form>
         </div>
@@ -75,9 +103,15 @@
             $('#frmSitemap #sitemapid').val(html);
         })
     });
+    $(document).ready(function(){
+        setCKEditorType('description', 0, '100%');
+    });
     <?php if($_GET['type'] != 'popup'){ ?>
         $('#btnSaveSitemap').click(function(){
             showLoading();
+            var description = CKEDITOR.instances['description'];
+            pageValue = description.getData();
+            $('textarea#description').val(pageValue);
             $.post("?route=core/sitemap/save",$('#frmSitemap').serialize(),function(data){
                 endLoading();
                 var obj = $.parseJSON(data)
@@ -94,5 +128,26 @@
             });
         });
     <?php } ?>
+    $('#btnSelectImage').click(function(){
+        $('#modal-select-file').modal();
+        var folder = "sitemap";
+        if($('#frmSitemap #id').val() == '')
+            folder += "/temp"+ Date.now() ;
+        else
+            folder += "/"+$('#frmSitemap #id').val();
+        $('#modal-select-file .modal-body').load('?route=core/uploadfile&folder='+folder+"&eid=image",function(){
 
+        });
+    });
+    $('#btnSelectFileDescription').click(function(){
+        $('#modal-select-file').modal();
+        var folder = "sitemap";
+        if($('#frmSitemap #id').val() == '')
+            folder += "/temp"+ Date.now() ;
+        else
+            folder += "/"+$('#frmSitemap #id').val();
+        $('#modal-select-file .modal-body').load('?route=core/uploadfile&folder='+folder+"&eid=description&type=editor",function(){
+
+        });
+    });
 </script>

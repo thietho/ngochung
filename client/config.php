@@ -2,11 +2,11 @@
 // CONFIG DOMAIN
 $base_domain = 'localhost:81'; //ex: google.com
 $domain = 'localhost:81'; //ex: www.google.com
-$main_http_server = "http://$domain/kotra/client/";
-$root_http_server = "http://$domain/kotra/client/";
-$root_https_server = "https://$domain/kotra/client/";
-$file_server = "http://$domain/kotra/client/fileserver/";
-$image_server = "http://$domain/kotra/admin/fileserver/";
+$main_http_server = "http://$domain/ngochung/client/";
+$root_http_server = "http://$domain/ngochung/client/";
+$root_https_server = "https://$domain/ngochung/client/";
+$file_server = "http://$domain/ngochung/client/fileserver/";
+$image_server = "http://$domain/ngochung/fileserver/";
 
 $direct_file_server = $image_server . "file_default" . "/file/";
 define('DIRECT_FILE_SERVER', $direct_file_server);
@@ -59,4 +59,4 @@ define('DIR_MODIFICATION_SYSTEM', DIR_SERVERROOT . 'system_setting/');
 define('DIR_LOGS', DIR_SERVERROOT . 'logs/');
 
 //
-define('DIR_FILE','fileserver/file_default/file/');
+define('DIR_FILE','../fileserver/file_default/file/');

@@ -85,16 +85,24 @@
     });
     $('.hl-cat').click(function(e) {
         $('.modal-body').html($(this).attr('sitemapname'));
-        $('#btnCatManagement').attr('sitemapid',$(this).attr('sitemapid'));
-        $('#btnCatManagement').attr('module',$(this).attr('module'));
-        $('#btnCatManagement').attr('id',$(this).attr('id'));
-        $('#btnCatEdit').attr('sitemapid',$(this).attr('sitemapid'));
+        switch($(this).attr('module'))
+        {
+            case "module/product":
+            case "module/news":
+                $('#btnCatManagement').attr('sitemapid',$(this).attr('id'));
+                $('#btnCatManagement').attr('module',$(this).attr('module'));
+                $('#btnCatManagement').removeClass('hide');
+                break;
+            default :
+                $('#btnCatManagement').addClass('hide');
+        }
+        $('#btnCatEdit').attr('sitemapid',$(this).attr('id'));
         $('#btnCatAddChild').attr('sitemapid',$(this).attr('sitemapid'));
         $('#btnCatEditConten').attr('sitemapid',$(this).attr('sitemapid'));
         $('#btnCatDel').attr('sitemapid',$(this).attr('sitemapid'));
     });
     $('#btnCatManagement').click(function(e) {
-        window.location = '?route='+$(this).attr('module')+'&sitemapid='+ $(this).attr('id');
+        window.location = '?route='+$(this).attr('module')+'&sitemapid='+ $(this).attr('sitemapid');
     });
     $('#btnCatEdit').click(function(e) {
         window.location = '?route=core/sitemap/update&sitemapid='+ $(this).attr('sitemapid');
@@ -150,7 +158,7 @@
                         $('.hl-message').html('<h1>Lưu thành công!!!<h1>');
 
                     }
-                    window.location.reload();
+                    //window.location.reload();
 
                 }
 

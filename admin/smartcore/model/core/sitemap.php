@@ -8,18 +8,11 @@ class ModelCoreSitemap extends Model
 		'module', 
 		'pos'
     );
-    public function getId($id)
+    public function getItem($id)
     {
         $query = $this->db->query("Select `sitemap`.*
 									from `sitemap`
 									where id ='" . $id . "' ");
-        return $query->row;
-    }
-    public function getItem($sitemapid)
-    {
-        $query = $this->db->query("Select `sitemap`.*
-									from `sitemap`
-									where sitemapid ='" . $sitemapid . "' ");
         return $query->row;
     }
 
@@ -65,9 +58,9 @@ class ModelCoreSitemap extends Model
         $query = @$this->db->query($sql);
         return $query->rows[0]['max'] +1 ;
     }
-    public function updateCol($sitemapid, $col, $val)
+    public function updateCol($id, $col, $val)
     {
-        $sitemapid = $this->db->escape($sitemapid);
+        $id = $this->db->escape($id);
         $col = $this->db->escape($col);
         $val = $this->db->escape($val);
 
@@ -78,7 +71,7 @@ class ModelCoreSitemap extends Model
             $val
         );
 
-        $where = "sitemapid = '" . $sitemapid . "'";
+        $where = "id = '" . $id . "'";
         $this->db->updateData("sitemap", $field, $value, $where);
     }
 
@@ -115,21 +108,21 @@ class ModelCoreSitemap extends Model
     }
 
     //Tree
-    function getTree($sitemapid, &$data, $level=-1, $path="", $parentpath="")
+    function getTree($id, &$data, $level=-1, $path="", $parentpath="")
     {
-        $arr=@$this->getItem($sitemapid);
+        $arr=@$this->getItem($id);
 
-        $rows = @$this->getChild($sitemapid);
+        $rows = @$this->getChild($id);
 
         @$arr['countchild'] = count($rows);
 
         if(@$arr['parent'] != "")
             $parentpath .= "-".$arr['parent'];
 
-        if(@$sitemapid!="" )
+        if(@$id!=0 )
         {
             $level += 1;
-            $path .= "-".$sitemapid;
+            $path .= "-".$id;
 
             @$arr['level'] = $level;
             @$arr['path'] = $path;
@@ -142,20 +135,76 @@ class ModelCoreSitemap extends Model
         if(count($rows))
             foreach($rows as $row)
             {
-                @$this->getTree($row['sitemapid'], $data, $level, $path, $parentpath);
+                @$this->getTree($row['id'], $data, $level, $path, $parentpath);
             }
     }
-    public function delete($sitemapid)
+    public function delete($id)
     {
-        $childs = $this->getChild($sitemapid);
+        $childs = $this->getChild($id);
         if(count($childs) == 0)
         {
-            $where = "sitemapid = '" . $sitemapid . "'";
+            $where = "id = '" . $id . "'";
             $this->db->deleteData("sitemap", $where);
+            $list = $this->getItemInfoList($id);
+            foreach($list as $info)
+                $this->deleteInfo($info['id']);
             return true;
         }
         else
             return false;
+    }
+    //Infomation
+    public function deleteInfo($id)
+    {
+        $where="id = '".$id."'";
+        $this->db->deleteData("sitemap_info",$where);
+
+    }
+    public function getItemValue($sitemapid,$infoname)
+    {
+        $sql = "SELECT *
+                FROM  `sitemap_info`
+                WHERE `sitemapid` = '$sitemapid' AND `infoname` = '$infoname'";
+        $query = $this->db->query($sql);
+        return @$query->row['infovalue'];
+    }
+
+    public function getItemInfoList($sitemapid)
+    {
+        $sql = "SELECT *
+                FROM  `sitemap_info`
+                WHERE `sitemapid` = '$sitemapid'";
+        $query = $this->db->query($sql);
+        return $query->rows;
+    }
+
+    public function saveItemInfo($sitemapid,$infoname,$infovalue)
+    {
+        $sql = "SELECT *
+                FROM  `sitemap_info`
+                WHERE `sitemapid` = '$sitemapid' AND `infoname` = '$infoname'";
+        $query = $this->db->query($sql);
+        $info = $query->row;
+        $field=array(
+            "sitemapid",
+            "infoname",
+            "infovalue"
+        );
+
+        $value=array(
+            $sitemapid,
+            $infoname,
+            $infovalue,
+        );
+        if(count($info) > 0)
+        {
+            $where="sitemapid = '".$sitemapid."' AND infoname = '".$infoname."'";
+            @$this->db->updateData('sitemap_info',$field,$value,$where);
+        }
+        else
+        {
+            @$this->db->insertData("sitemap_info",$field,$value);
+        }
     }
 }
 ?>
