@@ -28,7 +28,7 @@ $controller->addPreAction(new Action('common/maintenance'));
 if (isset($request->get['route'])) {
 	$action = new Action($request->get['route']);
 } else {
-	$action = new Action('kotra/home');
+	$action = new Action('module/home');
 }
 
 // Dispatch

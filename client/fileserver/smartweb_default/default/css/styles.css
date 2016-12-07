@@ -71,20 +71,87 @@ p
 #elife-menu ul li
 {
     display: inline-block;
-    padding: 8px 20px;
+    padding: 8px 36px;
+    border-right: thin solid #95d2a9;
 }
 #elife-menu ul li a
 {
     color: #fff;
 }
+#elife-search
+{
+    background: #e0fdea;
+    padding: 0px 0px 0px 10px;
+    margin: 5px 20px;
+    border-radius: 5px;
+    border: thin solid #c2c4c4;
+}
+#elife-search input
+{
+    border: none;
+    background: transparent;
+    color: #189d47;
+    font-style: italic;
+}
+#elife-search button
+{
+    background: #0e612f;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    padding: 3px;
+    color: #fff;
+}
+#elife-main-conten
+{
+    background: #fff;
+    padding-left: 37px;
+    padding-right: 7px;
+    padding-top: 10px;
+}
 #elife-banner
 {
-    background: #FFF;
-    padding-top: 1px;
-    padding-bottom: 4px;
-    height: 358px;
-}
 
+}
+#elife-sitebar
+{
+
+}
+#elife-sitebar .block
+{
+    border: thin solid #b6d6c0;
+    border-radius: 10px;
+    width: 245px;
+}
+#elife-sitebar .title
+{
+    background: url("../image/bg-sitebar-title.jpg") no-repeat;
+    height: 29px;
+    padding-top: 5px;
+    padding-left: 30px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+}
+#elife-sitebar ul
+{
+    margin: 7px 0px;
+    padding-left: 35px;
+}
+#elife-sitebar ul li
+{
+    list-style: url("../image/bulet.jpg");
+}
+#elife-sitebar ul li a
+{
+    font-size: 0.8em;
+    color: #666;
+}
+#elife-sitebar ul li a:hover
+{
+    color: #1ba049;
+    font-weight: bold;
+}
 #elife-footer
 {
     height: 57px;

@@ -19,6 +19,7 @@
 
     <!-- BEGIN STYLESHEETS -->
     <link rel="stylesheet" href="<?php echo DIR_CSS ?>styles.css" type="text/css"/>
+    <link rel="stylesheet" href="<?php echo DIR_CSS ?>font-awesome.css" type="text/css"/>
     <link rel="stylesheet" href="<?php echo DIR_CSS ?>toastr.min.css" type="text/css"/>
     <!-- END STYLESHEETS -->
 
