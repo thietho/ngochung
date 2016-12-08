@@ -19,3 +19,4 @@
 2016-11-24 12:53:23 - PHP Warning:  rmdir(fileserver/file_default/file/upload/product/temp1479966631341) [<a href='function.rmdir'>function.rmdir</a>]: No such file or directory in D:\xampp\htdocs\kotra\admin\smartcore\controller\kotra\product.php on line 151
 2016-12-06 9:30:37 - PHP Warning:  Invalid argument supplied for foreach() in D:\xampp\htdocs\kotra\admin\system\library\language.php on line 91
 2016-12-06 23:31:56 - PHP Warning:  Invalid argument supplied for foreach() in D:\xampp\htdocs\ngochung\admin\smartcore\template\default\view\module\product_form.tpl on line 62
+2016-12-08 22:34:17 - PHP Warning:  unlink(../fileserver/file_default/file/upload/sitemap/25/frontier5901.jpg) [<a href='function.unlink'>function.unlink</a>]: No such file or directory in D:\xampp\htdocs\ngochung\admin\smartcore\controller\core\uploadfile.php on line 46

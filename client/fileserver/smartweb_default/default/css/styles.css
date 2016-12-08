@@ -107,6 +107,42 @@ p
     padding-left: 37px;
     padding-right: 7px;
     padding-top: 10px;
+    padding-bottom: 20px;
+}
+#elife-content
+{
+    width: 654px;
+
+}
+#elife-content .item-block
+{
+    text-align: center;
+    border: thin solid #dfe1e0;
+    width: 297px;
+    margin-top: 27px;
+    margin-right: 28px;
+}
+#elife-content .item-image
+{
+    height: 195px;
+    border-bottom: thin solid #dfe1e0;
+    vertical-align: middle;
+    display: table-cell;
+    width: 297px;
+}
+
+#elife-content .item-info
+{
+    font-size: 0.9em;
+    padding: 13px 0;
+}
+#elife-content .item-title
+{
+    font-weight: bold;
+}
+#elife-content .item-summary
+{
+    color: #2fb494;
 }
 #elife-banner
 {
@@ -154,68 +190,38 @@ p
 }
 #elife-footer
 {
-    height: 57px;
-    margin-top: 48px;
 
-}
-#elife-footer #home
-{
-    position: absolute;
-    margin-top: -40px;
-    margin-left: 23px;
-    cursor: pointer;
-}
-#elife-footer #menu
-{
-    width: 919px;
-    margin-left: 101px;
-    position: absolute;
-
-}
-#elife-footer #menu ul
-{
-    list-style: none;
-    margin: 9px 0;
-    padding: 0;
-}
-#elife-footer #menu ul li
-{
-    display: inline-block;
-    padding: 0px 28px;
-    border-right: 2px #FFF solid;
-}
-#elife-footer #menu ul li:last-child
-{
-    border-right: none;
-}
-#elife-footer #menu ul li a
-{
-    font-family: Square721CnBT;
-    color: #FFF;
-    font-size: 2em;
-
-}
-#elife-footer #lang
-{
-    margin-top: 12px;
-    margin-right: 15px;
-}
-#lazadaheader
-{
+    background: #1ea34c;
     text-align: center;
-    text-transform: uppercase;
-    font-size: 2.5em;
-    font-weight: bold;
-    padding: 7px 0;
+
 }
-#lazadaconn
+#elife-footer #logo
 {
-
-    top: 220px;
-    margin-left: 28px;
-    width: 1027px;
-
+    padding: 20px 0;
 }
+#elife-footer #title
+{
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+#elife-footer #info
+{
+    font-size: 0.9em;
+    color: #abfcc3;
+    padding: 10px 0 ;
+}
+#elife-footer #copyright
+{
+    font-size: 0.8em;
+    color: #abfcc3;
+    background: #000;
+    opacity: .7;
+    padding: 10px 0;
+}
+
+
+
 .elife-left
 {
     float: left;

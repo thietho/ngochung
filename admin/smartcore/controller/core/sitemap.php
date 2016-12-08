@@ -31,7 +31,7 @@ class ControllerCoreSitemap extends Controller
         $data_childs = @$this->model_core_sitemap->getChild($id);
         $sitemap = @$this->model_core_sitemap->getItem($id);
         $str ='<li class="dd-item" data-id="'.$sitemap['id'].'">';
-        $str .= '<div class="dd-handle hl-cat" data-toggle="modal" data-target="#myModal" id="'.$sitemap['id'].'" sitemapid="'.$sitemap['sitemapid'].'" sitemapname="'.$sitemap['sitemapname'].'" module="'.$sitemap['module'].'">'.$sitemap['sitemapname'].' - '. $this->document->module[$sitemap['module']] .'</div>';
+        $str .= '<div class="dd-handle hl-cat" data-toggle="modal" data-target="#myModal" id="'.$sitemap['id'].'" sitemapid="'.$sitemap['id'].'" sitemapname="'.$sitemap['sitemapname'].'" module="'.$sitemap['module'].'">'.$sitemap['sitemapname'].' - '. $this->document->module[$sitemap['module']] .'</div>';
         if(count($data_childs))
         {
 
@@ -200,11 +200,28 @@ class ControllerCoreSitemap extends Controller
     {
         $data = $this->request->post;
         if ($this->validate($data)) {
+            $id = $data['id'];
             $data['id'] = $this->model_core_sitemap->save($data);
             //Save info
             $this->model_core_sitemap->saveItemInfo($data['id'],'summary',$data['summary']);
             $this->model_core_sitemap->saveItemInfo($data['id'],'image',$data['image']);
             $this->model_core_sitemap->saveItemInfo($data['id'],'description',$data['description']);
+
+            if($id == '')
+            {
+                //Move file vo dung thu muc
+                $oldname = DIR_FILE.$data['image'];
+                $file = pathinfo($oldname);
+                $path = DIR_FILE."upload/news/".$data['id'];
+                if(!is_dir($path))
+                    mkdir($path);
+                $newfile = $path."/".$file['basename'];
+                rename($oldname,$newfile);
+                rmdir($file['dirname']);
+                $newfile = str_replace(DIR_FILE,'',$newfile);
+                $this->model_module_news->updateCol($data['id'],'image',$newfile);
+
+            }
             $data['errors'] = array();
             $data['errorstext'] = '';
 

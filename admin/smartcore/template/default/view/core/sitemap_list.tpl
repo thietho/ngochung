@@ -158,7 +158,7 @@
                         $('.hl-message').html('<h1>Lưu thành công!!!<h1>');
 
                     }
-                    //window.location.reload();
+                    window.location.reload();
 
                 }
 
