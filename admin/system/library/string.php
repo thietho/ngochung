@@ -113,4 +113,14 @@ final class String
                     $s.="[".$item."]";
         return $s;
     }
+
+    function setLoopStr($str,$numlop)
+    {
+        $strresult = "";
+        for($i=0;$i<$numlop;$i++)
+        {
+            $strresult .= $str;
+        }
+        return $strresult;
+    }
 }

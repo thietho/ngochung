@@ -18,7 +18,23 @@
                             <div id="listbanner"></div>
                         </div>
                     </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">Site Map Home</label>
+                        <div class="col-md-9">
 
+                            <select id="sitemaps" class="form-control">
+                                <?php foreach($sitemaps as $sitemap){ ?>
+                                <option value="<?php echo $sitemap['id']?>"><?php echo $this->string->setLoopStr("---",$sitemap['level'])?><?php echo $sitemap['sitemapname']?></option>
+                                <?php } ?>
+                            </select>
+                            <button type="button" class="btn btn-sm btn-default btn-bg btn-success" id="btnAddSiteMapHome">Add</button>
+                            <ul id="listsitemaps">
+                                <?php foreach($sitemaphome['listsitemap'] as $sitemap){ ?>
+                                <li><input type="hidden" name="sitemaphome[]" value="<?php $sitemap['id']?>"><?php echo $sitemap['sitemapname']?><button type="button" class="btn btn-sm btn-default btn-icon btn-danger margin-0 margin-right-5 btnDelSitemapHome"><span class="fa fa-trash"></span></button></li>
+                                <?php } ?>
+                            </ul>
+                        </div>
+                    </div>
 
 
                 </div>
@@ -38,6 +54,7 @@
     <!-- END BLOCk -->
 </div>
 <script type="application/javascript">
+
 <?php foreach($banner['listfile'] as $filepath){ ?>
     addItemFile('listbanner',"<?php echo $filepath?>");
 <?php }?>
@@ -76,5 +93,14 @@
 
         });
     });
+    $('#btnAddSiteMapHome').click(function(){
+        var id = $('#frmSetting #sitemaps').val();
+        var text = $('#sitemaps option:selected').text();
+        var html = '<li><input type="hidden" name="sitemaphome[]" value="'+id+'">'+ text +'<button type="button" class="btn btn-sm btn-default btn-icon btn-danger margin-0 margin-right-5 btnDelSitemapHome"><span class="fa fa-trash"></span></button></li>'
+        $('#listsitemaps').append(html);
 
+        $('.btnDelSitemapHome').click(function(){
+            $(this).parent().remove();
+        });
+    });
 </script>
