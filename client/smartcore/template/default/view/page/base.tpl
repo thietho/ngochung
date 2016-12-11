@@ -26,8 +26,8 @@
     <!-- END STYLESHEETS -->
 
     <!-- ADD JAVASCRIPT -->
-    <script type="text/javascript" src="<?php echo DIR_JS ?>vendor/jquery/jquery.min.js"></script>
-    <script type="text/javascript" src="<?php echo DIR_JS ?>vendor/jquery/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="<?php echo DIR_JS ?>jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="<?php echo DIR_JS ?>jquery/jquery-ui.min.js"></script>
     <script type="text/javascript" src="<?php echo DIR_JS ?>toastr.min.js"></script>
     <script type="text/javascript" src="<?php echo DIR_JS ?>common.js"></script>
 
