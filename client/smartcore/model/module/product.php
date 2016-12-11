@@ -1,5 +1,5 @@
 <?php
-class ModelKotraProduct extends Model
+class ModelModuleProduct extends Model
 {
     private $arr_col = array(
         'productname', 

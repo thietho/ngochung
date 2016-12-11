@@ -182,4 +182,17 @@ final class Document
     {
         return $this->pageScripts;
     }
+    public function createLink($sitemap="",$id="",$key = "",$val = "")
+    {
+        $link = HTTP_SERVER;
+        if($sitemap)
+            $link.= $sitemap;
+        if($id)
+            $link.= '/'.$id;
+        if($key)
+            $link.= '/'.$key;
+        if($val)
+            $link.= '/'.$val;
+        return $link.'.html';
+    }
 }

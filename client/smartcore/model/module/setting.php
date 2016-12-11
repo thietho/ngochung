@@ -1,6 +1,6 @@
 <?php
 /**
- * Class ModelKotraSetting
+ * Class ModelModuleSetting
  *
  * @property db db
  * @property date date
@@ -8,7 +8,7 @@
  *
  *
  */
-class ModelKotraSetting extends Model
+class ModelModuleSetting extends Model
 {
     private $arr_col = array(
         'settingname',

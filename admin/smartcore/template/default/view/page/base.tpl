@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/html">
 <head>
-    <title>Kotra</title>
+    <title>Ngọc Hùng</title>
 
     <!-- META SECTION -->
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">

@@ -30,7 +30,7 @@
                             <button type="button" class="btn btn-sm btn-default btn-bg btn-success" id="btnAddSiteMapHome">Add</button>
                             <ul id="listsitemaps">
                                 <?php foreach($sitemaphome['listsitemap'] as $sitemap){ ?>
-                                <li><input type="hidden" name="sitemaphome[]" value="<?php $sitemap['id']?>"><?php echo $sitemap['sitemapname']?><button type="button" class="btn btn-sm btn-default btn-icon btn-danger margin-0 margin-right-5 btnDelSitemapHome"><span class="fa fa-trash"></span></button></li>
+                                <li><input type="hidden" name="sitemaphome[]" value="<?php echo $sitemap['id']?>"><?php echo $sitemap['sitemapname']?><button type="button" class="btn btn-sm btn-default btn-icon btn-danger margin-0 margin-right-5 btnDelSitemapHome"><span class="fa fa-trash"></span></button></li>
                                 <?php } ?>
                             </ul>
                         </div>
@@ -99,6 +99,11 @@
         var html = '<li><input type="hidden" name="sitemaphome[]" value="'+id+'">'+ text +'<button type="button" class="btn btn-sm btn-default btn-icon btn-danger margin-0 margin-right-5 btnDelSitemapHome"><span class="fa fa-trash"></span></button></li>'
         $('#listsitemaps').append(html);
 
+        $('.btnDelSitemapHome').click(function(){
+            $(this).parent().remove();
+        });
+    });
+    $(document).ready(function(){
         $('.btnDelSitemapHome').click(function(){
             $(this).parent().remove();
         });

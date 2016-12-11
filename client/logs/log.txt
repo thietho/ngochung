@@ -14,3 +14,5 @@
 2016-12-07 22:00:46 - PHP Warning:  Invalid argument supplied for foreach() in D:\xampp\htdocs\ngochung\client\system\library\language.php on line 91
 2016-12-07 23:42:59 - PHP Fatal Error:  Error: Could not load template module/sitebar.tpl! in D:\xampp\htdocs\ngochung\client\system\engine\loader.php on line 259
 2016-12-07 23:43:15 - PHP Fatal Error:  Error: Could not load template module/sitebar.tpl! in D:\xampp\htdocs\ngochung\client\system\engine\loader.php on line 259
+2016-12-10 18:56:27 - ERROR: Not found module: [module/infomation]
+2016-12-10 18:57:29 - ERROR: Not found module: [module/infomation]

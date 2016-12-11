@@ -28,6 +28,7 @@ class ControllerModuleSetting extends Controller
         foreach($listid as $id)
         {
             $sitemap = $this->model_core_sitemap->getItem($id);
+
             $this->data['sitemaphome']['listsitemap'][] = $sitemap;
         }
 

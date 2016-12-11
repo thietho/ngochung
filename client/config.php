@@ -31,8 +31,8 @@ $_SESSION['country_session'] = $countryCode;
 //COMMON URL
 define('MAIN_HTTP_SERVER', $main_http_server);
 define('ROOT_HTTP_SERVER', $root_http_server);
-define('HTTP_SERVER', $root_http_server . $langs . '-' . $countryCode . '/');
-define('HTTPS_SERVER', $root_https_server . $langs . '-' . $countryCode . '/');
+define('HTTP_SERVER', $root_http_server );
+define('HTTPS_SERVER', $root_https_server);
 define('FILE_SERVER', $file_server);
 define('IMAGE_SERVER', $image_server);
 define('HTTP_WEB', $root_http_server . $langs . '-' . $countryCode . '/');

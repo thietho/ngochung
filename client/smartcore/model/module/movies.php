@@ -1,6 +1,6 @@
 <?php
 /**
- * Class ModelKotraMovies
+ * Class ModelModuleMovies
  *
  * @property db db
  * @property date date
@@ -8,7 +8,7 @@
  *
  *
  */
-class ModelKotraMovies extends Model
+class ModelModuleMovies extends Model
 {
     private $arr_col = array(
         'moviesname',

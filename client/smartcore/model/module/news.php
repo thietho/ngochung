@@ -1,5 +1,5 @@
 <?php
-class ModelKotraNews extends Model
+class ModelModuleNews extends Model
 {
     private $arr_col = array(
         'title', 

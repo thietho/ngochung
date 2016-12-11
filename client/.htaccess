@@ -10,7 +10,9 @@ RewriteRule ^([a-zA-Z][a-zA-Z])-([a-zA-Z][a-zA-Z])/images/root/([a-zA-Z0-9_]*)/(
 RewriteRule ^([a-zA-Z][a-zA-Z])-([a-zA-Z][a-zA-Z])/images/([a-zA-Z0-9_]*)-([0-9]*)x([0-9]*)/([a-zA-Z0-9_]*)/([^?]*)$ ../admin/fileserver/images/smartweb_default/$3-$4x$5/$6/$7 [L,QSA]
 
 
-RewriteRule ^([a-zA-Z][a-zA-Z])-([a-zA-Z][a-zA-Z])/([^?]*) index.php?lang=$1&countrycode=$2&%{QUERY_STRING} [L,QSA]
+RewriteRule ^([^/]*).html$ index.php?route=module/pagedetail&sitemapid=$1 [L]
+RewriteRule ^([^/]*)/([^/]*).html?$ index.php?route=module/pagedetail&sitemapid=$1&id=$2 [L]
+RewriteRule ^([^/]*)/([^/]*)/([^/]*).html?$ index.php?route=module/pagedetail&sitemapid=$1&$2=$3 [L]
 
 
 

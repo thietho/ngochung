@@ -1,7 +1,7 @@
 <?php
 /**
- * Class ControllerKotraBanner
- * @property ModelKotraSetting model_kotra_setting
+ * Class ControllerModuleBanner
+ * @property ModelModuleSetting model_module_setting
  *
  *
  */
@@ -12,8 +12,8 @@ class ControllerHomeBanner extends Controller
     public function index()
     {
         $type = $this->request->get['type'];
-        $this->load->model('kotra/setting');
-        $banner = $this->model_kotra_setting->getItemName('banner');
+        $this->load->model('module/setting');
+        $banner = $this->model_module_setting->getItemName('banner');
         $this->data['listfile'] = $this->string->stringToArray($banner['settingvalue']);
         switch($type)
         {
