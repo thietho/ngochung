@@ -350,16 +350,14 @@ p
 }
 #elife-news-list
 {
-    padding: 15px;
+
 }
 #elife-news-list .news-item
 {
-    margin: 11px;
-    width: 503px;
+
 }
 #elife-news-detail
 {
-    width: 1030px;
     margin: 0 auto;
     background: #fff;
 }
