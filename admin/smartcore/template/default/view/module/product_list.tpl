@@ -39,7 +39,7 @@
             <div class="col-md-12">
                 <?php if($_GET['type'] != 'popup'){ ?>
                 <div class="pull-left margin-bottom-20">
-                    <button onclick="window.location.href='<?php echo HTTP_WEB ?>?route=module/product/insert'" type="button" class="btn btn-default btn-bg btn-success"><span class="fa fa-plus"></span> Add product</button>
+                    <button onclick="window.location.href='<?php echo $insert?>'" type="button" class="btn btn-default btn-bg btn-success"><span class="fa fa-plus"></span> Add product</button>
                 </div>
                 <?php } ?>
                 <div class="clear-mobile"></div>

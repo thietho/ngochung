@@ -57,3 +57,10 @@
 2016-12-11 14:44:34 - ERROR: Not found module: [module/product]
 2016-12-11 14:44:39 - ERROR: Not found module: [module/product]
 2016-12-11 14:46:47 - ERROR: Not found module: [module/product]
+2016-12-11 21:48:16 - PHP Warning:  Invalid argument supplied for foreach() in D:\xampp\htdocs\ngochung\client\smartcore\template\default\view\module\news_detail.tpl on line 12
+2016-12-11 21:48:49 - PHP Warning:  Invalid argument supplied for foreach() in D:\xampp\htdocs\ngochung\client\smartcore\template\default\view\module\news_detail.tpl on line 12
+2016-12-11 21:49:14 - PHP Warning:  Invalid argument supplied for foreach() in D:\xampp\htdocs\ngochung\client\smartcore\template\default\view\module\news_detail.tpl on line 12
+2016-12-11 21:49:33 - PHP Warning:  Invalid argument supplied for foreach() in D:\xampp\htdocs\ngochung\client\smartcore\template\default\view\module\news_detail.tpl on line 12
+2016-12-11 22:43:42 - PHP Warning:  Invalid argument supplied for foreach() in D:\xampp\htdocs\ngochung\client\smartcore\controller\module\product.php on line 42
+2016-12-11 22:43:45 - PHP Warning:  Invalid argument supplied for foreach() in D:\xampp\htdocs\ngochung\client\smartcore\controller\module\product.php on line 59
+2016-12-11 23:06:16 - PHP Warning:  Invalid argument supplied for foreach() in D:\xampp\htdocs\ngochung\client\smartcore\controller\module\product.php on line 42

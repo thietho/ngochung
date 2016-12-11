@@ -7,3 +7,11 @@
     </div>
 
 </div>
+<div id="oldernews">
+    <ul>
+        <?php foreach($oldernews as $news){ ?>
+        <li><a href="<?php echo $news['link']?>"><?php echo $news['title']?></a></li>
+        <?php } ?>
+    </ul>
+
+</div>

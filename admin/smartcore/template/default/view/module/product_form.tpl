@@ -75,7 +75,7 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="col-md-3 control-label">Image(503x236)</label>
+                        <label class="col-md-3 control-label">Image(297x194)</label>
                         <div class="col-md-9">
                             <input type="hidden" name="image" id="image" value="<?php echo $item['image']?>">
                             <img id="imgimage" width="auto" height="64" src="<?php echo DIR_USERIMAGE ?>autosize-0x64/<?php echo $item['image'] ?>" />
@@ -192,7 +192,8 @@ $(document).ready(function(){
                 }
                 else
                 {
-                    toastr.options.onHidden = function() { window.location = '?route=module/product'};
+                    //toastr.options.onHidden = function() { window.location = '?route=module/product'};
+                    toastr.options.onHidden = function() { history.back()};
                     toastr.success('Product has been save', 'Save success', {timeOut: 1000});
                 }
 

@@ -2,3 +2,4 @@
     <?php echo $block?>
 <?php }?>
 <?php echo $blocknews?>
+<?php echo $blockhotroonline?>

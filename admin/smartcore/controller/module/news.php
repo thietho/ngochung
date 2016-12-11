@@ -140,7 +140,7 @@ class ControllerModuleNews extends Controller
         if ($this->validate($data)) {
             $id=$data['id'];
             $data['id'] = $this->model_module_news->save($data);
-            if($id == '')
+            if($id == '' && $data['image']!='')
             {
                 //Move file vo dung thu muc
                 $oldname = DIR_FILE.$data['image'];

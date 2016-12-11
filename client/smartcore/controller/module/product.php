@@ -56,11 +56,19 @@ class ControllerModuleProduct extends Controller
         $this->data['product'] = $this->model_module_product->getItem($id);
         $data_summary = json_decode(base64_decode($this->data['product']['summary']),true);
         $arr = array();
-        foreach($data_summary['title'] as $k => $title)
+        if(count($data_summary['title']))
         {
-            $arr[] = "<div class='title'><p>".$title."</p></div><div class='value'><p>".$data_summary['value'][$k]."</p></div>";
+            foreach($data_summary['title'] as $k => $title)
+            {
+                $arr[] = "<div class='title'><p>".$title."</p></div><div class='value'><p>".$data_summary['value'][$k]."</p></div>";
+            }
+            $this->data['product']['summary'] = implode("<div class='elife-clear'></div>",$arr);
         }
-        $this->data['product']['summary'] = implode("<div class='elife-clear'></div>",$arr);
+        else
+        {
+            $this->data['product']['summary'] = "";
+        }
+
         $this->data['product']['description'] = html_entity_decode($this->data['product']['description']);
         //Update viewcount
         $this->model_module_product->updateCol($this->data['product']['id'],'viewcout',$this->data['product']['viewcout'] + 1);

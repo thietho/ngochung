@@ -5,9 +5,9 @@
     <?php echo $sitemap['description']?>
 </div>
 <form id="frmContact">
-    <table>
+    <table class="table-form">
         <tr>
-            <td><label>Họ tên</label></td>
+            <td width="10%"><label>Họ tên</label></td>
             <td><input type="text" class="form-control" name="txt_fullname" placeholder="Họ tên"></td>
         </tr>
         <tr>

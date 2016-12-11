@@ -32,7 +32,7 @@ class ControllerModuleNews extends Controller
     private function getList($id)
     {
         $where = " AND sitemapid = " .$id;
-        $this->data['data_news'] = $this->model_module_news->getList($where);
+        $this->data['data_news'] = $this->model_module_news->getList($where. " ORDER BY  `createdate` DESC LIMIT 0 , 20");
         $sitemap = $this->model_core_sitemap->getItem($id);
         foreach($this->data['data_news'] as $key => $item)
         {
@@ -46,6 +46,13 @@ class ControllerModuleNews extends Controller
     {
         $this->data['item'] = $this->model_module_news->getItem($id);
         $this->data['item']['description'] = html_entity_decode($this->data['item']['description']);
+        $sitemap = $this->model_core_sitemap->getItem($this->data['item']['sitemapid']);
+        $where = " AND sitemapid ='".$sitemap['id']."' AND createdate < '".$this->data['item']['createdate']."' ORDER BY  `createdate` DESC LIMIT 0 , 10";
+        $this->data['oldernews'] = $this->model_module_news->getList($where);
+        foreach($this->data['oldernews'] as $key => $item)
+        {
+            $this->data['oldernews'][$key]['link'] = $this->document->createLink($sitemap['id']."-".$sitemap['sitemapid'],'detail',$item['id']."-".$this->common->createSeoText($item['title']));
+        }
         $this->template = "module/news_detail.tpl";
         $this->render();
     }

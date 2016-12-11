@@ -27,6 +27,11 @@ class ControllerModuleProduct extends Controller
     public function getList()
     {
         $this->data['sitemapid'] = $this->request->get['sitemapid'];
+        $this->data['insert'] = HTTP_WEB."?route=module/product/insert";
+        if($this->data['sitemapid']!='')
+        {
+            $this->data['insert'].="&sitemapid=".$this->data['sitemapid'];
+        }
         $this->template = "module/product_list.tpl";
         $this->layout = "page/home";
         $type = $this->request->get['type'];
@@ -65,11 +70,16 @@ class ControllerModuleProduct extends Controller
         {
             $data_summary = json_decode(base64_decode($item['summary']),true);
             $arr = array();
-            foreach($data_summary['title'] as $k => $title)
+            if(count($data_summary['title']))
             {
-                $arr[] = $title.":".$data_summary['value'][$k];
+                foreach($data_summary['title'] as $k => $title)
+                {
+                    $arr[] = $title.":".$data_summary['value'][$k];
+                }
+                $this->data['products'][$key]['summary'] = implode("<br>",$arr);
             }
-            $this->data['products'][$key]['summary'] = implode("<br>",$arr);
+            else
+                $this->data['products'][$key]['summary'] = '';
             $sitemap = $this->model_core_sitemap->getItem($item['sitemapid']);
             $this->data['products'][$key]['sitemapname'] = $sitemap['sitemapname'];
         }
@@ -99,9 +109,14 @@ class ControllerModuleProduct extends Controller
     private function getForm()
     {
         $id = $this->request->get['id'];
+        $this->data['sitemapid'] = $this->request->get['sitemapid'];
         if ($id) {
             $this->data['item'] = $this->model_module_product->getItem($id);
             $this->data['item']['summary'] = json_decode(base64_decode($this->data['item']['summary']),true);
+        }
+        else
+        {
+            $this->data['item']['sitemapid'] = $this->data['sitemapid'];
         }
 
         $this->template = "module/product_form.tpl";
@@ -148,28 +163,35 @@ class ControllerModuleProduct extends Controller
             $data['id'] = $this->model_module_product->save($data);
             if($id == '')
             {
-                //Move file vo dung thu muc
-                $oldname = DIR_FILE.$data['image'];
-                $file = pathinfo($oldname);
-                $path = DIR_FILE."upload/product/".$data['id'];
-                if(!is_dir($path))
-                    mkdir($path);
-                $newfile = $path."/".$file['basename'];
-                rename($oldname,$newfile);
-                rmdir($file['dirname']);
-                $newfile = str_replace(DIR_FILE,'',$newfile);
-                $this->model_module_product->updateCol($data['id'],'image',$newfile);
-                //Move file vo dung thu muc
-                $oldname = DIR_FILE.$data['imagedetail'];
-                $file = pathinfo($oldname);
-                $path = DIR_FILE."upload/product/".$data['id'];
-                if(!is_dir($path))
-                    mkdir($path);
-                $newfile = $path."/".$file['basename'];
-                rename($oldname,$newfile);
-                rmdir($file['dirname']);
-                $newfile = str_replace(DIR_FILE,'',$newfile);
-                $this->model_module_product->updateCol($data['id'],'imagedetail',$newfile);
+                if($data['image']!='')
+                {
+                    //Move file vo dung thu muc
+                    $oldname = DIR_FILE.$data['image'];
+                    $file = pathinfo($oldname);
+                    $path = DIR_FILE."upload/product/".$data['id'];
+                    if(!is_dir($path))
+                        mkdir($path);
+                    $newfile = $path."/".$file['basename'];
+                    rename($oldname,$newfile);
+                    rmdir($file['dirname']);
+                    $newfile = str_replace(DIR_FILE,'',$newfile);
+                    $this->model_module_product->updateCol($data['id'],'image',$newfile);
+                }
+                if($data['imagedetail'])
+                {
+                    //Move file vo dung thu muc
+                    $oldname = DIR_FILE.$data['imagedetail'];
+                    $file = pathinfo($oldname);
+                    $path = DIR_FILE."upload/product/".$data['id'];
+                    if(!is_dir($path))
+                        mkdir($path);
+                    $newfile = $path."/".$file['basename'];
+                    rename($oldname,$newfile);
+                    rmdir($file['dirname']);
+                    $newfile = str_replace(DIR_FILE,'',$newfile);
+                    $this->model_module_product->updateCol($data['id'],'imagedetail',$newfile);
+                }
+
             }
             $data['errors'] = array();
             $data['errorstext'] = '';
@@ -191,7 +213,7 @@ class ControllerModuleProduct extends Controller
         $this->errors = array();
 
         if ("" == $data['productname']) {
-			$this->errors['productname'] = "productname not empty";
+			$this->errors['productname'] = "Product name not empty";
 		}
 
 		

@@ -30,7 +30,7 @@
 							
                             ><span class="fa fa-check"></span> Select</button>
                     <?php }else{ ?>
-                    <button type="button" class="btn btn-sm btn-default btn-icon btn-danger btn-warning margin-0 margin-right-5" onclick="elife_News.showDeleteDialog(<?php echo $news['id']?>, '<?php echo $news['productname'] ?>')"><span class="fa fa-trash"></span></button>
+                    <button type="button" class="btn btn-sm btn-default btn-icon btn-danger btn-warning margin-0 margin-right-5" onclick="elife_News.showDeleteDialog(<?php echo $news['id']?>, '<?php echo $news['title'] ?>')"><span class="fa fa-trash"></span></button>
                     <button onclick="window.location.href='<?php echo HTTP_WEB ?>?route=module/news/update&id=<?php echo $news[id] ?>'" type="button" class="btn btn-sm btn-default btn-icon btn-edit btn-info margin-0 margin-right-5"><span class="fa fa-edit"></span></button>
                     <?php } ?>
                 </td>
