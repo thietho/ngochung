@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3bfcc36a-a5b5-49cb-a245-a6c1950a3801" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/fileserver/smartweb_default/default/js/jquery/jquery-ui.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/fileserver/smartweb_default/default/js/jquery/jquery.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/smartcore/template/default/view/page/base.tpl" afterPath="$PROJECT_DIR$/client/smartcore/template/default/view/page/base.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="3bfcc36a-a5b5-49cb-a245-a6c1950a3801" name="Default" comment="" />
     <ignored path="ngochung.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
