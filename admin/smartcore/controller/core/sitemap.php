@@ -219,7 +219,7 @@ class ControllerCoreSitemap extends Controller
                 rename($oldname,$newfile);
                 rmdir($file['dirname']);
                 $newfile = str_replace(DIR_FILE,'',$newfile);
-                $this->model_module_news->updateCol($data['id'],'image',$newfile);
+                $this->model_core_sitemap->updateCol($data['id'],'image',$newfile);
 
             }
             $data['errors'] = array();

@@ -16,3 +16,6 @@
 2016-12-07 23:43:15 - PHP Fatal Error:  Error: Could not load template module/sitebar.tpl! in D:\xampp\htdocs\ngochung\client\system\engine\loader.php on line 259
 2016-12-10 18:56:27 - ERROR: Not found module: [module/infomation]
 2016-12-10 18:57:29 - ERROR: Not found module: [module/infomation]
+2016-12-11 13:04:39 - PHP Warning:  Missing argument 1 for ControllerModuleInfomation::index() in D:\xampp\htdocs\ngochung\client\smartcore\controller\module\infomation.php on line 11
+2016-12-11 13:33:33 - ERROR: Not found module: [module/contact]
+2016-12-11 13:34:29 - ERROR: Not found module: [module/contact]

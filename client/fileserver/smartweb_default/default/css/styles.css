@@ -144,6 +144,11 @@ p
 {
     color: #2fb494;
 }
+#elife-content .title
+{
+    font-weight: bold;
+    font-size: 1.2em;
+}
 #elife-banner
 {
 

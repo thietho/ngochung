@@ -20,3 +20,7 @@
 2016-12-06 9:30:37 - PHP Warning:  Invalid argument supplied for foreach() in D:\xampp\htdocs\kotra\admin\system\library\language.php on line 91
 2016-12-06 23:31:56 - PHP Warning:  Invalid argument supplied for foreach() in D:\xampp\htdocs\ngochung\admin\smartcore\template\default\view\module\product_form.tpl on line 62
 2016-12-08 22:34:17 - PHP Warning:  unlink(../fileserver/file_default/file/upload/sitemap/25/frontier5901.jpg) [<a href='function.unlink'>function.unlink</a>]: No such file or directory in D:\xampp\htdocs\ngochung\admin\smartcore\controller\core\uploadfile.php on line 46
+2016-12-11 9:59:51 - PHP Warning:  Invalid argument supplied for foreach() in D:\xampp\htdocs\ngochung\admin\smartcore\controller\module\setting.php on line 28
+2016-12-11 9:59:51 - PHP Warning:  Invalid argument supplied for foreach() in D:\xampp\htdocs\ngochung\admin\smartcore\template\default\view\module\setting.tpl on line 32
+2016-12-11 13:17:04 - PHP Warning:  rename(../fileserver/file_default/file/,../fileserver/file_default/file/upload/news/26/file) [<a href='function.rename'>function.rename</a>]: Access is denied. (code: 5) in D:\xampp\htdocs\ngochung\admin\smartcore\controller\core\sitemap.php on line 219
+2016-12-11 13:17:04 - PHP Warning:  rmdir(../fileserver/file_default) [<a href='function.rmdir'>function.rmdir</a>]: Directory not empty in D:\xampp\htdocs\ngochung\admin\smartcore\controller\core\sitemap.php on line 220

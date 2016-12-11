@@ -21,7 +21,8 @@ class ControllerModulePagedetail extends Controller
                 break;
             default:
                 //echo $sitemap['module'];
-                $this->data['content'] = $this->load->controller($sitemap['module']);
+                $arr = array($arr[0]);
+                $this->data['content'] = $this->load->controller($sitemap['module'],'index',$arr);
                 break;
         }
         $this->data['sitebar'] = $this->load->controller('module/sitebar');

@@ -195,4 +195,20 @@ final class Document
             $link.= '/'.$val;
         return $link.'.html';
     }
+    public function createLinkBySiteMap($sitemap)
+    {
+        $link = "";
+        switch($sitemap['module'])
+        {
+            case '':
+                $link = "#";
+                break;
+            case "homepage":
+                $link = HTTP_SERVER;
+                break;
+            default:
+                $link = $this->createLink($sitemap['id']."-".$sitemap['sitemapid']);
+        }
+        return $link;
+    }
 }

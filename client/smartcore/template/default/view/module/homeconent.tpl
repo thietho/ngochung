@@ -8,9 +8,9 @@
     </div>
     <div class="item-info">
         <div class="item-title">
-            <a href="#"><?php echo $sitemap['summary']?></a>
+            <a href="#"><?php echo $sitemap['sitemapname']?></a>
         </div>
-        <div class="item-summary"><?php echo $sitemap['sitemapname']?></div>
+        <div class="item-summary"><?php echo $sitemap['summary']?></div>
     </div>
 </div>
 <?php } ?>

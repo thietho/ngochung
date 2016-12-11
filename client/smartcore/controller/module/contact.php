@@ -4,7 +4,7 @@
  * @property ModelCoreSitemap model_core_sitemap
  *
  */
-class ControllerModuleInfomation extends Controller
+class ControllerModuleContact extends Controller
 {
     private $errors = array();
     private $itemsPerPage = 20;
@@ -16,7 +16,7 @@ class ControllerModuleInfomation extends Controller
         $this->data['sitemap']['image'] = $this->model_core_sitemap->getItemValue($id,'image');
         $this->data['sitemap']['description'] = html_entity_decode($this->model_core_sitemap->getItemValue($id,'description'));
 
-        $this->template = "module/infomation.tpl";
+        $this->template = "module/contact.tpl";
         $this->render();
     }
 
