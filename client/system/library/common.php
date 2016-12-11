@@ -345,7 +345,17 @@ final class Common
         return $array_translate;
     }
 
+    public function createSeoText($text)
+    {
 
+        $arr = explode(' ',strtolower($text));
+        foreach($arr as $key => $str)
+        {
+            $arr[$key] = preg_replace('/[^A-Za-z0-9\-]/', '', $str);
+        }
+        $str  = implode('-',$arr);
+        return $str;
+    }
     function getAdvanceSearchInfo($content) {
 
         //require_once(DIR_SERVERROOT.'simple_html_dom.php');

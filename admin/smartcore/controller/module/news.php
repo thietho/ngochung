@@ -70,7 +70,7 @@ class ControllerModuleNews extends Controller
         $this->data['newss'] = $this->model_module_news->getList($where.$orderby, $from, $to);
         foreach($this->data['newss'] as $key => $item)
         {
-            $sitemap = $this->model_core_sitemap->getId($item['sitemapid']);
+            $sitemap = $this->model_core_sitemap->getItem($item['sitemapid']);
             $this->data['newss'][$key]['sitemapname'] = $sitemap['sitemapname'];
         }
 

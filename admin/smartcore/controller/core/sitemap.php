@@ -207,7 +207,7 @@ class ControllerCoreSitemap extends Controller
             $this->model_core_sitemap->saveItemInfo($data['id'],'image',$data['image']);
             $this->model_core_sitemap->saveItemInfo($data['id'],'description',$data['description']);
 
-            if($id == '')
+            if($id == '' && $data['image'] != '')
             {
                 //Move file vo dung thu muc
                 $oldname = DIR_FILE.$data['image'];

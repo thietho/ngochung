@@ -70,7 +70,7 @@ class ControllerModuleProduct extends Controller
                 $arr[] = $title.":".$data_summary['value'][$k];
             }
             $this->data['products'][$key]['summary'] = implode("<br>",$arr);
-            $sitemap = $this->model_core_sitemap->getId($item['sitemapid']);
+            $sitemap = $this->model_core_sitemap->getItem($item['sitemapid']);
             $this->data['products'][$key]['sitemapname'] = $sitemap['sitemapname'];
         }
 

@@ -1,6 +1,6 @@
-<div class="title">
+<h1 class="title">
     <?php echo $sitemap['sitemapname']?>
-</div>
+</h1>
 <div>
     <?php echo $sitemap['description']?>
 </div>
