@@ -33,6 +33,10 @@ final class Document
         'active' => 'Active',
         'deactive' => 'Deactive'
     );
+    public $statusmessage = array(
+        'new' => 'New',
+        'read' => 'Read'
+    );
     public function __construct()
     {
         $this->config = Registry::get('config');

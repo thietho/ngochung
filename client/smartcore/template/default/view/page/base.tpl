@@ -7,11 +7,9 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="<?php echo DIR_IMAGE?>logo.png" type="image/x-icon">
+    <link rel="icon" href="<?php echo DIR_IMAGE?>logo.png" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <!--<--<meta name="viewport" content="width=device-width, user-scalable=no">
-    <meta name="viewport" content="width=device-width, initial-scale=1">-->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="mobile-web-app-status-bar-style" content="black">
     <meta name="apple-mobile-web-app-capable" content="yes"/>
@@ -42,6 +40,11 @@
         <?php echo $footer?>
 
     </div>
+    <div id="loading" style="position:fixed;top: 0;width: 100%;height: 100%;text-align: center;display: table;background: #fff;opacity: 0.7;" class="hidden">
+    <span style="display: table-cell;vertical-align: middle">
+        <img src="<?php echo DIR_IMAGE?>loading.gif" >
+    </span>
 
+    </div>
 </body>
 </html>

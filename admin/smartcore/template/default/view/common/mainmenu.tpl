@@ -16,6 +16,10 @@
             <a href="<?php echo HTTP_WEB ?>?route=module/setting"><span class="icon-cog"></span>&nbsp;Setting</a>
             <ul></ul>
         </li>
+        <li class="<?php echo $this->request->get['route'] == 'core/message' ? 'active' : '' ?>">
+            <a href="<?php echo HTTP_WEB ?>?route=core/message"><span class="icon-envelope"></span>&nbsp;Message</a>
+            <ul></ul>
+        </li>
 
     </ul>
 </nav>
