@@ -20,6 +20,8 @@ class ControllerModuleSetting extends Controller
     }
     public function index()
     {
+        $this->data['header'] = $this->model_module_setting->getItemName('header');
+
         $this->data['banner'] = $this->model_module_setting->getItemName('banner');
         $this->data['banner']['listfile'] = $this->string->stringToArray($this->data['banner']['settingvalue']);
 
@@ -39,6 +41,10 @@ class ControllerModuleSetting extends Controller
     public function save()
     {
         $data = $this->request->post;
+        //Save header
+        $setting['settingname'] = 'header';
+        $setting['settingvalue'] = $data['header'];
+        $this->model_module_setting->save($setting);
         //Save banner
         $setting['settingname'] = 'banner';
         $setting['settingvalue'] = $data['banner'];

@@ -7,9 +7,19 @@
             <form class="form-horizontal" id="frmSetting">
                 <input type="hidden" name="id" id="id" value="<?php echo $item['id']?>">
                 <div class="col-md-6 col-md-offset-3">
-
                     <div class="form-group">
-                        <label class="col-md-3 control-label">Banner</label>
+                        <label class="col-md-3 control-label">Header Image(964x148)</label>
+                        <div class="col-md-9">
+                            <input type="hidden" name="header" id="header" value="<?php echo $header['settingvalue']?>">
+
+                            <img id="imgheader" width="auto" height="64" src="<?php echo DIR_USERIMAGE ?>autosize-0x64/<?php echo $header['settingvalue']?>" />
+
+                            <button type="button" class="btn btn-sm btn-default btn-bg btn-success" id="btnSelectImageHeader">Select</button>
+
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">Banner(629x212)</label>
                         <div class="col-md-9">
                             <input type="hidden" name="banner" id="banner" value="<?php echo $item['banner']?>">
 
@@ -85,6 +95,14 @@
         });
 
     <?php } ?>
+    $('#btnSelectImageHeader').click(function(){
+        $('#modal-select-file').modal();
+        var folder = "header";
+
+        $('#modal-select-file .modal-body').load('?route=core/uploadfile&folder='+folder+"&eid=header",function(){
+
+        });
+    });
     $('#btnSelectImage').click(function(){
         $('#modal-select-file').modal();
         var folder = "banner";
