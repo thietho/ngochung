@@ -46,6 +46,7 @@ p
 .elife-editor
 {
     padding: 10px;
+    color: #5d605e;
 }
 .elife-editor img
 {
@@ -133,7 +134,7 @@ p
     height: 195px;
     border-bottom: thin solid #dfe1e0;
     vertical-align: middle;
-    display: table-cell;
+
     width: 297px;
 }
 
@@ -154,6 +155,7 @@ p
 {
     font-weight: bold;
     font-size: 1.2em;
+    color: #2fb457;
 }
 #elife-banner
 {
@@ -384,4 +386,109 @@ p
 .table-form .form-control textarea
 {
     height: 100px;
+}
+.form-control
+{
+    border: #2fb457 thin solid;
+    margin: 5px;
+}
+.btn
+{
+    background: #2fb457;
+    border-radius: 15px;
+    color: #ffffff;
+    padding: 5px 20px;
+    font-weight: bold;
+}
+#elife-btn-menu-mobile
+{
+    position: fixed;
+    top: 20px;
+    right: 15px;
+    cursor: pointer;
+    display: none;
+}
+#elife-menu-mobile
+{
+    display: none;
+    width: 60%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #2fb457;
+}
+#elife-menu-mobile ul
+{
+    padding-left: 10px;
+    margin: 0;
+}
+#elife-menu-mobile ul li
+{
+    list-style: none;
+    padding: 5px;
+}
+@media only screen and ( max-width: 900px ) {
+    #elife-page
+    {
+        width: 100%;
+    }
+    #elife-sitebar
+    {
+        display: none;
+    }
+    #elife-menu
+    {
+        display: none;
+    }
+    #elife-header
+    {
+        height: auto;
+    }
+    #elife-header img
+    {
+        width: 100%;
+    }
+    #elife-main-conten
+    {
+        padding: 10px;
+    }
+    #elife-content
+    {
+        width: 100%;
+    }
+    #elife-banner img
+    {
+        width: 100%;
+    }
+    #elife-content .item-block
+    {
+        width: 47%;
+        margin: 1%;
+    }
+    #elife-content .item-image
+    {
+        width: 100%;
+        height: 100%;
+    }
+    #elife-content .item-image img
+    {
+        width: 100%;
+
+    }
+    #elife-btn-menu-mobile
+    {
+        display: block;
+    }
+}
+@media only screen and ( max-width: 600px ) {
+    #elife-content .item-block
+    {
+        width: 100%;
+        margin: 0;
+    }
+    #elife-content .item-image
+    {
+        width: 100%;
+        height: 100%;
+    }
 }

@@ -30,10 +30,39 @@ class ControllerCommonHeader extends Controller
                 $this->data['sitemaps']['login']['link'] = $this->document->createLink('login');
             }*/
         }
+        $childs = $this->model_core_sitemap->getChild(27);
+        $this->data['menusitebar'] = '';
+        foreach($childs as $child)
+        {
+            $this->data['menusitebar'].= $this->getTree($child['id']);
+        }
         $this->load->model('module/setting');
         $this->data['header'] = $this->model_module_setting->getItemName('header');
         //render html
         $this->template = "common/header.tpl";
         $this->render();
+    }
+    private function getTree($id)
+    {
+
+        $data_childs = @$this->model_core_sitemap->getChild($id);
+        $sitemap = @$this->model_core_sitemap->getItem($id);
+        $str ='<li>';
+        $str .= '<a href="'.$this->document->createLinkBySiteMap($sitemap).'">'.$sitemap['sitemapname'].'</a>';
+        if(count($data_childs))
+        {
+
+            $str .= '<ul>';
+            foreach($data_childs as $child)
+            {
+
+                $str .= @$this->getTree($child['id']);
+
+            }
+            $str.='</ul>';
+
+        }
+        $str .= '</li>';
+        return $str;
     }
 }

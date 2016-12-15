@@ -34,14 +34,6 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="col-md-3 control-label">Price discount</label>
-                        <div class="col-md-9">
-                            <input type="text" class="form-control input-control number"
-                                   name="pricediscount" id="pricediscount" placeholder="Price discount"
-                                   value="<?php echo $item['pricediscount'] ?>">
-                        </div>
-                    </div>
-                    <div class="form-group">
                         <label class="col-md-3 control-label">Discountpercent</label>
 
                         <div class="col-md-9">
@@ -54,6 +46,15 @@
                         </div>
 
                     </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">Price discount</label>
+                        <div class="col-md-9">
+                            <input type="text" class="form-control input-control number"
+                                   name="pricediscount" id="pricediscount" placeholder="Price discount"
+                                   value="<?php echo $item['pricediscount'] ?>">
+                        </div>
+                    </div>
+
                     <div class="form-group">
                         <label class="col-md-3 control-label">Site map</label>
                         <div class="col-md-9">
@@ -244,8 +245,12 @@ $(document).ready(function(){
         var price = Number(stringtoNumber($('#frmProduct #price').val()));
         var discount = Number(stringtoNumber($('#frmProduct #pricediscount').val()));
         var percent = Number(stringtoNumber($('#frmProduct #discountpercent').val()));
-        percent = (price - discount)/price *100;
-        $('#frmProduct #discountpercent').val(formateNumber(percent));
+        if(discount != 0)
+        {
+            percent = (price - discount)/price *100;
+            $('#frmProduct #discountpercent').val(formateNumber(percent));
+        }
+
     });
     $('#frmProduct #pricediscount').keyup(function(){
         var price = Number(stringtoNumber($('#frmProduct #price').val()));
