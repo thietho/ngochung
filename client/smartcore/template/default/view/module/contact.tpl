@@ -5,25 +5,40 @@
     <?php echo $sitemap['description']?>
 </div>
 <form id="frmContact">
-    <table class="table-form">
-        <tr>
-            <td width="10%"><label>Họ tên</label></td>
-            <td><input type="text" class="form-control" name="fullname" placeholder="Họ tên"></td>
-        </tr>
-        <tr>
-            <td><label>Email</label></td>
-            <td><input type="text" class="form-control" name="email" placeholder="Email"></td>
-        </tr>
-        <tr>
-            <td><label>Điện thoại</label></td>
-            <td><input type="text" class="form-control" name="phone" placeholder="Điện thoại"></td>
-        </tr>
-        <tr>
-            <td><label>Lời nhắn</label></td>
-            <td><textarea class="form-control" name="desscriptions" placeholder="Lời nhắn"></textarea></td>
-        </tr>
-    </table>
-    <div class="elife-center">
+    <div class="form-group">
+        <div>
+            <label>Họ tên</label>
+        </div>
+        <div>
+            <input type="text" class="form-control" name="fullname" placeholder="Họ tên">
+        </div>
+    </div>
+    <div class="form-group">
+        <div>
+            <label>Email</label>
+        </div>
+        <div>
+            <input type="text" class="form-control" name="email" placeholder="Email">
+        </div>
+    </div>
+    <div class="form-group">
+        <div>
+            <label>Điện thoại</label>
+        </div>
+        <div>
+            <input type="text" class="form-control" name="phone" placeholder="Điện thoại">
+        </div>
+    </div>
+    <div class="form-group">
+        <div>
+            <label>Lời nhắn</label>
+        </div>
+        <div>
+            <textarea class="form-control" name="desscriptions" placeholder="Lời nhắn"></textarea>
+        </div>
+    </div>
+
+    <div>
         <button type="button" class="btn form-control" id="btnSend">Gửi</button>
         <button type="reset" class="btn form-control">Làm lại</button>
     </div>
