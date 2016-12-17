@@ -1,65 +1,85 @@
-<h1 class="title">
-    Đăng ký
-</h1>
 <div>
-    <form id="frmLogin">
-        <div class="form-group">
-            <div>
-                <label>Tên đăng nhập</label>
-            </div>
-            <div>
-                <input type="text" class="form-control" id="username" name="username">
-            </div>
-        </div>
-        <div class="form-group">
-            <div>
-                <label>Mật khẩu</label>
-            </div>
-            <div>
-                <input type="password" class="form-control" id="password" name="password">
-            </div>
-        </div>
-        <div class="form-group">
-            <div>
-                <label>Nhập lại Mật khẩu</label>
-            </div>
-            <div>
-                <input type="password" class="form-control" id="confirmpassword" name="confirmpassword">
-            </div>
-        </div>
-        <div class="form-group">
-            <div>
-                <label>Họ tên</label>
-            </div>
-            <div>
-                <input type="text" class="form-control" id="fullname" name="fullname" placeholder="Họ tên">
-            </div>
-        </div>
-        <div class="form-group">
-            <div>
-                <label>Email</label>
-            </div>
-            <div>
-                <input type="text" class="form-control" id="email" name="email" placeholder="Email">
-            </div>
-        </div>
-        <div class="form-group">
-            <div>
-                <label>Điện thoại</label>
-            </div>
-            <div>
-                <input type="text" class="form-control" id="phone" name="phone" placeholder="Điện thoại">
-            </div>
-        </div>
-        <div>
-            <button type="button" class="btn form-control" id="btnRegister">Đăng nhập</button>
-            <button type="reset" class="btn form-control">Làm lại</button>
-        </div>
+	<h3>Đăng ký thành viên</h3>
+    <div id="error" class="ben-error" style="display:none"></div>
+	<form id="frmRegister" method="post">
+    	
+    	<table class="ben-form">
+        	<tr>
+            	<td><label>Tên đăng nhập</label></td>
+                <td><input type="text" id="username" name="username" class="ben-textbox" size="40"></td>
+            </tr>
+            <tr>
+            	<td><label>Mật khẩu</label></td>
+                <td><input type="password" id="password" name="password" class="ben-textbox" size="40"></td>
+            </tr>
+            <tr>
+            	<td><label>Xác nhận mật khẩu</label></td>
+                <td><input type="password" id="confirmpassword" name="confirmpassword" class="ben-textbox" size="40"></td>
+            </tr>
+            <tr>
+            	<td><label>Họ và tên</label></td>
+                <td><input type="text" id="fullname" name="fullname" class="ben-textbox" size="40"></td>
+            </tr>
+            <tr>
+            	<td><label>Email</label></td>
+                <td><input type="text" id="email" name="email" class="ben-textbox" size="40"></td>
+            </tr>
+            <tr>
+            	<td><label>Địa chỉ</label></td>
+                <td><input type="text" id="address" name="address" class="ben-textbox" size="40"></td>
+            </tr>
+            <tr>
+            	<td><label>Điện thoại</label></td>
+                <td><input type="text" id="phone" name="phone" class="ben-textbox" size="40"></td>
+            </tr>
 
+            
+            <tr>
+            	<td></td>
+                <td>
+                	<div class="ben-dieukhoan">
+                    	<?php echo @$dieukhoan?>
+                	</div>
+                </td>
+            </tr>
+            <tr>
+            	<td></td>
+                <td>
+                	<input type="checkbox" id="chkaccept" name="chkaccept" value="accept" class="ben-textbox">
+                    Tôi đồng ý với điều khoản trên
+                </td>
+            </tr>
+            <tr>
+            	<td></td>
+                <td>
+                	<input type="button" id="btnRegister" name="btnRegister" class="ben-button" value="Đăng ký">
+                </td>
+            </tr>
+        </table>
     </form>
 </div>
-<script type="application/javascript">
-    $('#btnRegister').click(function(){
-        window.location = "<?php echo $this->document->createLink('register')?>";
-    });
+<div class="clearer">&nbsp;</div>
+<script language="javascript">
+$("#btnRegister").click(function(){
+	showLoading();
+	
+	$.post("<?php echo HTTP_SERVER?>?route=addon/register/save", $("#frmRegister").serialize(),
+		function(data){
+			if(data == "true")
+			{
+				$('#error').html("Bạn đã đăng ký thành công! Mã kích hoạt tài khoản đã đươc gửi tới email của bạn! <a href='<?php echo @$this->document->createLink('active')?>'>Kích hoạt tài khoản click vào đây</a>").show('slow');
+				$("#frmRegister").hide();
+
+			}
+			else
+			{
+				
+
+                toastr.error(data,"Lỗi");
+				
+			}
+			endLoading();
+		}
+	);					   
+});
 </script>

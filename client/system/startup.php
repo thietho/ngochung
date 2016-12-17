@@ -308,7 +308,8 @@ Registry::set('common', new Common());
 // Smartweb
 Registry::set('smartweb', new Smartweb());
 
-
+//Mail
+Registry::set('mailsmtp', new MailSMTP());
 
 // Security
 //-- crsf
