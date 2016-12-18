@@ -1,197 +1,149 @@
-<section>
-    <div class="section-header">
-        <h3 class="text-standard text-uppercase"><strong><?php echo $lang_text_user_mangament ?></strong></h3>
+<!-- START PAGE HEADING -->
+<?php if($_GET['route'] == 'core/user/insert') { ?>
+<div class="app-heading app-heading-bordered app-heading-page">
+    <div class="icon icon-lg"><span class="icon-clipboard-text"></span></div>
+    <div class="title">
+        <h2>New user</h2>
+        <p>User information management</p>
     </div>
-    <div class="section-body">
-        <div class="row">
-            <div class="col-md-3 pull-right clearfix">
-                <div class="panel-heading text-right">
-                    
-                    <button type="button" class="btn btn-primary" onclick="save()"><span class="fa fa-save"></span> <?php echo $lang_text_save ?></button>
-                    <button type="button" class="btn btn-danger" onclick="window.location = '?route=core/user'"><span class="fa fa-backward"></span> <?php echo $lang_text_cancel ?></button>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <div class="box">
-                    <div class="box-head">
-                        <header class="col-md-12 error-message hidden"></header>
-                    </div>
-                </div>
-            </div>
+</div>
+<?php } else { ?>
+<!-- START PAGE HEADING -->
+<div class="app-heading app-heading-bordered app-heading-page">
+    <div class="icon icon-lg"><span class="icon-clipboard-text"></span></div>
+    <div class="title">
+        <h2>Edit user</h2>
+        <p>User information management</p>
+    </div>
+</div>
+<?php } ?>
 
+
+
+<!-- START PAGE CONTAINER -->
+<div class="container container-boxed">
+    <!-- START BLOCk -->
+    <div class="block">
+        <div class="row margin-top-15">
             <form id="frmform" class="form-horizontal form-bordered" role="form" enctype="multipart/form-data" method="post" name="frm">
                 <input id="userid" type="hidden" name="userid" value="<?php echo $user['userid']?>"/>
 
-                <div class="col-md-12">
-                    <div class="panel-group">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4 class="panel-title"><i class="fa fa-user" aria-hidden="true"></i>&nbsp;<?php echo $lang_text_user_info ?></h4>
-                            </div>
-                            <div id="collapseOne" class="panel-collapse in" style="height: auto;">
-                                <div class="panel-body">
+                <div class="col-md-6 col-md-offset-3">
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">User type</label>
+                        <div class="col-md-8">
+                            <select class="form-control input-control" name="usertypeid">
+                                <?php foreach($usertypes as $usertype) { ?>
+                                <option value="<?php echo $usertype['usertypeid'] ?>" <?php echo $user['usertypeid'] == $usertype['usertypeid'] ? 'selected' : '' ?>><?php echo $usertype['usertypename'] ?></option>
+                                <?php } ?>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">Name</label>
+                        <div class="col-md-8">
 
-                                    <div class="form-group">
-                                        <div class="col-lg-2 col-md-2 col-sm-12">
-                                            <label class="control-label required" for="username"><?php echo $lang_text_user_type ?></label>
-                                        </div>
-                                        <div class="col-lg-10 col-md-10 col-sm-12">
-                                            <select id="usertypeid" name="usertypeid" class="form-control control-width-medium">
-                                                <?php foreach($usertypes as $usertype) { ?>
-                                                <option value="<?php echo $usertype['usertypeid'] ?>" <?php echo $user['usertypeid'] == $usertype['usertypeid'] ? 'selected' : '' ?>><?php echo $usertype['usertypename'] ?></option>
-                                                <?php } ?>
-                                            </select>
-                                        </div>
-                                    </div>
+                            <input id="fullname" class="form-control input-control" placeholder="Name" name="fullname" value="<?php echo $user['fullname']?>" type="text">
+                            <span class="fullname-required help-block hide"><?php echo $lang_err_fullname_required ?></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">Username</label>
+                        <div class="col-md-8">
 
-                                    <div class="form-group">
-                                        <div class="col-lg-2 col-md-2 col-sm-12">
-                                            <label class="control-label required" for="username"><?php echo $lang_text_user_account ?></label>
-                                        </div>
-                                        <div class="col-lg-10 col-md-10 col-sm-12">
-                                            <input id="username" class="form-control control-width-large" type="text" name="username" maxlength="100"
-                                                   value="<?php echo $user['username']?>" <?php echo isset($this->request->get['userid']) ? 'readonly' : '' ?>>
-                                            <span class="username-required help-block hidden"><?php echo $lang_err_username_required ?></span>
-                                            <span class="username-used help-block hidden"><?php echo $lang_err_username_used ?></span>
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <div class="col-lg-2 col-md-2 col-sm-12">
-                                            <label class="control-label required" for="fulname"><?php echo $lang_text_user_name ?></label>
-                                        </div>
-                                        <div class="col-lg-10 col-md-10 col-sm-12">
-                                            <input id="fullname" class="form-control control-width-large" type="text" name="fullname" maxlength="100" value="<?php echo $user['fullname']?>">
-                                            <span class="fullname-required help-block hidden"><?php echo $lang_err_fullname_required ?></span>
-                                        </div>
-                                    </div>
-
-
-                                    <?php if($isInsert) { ?>
-                                    <div class="form-group">
-                                        <div class="col-lg-2 col-md-2 col-sm-12">
-                                            <label class="control-label required" for="password"><?php echo $lang_text_user_password ?></label>
-                                        </div>
-                                        <div class="col-lg-10 col-md-10 col-sm-12">
-                                            <input id="password" class="form-control control-width-large" type="password" name="password" maxlength="100" value="">
-                                            <span class="password-required help-block hidden"><?php echo $lang_err_password_required ?></span>
-                                            <span class="password-length help-block hidden"><?php echo $lang_err_password_length ?></span>
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <div class="col-lg-2 col-md-2 col-sm-12">
-                                            <label class="control-label required" for="confirmpassword"><?php echo $lang_text_user_confirmpassword ?></label>
-                                        </div>
-                                        <div class="col-lg-10 col-md-10 col-sm-12 confirm">
-                                            <input id="confirmpassword" class="form-control control-width-large" type="password" name="confirmpassword" maxlength="100" value="">
-                                            <span class="confirmpassword-required help-block hidden"><?php echo $lang_err_confirmpassword_required ?></span>
-                                            <span class="confirmpassword-length help-block hidden"><?php echo $lang_err_password_length ?></span>
-                                            <span class="confirmpassword-match help-block hidden"><?php echo $lang_err_password_match ?></span>
-                                        </div>
-                                    </div>
-                                    <?php } ?>
-
-
-                                    <div class="form-group">
-                                        <div class="col-lg-2 col-md-2 col-sm-12">
-                                            <label class="control-label required" for="email"><?php echo $lang_text_user_email ?></label>
-                                        </div>
-                                        <div class="col-lg-10 col-md-10 col-sm-12">
-                                            <input id="email" class="form-control control-width-large text-lowercase" type="text" name="email" maxlength="100" value="<?php echo $user['email']?>">
-                                            <span class="email-required help-block hidden"><?php echo $lang_err_email_required ?></span>
-                                            <span class="email-invalid help-block hidden"><?php echo $lang_err_email_invalid ?></span>
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <div class="col-lg-2 col-md-2 col-sm-12">
-                                            <label class="control-label" for="phone"><?php echo $lang_text_user_phone ?></label>
-                                        </div>
-                                        <div class="col-lg-10 col-md-10 col-sm-12">
-                                            <input id="phone" class="form-control control-width-large" type="text" name="phone" maxlength="100" value="<?php echo $user['phone']?>">
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <div class="col-lg-2 col-md-2 col-sm-12">
-                                            <label class="control-label" for="contactemail"><?php echo $lang_text_user_image ?></label>
-                                        </div>
-                                        <div class="col-lg-10 col-md-10 col-sm-12">
-
-                                            <!--
-                                            <a class="btn btn-primary btn-equal" onclick="elifeupload_one('imagepath','imagepreview')">
-                                                <i class="fa fa-pencil" aria-hidden="true"></i>
-                                            </a>
-                                            <a class="btn btn-danger btn-equal" onclick="elifeupload_unselectimage('imagepath','imagepreview')">
-                                                <i class="fa fa-refresh" aria-hidden="true"></i>
-                                            </a>
-                                            <div class="qu-imagepreview-thumb">
-                                                <?php if($user['imagepath'] == '') { ?>
-                                                <img height="64" id="imagepreview" imagetype="images/autosize-0x64" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" />
-                                                <?php } else { ?>
-                                                <img height="64" id="imagepreview" imagetype="images/autosize-0x64" src="<?php echo DIR_USERIMAGE ?>autosize-0x64/<?php echo $user['imagepath'] ?>" />
-                                                <?php } ?>
-                                                <input type="hidden" id="imagepath" name="imagepath" value="<?php echo $user['imagepath']?>" />
-                                            </div>
-                                            -->
-
-                                            <!-- control upload image -->
-                                            <input id="avatar-imagepath" type="hidden" name="imagepath" value="<?php echo $user['imagepath'] ?>" />
-                                            <div class="qu-imagepreview-thumb">
-                                                <p>
-                                                    <a class="btn btn-primary btn-equal" onclick="elifeupload_one('avatar-imagepath','avatar-imagepreview')">
-                                                        <i class="fa fa-pencil" aria-hidden="true"></i>
-                                                    </a>
-                                                    <a class="btn btn-danger btn-equal" onclick="elifeupload_unselectimage('avatar-imagepath','avatar-imagepreview')">
-                                                        <i class="fa fa-refresh" aria-hidden="true"></i>
-                                                    </a>
-                                                </p>
-                                                <p>
-                                                    <?php if($user['imagepath'] == '') { ?>
-                                                    <img height="64" id="avatar-imagepreview" imagetype="images/autosize-0x64" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" />
-                                                    <?php } else { ?>
-                                                    <img height="64" id="avatar-imagepreview" imagetype="images/autosize-0x64" src="<?php echo DIR_USERIMAGE ?>autosize-0x64/<?php echo $user['imagepath'] ?>" />
-                                                    <?php } ?>
-                                                </p>
-                                            </div>
-                                            <div class="qu-imagepreview-thumb mobile">
-                                                <p>
-                                                    <a class="btn btn-primary btn-equal" onclick="quickupload_one('<?php echo SKINID ?>', 'avatar')">
-                                                        <i class="fa fa-pencil" aria-hidden="true"></i>
-                                                    </a>
-                                                    <a class="btn btn-danger btn-equal" onclick="quickupload_one_remove('<?php echo IMAGE_SERVER ?>file_<?php echo SKINID ?>/file/quickupload.php?file=', 'avatar')">
-                                                        <i class="fa fa-trash" aria-hidden="true"></i>
-                                                    </a>
-                                                </p>
-
-                                                <p>
-                                                    <input id="avatar-qu-oldimagepath" type="hidden" imageupload="<?php echo $user['imagepath'] ?>" value="images/autosize-0x64/<?php echo $user['imagepath'] ?>">
-                                                    <?php if($user['imagepath'] == '') { ?>
-                                                    <img id="avatar-qu-imagepreview" imagepath="images/autosize-0x64/upload/" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
-                                                    <?php } else { ?>
-                                                    <img id="avatar-qu-imagepreview" imagepath="images/autosize-0x64/upload/" src="images/autosize-0x64/<?php echo $user['imagepath'] ?>" />
-                                                    <?php } ?>
-                                                    <img id="avatar-qu-imagewaiting" class="hidden" width="50" height="50" src="<?php echo DIR_IMAGE ?>loading.gif" />
-                                                    <input id="avatar-qu-fileupload" type="file" style="display:none" name="files[]" data-url="<?php echo IMAGE_SERVER ?>file_<?php echo SKINID ?>/file/quickupload.php" accept="image/*; capture=camera">
-                                                </p>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <input id="username" type="text" class="form-control input-control" placeholder="Username" name="username" maxlength="100"
+                                   value="<?php echo $user['username']?>" <?php echo isset($this->request->get['userid']) ? 'readonly' : '' ?>>
+                            <span class="username-required help-block hide"><?php echo $lang_err_username_required ?></span>
+                            <span class="username-used help-block hide"><?php echo $lang_err_username_used ?></span>
                         </div>
                     </div>
 
+                    <?php if($isInsert) { ?>
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">Password</label>
+                        <div class="col-md-8">
+                            <input id="password" type="password" class="form-control input-control" placeholder="Password" name="password" maxlength="100" value="">
+                            <span class="password-required help-block hide"><?php echo $lang_err_password_required ?></span>
+                            <span class="password-length help-block hide"><?php echo $lang_err_password_length ?></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">Confirm Password</label>
+                        <div class="col-md-8">
+                            <input id="confirmpassword" type="password" class="form-control input-control" placeholder="Confirm Password" name="confirmpassword" maxlength="100" value="">
+                            <span class="confirmpassword-required help-block hide"><?php echo $lang_err_confirmpassword_required ?></span>
+                            <span class="confirmpassword-length help-block hide"><?php echo $lang_err_password_length ?></span>
+                            <span class="confirmpassword-match help-block hide"><?php echo $lang_err_password_match ?></span>
+                        </div>
+                    </div>
+                    <?php } ?>
+
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">Email</label>
+                        <div class="col-md-8">
+                            <input id="email" type="text" class="form-control input-control" placeholder="Email" name="email" maxlength="100" value="<?php echo $user['email']?>">
+                            <span class="email-required help-block hide"><?php echo $lang_err_email_required ?></span>
+                            <span class="email-invalid help-block hide"><?php echo $lang_err_email_invalid ?></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">Phone number</label>
+                        <div class="col-md-8">
+                            <input id="phone" type="text" class="form-control input-control" placeholder="Phone number" name="phone" maxlength="100" value="<?php echo $user['phone']?>">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">Avatar</label>
+                        <div class="col-md-8">
+
+                            <!--
+                            <img class="margin-right-10" width="50" src="<?php echo DIR_IMAGE ?>no-image.png">
+                            <button type="button" class="btn btn-sm btn-primary btn-icon"><span class="fa fa-pencil"></span></button>
+                            <button type="button" class="btn btn-sm btn-info btn-icon"><span class="fa fa-refresh"></span></button>
+                            -->
+
+                            <input id="imagepath" type="hidden" name="imagepath" value="<?php echo $user['imagepath'] ?>" />
+                            <img id="imgimagepath" width="auto" height="64" src="<?php echo DIR_USERIMAGE ?>autosize-0x64/<?php echo $user['imagepath'] ?>" />
+
+
+
+                            <button type="button" class="btn btn-sm btn-default btn-bg btn-success" id="btnSelectImage">Select</button>
+                            <button type="button" class="btn btn-sm btn-info btn-icon" id="btnRemoveImage"><span class="fa fa-trash"></span></button>
+
+
+                            <p>
+                                <input id="avatar-qu-oldimagepath" type="hidden" imageupload="<?php echo $user['imagepath'] ?>" value="images/autosize-0x64/<?php echo $user['imagepath'] ?>">
+                                <input id="avatar-qu-fileupload" type="file" style="display:none" name="files[]" data-url="<?php echo UPLOAD_SERVER ?>file_<?php echo SKINID ?>/file/quickupload.php" accept="image/*; capture=camera">
+                            </p>
+
+                        </div>
+                    </div>
+
+
                 </div>
+
 
             </form>
         </div>
+
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3 margin-top-30">
+                <div class="text-center">
+                    <button type="button" class="btn btn-sm btn-default btn-bg btn-success" onclick="save()"><?php echo $isInsert ? 'Insert' : 'Update' ?></button>
+                    <button onclick="window.location = '?route=core/user'" type="button" class="btn btn-sm btn-default btn-bg">Cancel</button>
+                </div>
+            </div>
+        </div>
+
     </div>
-</section>
+    <!-- END BLOCk -->
+</div>
+<!-- END PAGE CONTAINER -->
+
+
+
 <script type="application/javascript">
     var $jUserId = $('#userid');
     var $jUsername = $('#username');
@@ -200,15 +152,31 @@
     var $jPassword = $('#password');
     var $jConfirmPassword = $('#confirmpassword');
 
+    $('#frmform #btnSelectImage').click(function(){
+        $('#modal-select-file').modal();
+        var folder = "user";
+        if($('#frmMovies #id').val() == '')
+            folder += "/temp"+ Date.now() ;
+        else
+            folder += "/"+$('#frmform #userid').val();
+        $('#modal-select-file .modal-body').load('?route=core/uploadfile&folder='+folder+"&eid=imagepath",function(){
 
+        });
+    });
+    $('#frmform #btnRemoveImage').click(function(){
+        $('#frmform #imagepath').val('');
+        $('#frmform #imgimagepath').attr('src',"<?php echo DIR_USERIMAGE ?>autosize-0x64/default/default.png");
+    });
     function showError($jSelector, $classHelp) {
         $jSelector.parent().addClass('has-error');
-        $jSelector.siblings("." + $classHelp).css('display', 'inline-block');
+        $jSelector.siblings("." + $classHelp).removeClass('hide');
+        $jSelector.siblings("." + $classHelp).addClass('show');
     }
 
     function hideError($jSelector, $classHelp) {
         $jSelector.parent().removeClass('has-error');
-        $jSelector.siblings("." + $classHelp).css('display', 'none');
+        $jSelector.siblings("." + $classHelp).removeClass('show');
+        $jSelector.siblings("." + $classHelp).css('hide');
     }
 
 

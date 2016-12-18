@@ -20,7 +20,7 @@
             	<td class="ben-right"></td>
                 <td>
                 	<input type="button" id="btnActive" name="btnActive" class="btn form-control" value="Kích hoạt">
-                    
+                    <input type="button" id="btnReSend" name="btnReSend" class="btn form-control" value="Gửi lại mã kích hoạt">
                 </td>
             </tr>
         </table>
@@ -31,7 +31,7 @@
 $("#btnActive").click(function(){
     showLoading();
 	
-	$.get("<?php echo HTTP_SERVER?>?route=addon/active/active", $("#frmActive").serialize(),
+	$.post("<?php echo HTTP_SERVER?>?route=addon/active/active", $("#frmActive").serialize(),
 		function(data){
             endLoading();
 			if(data == "true")
@@ -49,5 +49,24 @@ $("#btnActive").click(function(){
 
 		}
 	);					   
+});
+$("#btnReSend").click(function(){
+    showLoading();
+
+    $.post("<?php echo HTTP_SERVER?>?route=addon/active/resendActiveCode", $("#frmActive").serialize(),
+            function(data){
+                endLoading();
+                if(data == "true")
+                {
+                    alert("Bạn đã kích hoạt tài khoản thành công!");
+                    //window.location = "<?php echo @$this->document->createLink('login')?>";
+                }
+                else
+                {
+                    toastr.error(data,"Lỗi");
+                }
+
+            }
+    );
 });
 </script>

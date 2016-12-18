@@ -37,10 +37,10 @@ class ModelCoreUser extends Model
         return $query->row;
     }
 
-    public function getList($where = "", $from = "", $to = "")
+    public function getList($where = "", $from = -1, $to = -1)
     {
         $sql = "Select * from `user` WHERE deletedby = '' " . $where;
-        if($from != "") {
+        if($from >= 0) {
             $sql .= "LIMIT $from, $to";
         }
         $query = $this->db->query($sql);
@@ -174,6 +174,26 @@ class ModelCoreUser extends Model
         $where = "userid = '" . $userid . "'";
         $this->db->updateData("user", $field, $value, $where);
 
+    }
+
+
+    public function changeNewPassword($userid, $password)
+    {
+        if($userid != "") {
+            $password = $this->db->escape(@$password);
+
+            $field = array(
+                '`password`'
+            );
+
+            $value = array(
+                md5($password)
+            );
+
+            $where = " userid = '" . $userid . "'";
+
+            $this->db->updateData("user", $field, $value, $where);
+        }
     }
 
 

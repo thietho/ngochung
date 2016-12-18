@@ -15,6 +15,7 @@
 <div id="listfile"></div>
 <script type="application/javascript">
     var type = "<?php echo $type?>";
+    var eid = "<?php echo $eid?>";
     $(function () {
         $('#fileupload').fileupload({
             dataType: 'json',
@@ -22,7 +23,10 @@
             done: function (e, data) {
 
                 resetProgressBar();
-                returnControl(data.files[0].name);
+                if(eid != '')
+                    returnControl(data.files[0].name);
+                else
+                    loadListFile();
             },
             progressall: function (e, data) {
                 //showProgress(cur,e, data)
@@ -50,9 +54,9 @@
                 progress + '%'
         );
     }
-
-    $(document).ready(function(){
-        $('#listfile').load("?route=core/uploadfile/getList&folder=<?php echo $folder?>&type=<?php echo $type?>",function(){
+    function loadListFile()
+    {
+        $('#listfile').load("?route=core/uploadfile/getList&folder=<?php echo $folder?>&type=<?php echo $type?>&eid=<?php echo $eid?>",function(){
             var fbbtnSelectFile = false;
 
             $(document).ajaxComplete(function(){
@@ -61,47 +65,61 @@
                 {
                     fbbtnSelectFile = true;
 
+                    $('.btnSelectFile').click(function(){
+                        returnControl($(this).attr('filename'));
+                    });
+                    $('.btnDownloadFile').click(function(){
 
+                        //window.location. = $(this).attr('link');
+                        var a = $("<a>")
+                                .attr("href", $(this).attr('link'))
+                                .attr("download", $(this).attr('filename'))
+                                .appendTo("body");
+
+                        a[0].click();
+
+                        a.remove();
+                    });
                 }
-                $('.btnSelectFile').click(function(){
-                    returnControl($(this).attr('filename'));
 
-                });
                 $('.btnDeleteFile').click(function(){
                     $.post("?route=core/uploadfile/delFile",{
                         filepath:$(this).attr('filepath')
                     },function(data){
                         if(data == 'true')
                         {
-                            $('#listfile').load("?route=core/uploadfile/getList&folder=<?php echo $folder?>");
+                            $('#listfile').load("?route=core/uploadfile/getList&folder=<?php echo $folder?>&type=<?php echo $type?>&eid=<?php echo $eid?>");
                         }
                     });
                 });
             });
         });
+    }
+    $(document).ready(function(){
+        loadListFile();
     });
     function returnControl(filename)
     {
         switch(type)
         {
             case '':
-                $("#<?php echo $_GET['eid']?>").val("<?php echo 'upload/'.$folder?>/"+filename);
-                $("#lbl<?php echo $_GET['eid']?>").html("<?php echo 'upload/'.$folder?>/"+filename);
-                $("#img<?php echo $_GET['eid']?>").attr('src',"<?php echo DIR_USERIMAGE ?>autosize-0x64/<?php echo 'upload/'.$folder?>/"+filename);
+                $("#<?php echo $eid?>").val("<?php echo 'upload/'.$folder?>/"+filename);
+                $("#lbl<?php echo $eid?>").html("<?php echo 'upload/'.$folder?>/"+filename);
+                $("#img<?php echo $eid?>").attr('src',"<?php echo DIR_USERIMAGE ?>autosize-0x64/<?php echo 'upload/'.$folder?>/"+filename);
                 $('#modal-select-file').modal('hide');
 
                 break;
             case 'multi':
                 var s ="<?php echo DIR_USERIMAGE ?>autosize-0x64/<?php echo 'upload/'.$folder?>/"+filename;
                 var filepath = "<?php echo 'upload/'.$folder?>/"+ filename;
-                $("#<?php echo $_GET['eid']?>").append('<div class="listfile" filepath="'+ filepath +'"><img src="'+s+'"> <button type="button" class="btn btn-sm btn-default btn-icon btn-danger margin-0 margin-right-5 btnDelFileList"><span class="fa fa-trash"></span></button></div>');
+                $("#<?php echo $eid?>").append('<div class="listfile" filepath="'+ filepath +'"><img src="'+s+'"> <button type="button" class="btn btn-sm btn-default btn-icon btn-danger margin-0 margin-right-5 btnDelFileList"><span class="fa fa-trash"></span></button></div>');
                 $('#modal-select-file').modal('hide');
                 $('.btnDelFileList').click(function(){
                     $(this).parent().remove();
                 });
                 break;
             case 'editor':
-                var oEditor = CKEDITOR.instances["<?php echo $_GET['eid']?>"] ;
+                var oEditor = CKEDITOR.instances["<?php echo $eid?>"] ;
                 var filepath = "<?php echo 'upload/'.$folder?>/"+ filename;
                 value = "<img src='<?php echo MAIN_HTTP_SERVER.DIR_FILE?>" + filepath + "'/>";
                 // Check the active editing mode.

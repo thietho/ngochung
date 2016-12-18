@@ -3,7 +3,11 @@
 <ul class="app-header-buttons pull-right">
     <li>
         <div class="contact contact-rounded contact-bordered contact-lg contact-ps-controls">
-            <img src="<?php echo DIR_IMAGE ?>no-image.png" alt="John Doe">
+            <?php if($user['imagepath'] == '') { ?>
+            <img src="<?php echo DIR_IMAGE ?>no-image.png" alt="<?php echo $user['fullname'] ?>">
+            <?php } else { ?>
+            <img src="<?php echo DIR_USERIMAGE ?>fixsize-40x40/<?php echo $user['imagepath'] ?>" alt="<?php echo $user['fullname'] ?>">
+            <?php } ?>
             <div class="contact-container"><a href="?route=core/user/update&userid=<?php echo $this->user->getId()?>"><?php echo $this->user->getUserName()?></a> <span></span></div>
             <div class="contact-controls">
                 <div class="dropdown">

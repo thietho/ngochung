@@ -33,6 +33,10 @@ final class Document
         'active' => 'Active',
         'deactive' => 'Deactive'
     );
+    public $userStatus = array(
+        'active' => 'Active',
+        'lock' => 'Lock'
+    );
     public $statusmessage = array(
         'new' => 'New',
         'read' => 'Read'

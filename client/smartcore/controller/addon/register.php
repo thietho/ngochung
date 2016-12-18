@@ -39,8 +39,7 @@ class ControllerAddonRegister extends Controller
 		{
 			$this->load->model("core/user");
 
-			$data['birthday'] = $this->date->formatViewDate($data['birthday']);
-			$data['birthdaykids'] = $this->date->formatViewDate($data['birthdaykids']);
+
 			$data['usertypeid'] = "member";
 			$this->model_core_user->insertUser($data);
 

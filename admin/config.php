@@ -8,7 +8,8 @@ $root_https_server = "https://$domain/ngochung/admin/";
 $file_server = "http://$domain/ngochung/admin/fileserver/";
 $image_server = "http://$domain/ngochung/fileserver/";
 
-
+$direct_file_server = $image_server . "file_default" . "/file/";
+define('DIRECT_FILE_SERVER', $direct_file_server);
 //Set language for website
 if (!isset($_GET['lang']) || $_GET['lang'] == "") {
     $langs = (!isset($_SESSION['lang_session']) || $_SESSION['lang_session'] == "") ? "en" : $_SESSION['lang_session'];

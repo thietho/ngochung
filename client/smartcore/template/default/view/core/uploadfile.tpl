@@ -64,12 +64,12 @@
                 if(fbbtnSelectFile == false)
                 {
                     fbbtnSelectFile = true;
-                    $('.btnSelectFile').click(function(){
+                    $('.btnDownloadFile').click(function(){
 
                         //window.location. = $(this).attr('link');
                         var a = $("<a>")
                                 .attr("href", $(this).attr('link'))
-                                .attr("download", "img.png")
+                                .attr("download", $(this).attr('filename'))
                                 .appendTo("body");
 
                         a[0].click();

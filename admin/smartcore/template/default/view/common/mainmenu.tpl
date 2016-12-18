@@ -20,6 +20,10 @@
             <a href="<?php echo HTTP_WEB ?>?route=core/message"><span class="icon-envelope"></span>&nbsp;Message</a>
             <ul></ul>
         </li>
+        <li class="<?php echo $this->request->get['route'] == 'core/user' ? 'active' : '' ?> openable">
+            <a href="<?php echo HTTP_WEB ?>?route=core/user"><span class="icon-user"></span>&nbsp;Users</a>
+            <ul></ul>
+        </li>
 
     </ul>
 </nav>

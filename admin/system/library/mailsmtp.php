@@ -19,14 +19,14 @@ final class MailSMTP {
         $mail->Username = "info@mylanbeauty.net"; // your SMTP username or your gmail username
         $mail->Password = "LanTran1981";*/
 
-		$mail->Host = "125.253.125.132"; // specify main and backup server
+		$mail->Host = "mail.q7computer.vn"; // specify main and backup server
 		$mail->Port = 25; // set the port to use
 		$mail->SMTPAuth = true; // turn on SMTP authentication
 		$mail->SMTPSecure = '';
-		$mail->Username = "info@ngochung.net"; // your SMTP username or your gmail username
-		$mail->Password = "NgocHung2016";
+		$mail->Username = "info@q7computer.vn"; // your SMTP username or your gmail username
+		$mail->Password = "Q7Computer";
 		
-		$from = "info@ngochung.net"; // Reply to this email
+		$from = "info@q7computer.vn"; // Reply to this email
 		@$arremail = explode(',',$data['to']);
 		$to=$arremail[0]; // Recipients email ID
 		$name= $data['name']; // Recipient's name
@@ -42,7 +42,7 @@ final class MailSMTP {
 		$mail->WordWrap = 50; // set word wrap
 		$mail->IsHTML(true); // send as HTML
 		$mail->Subject = $data['subject'];
-		echo $mail->Body = $data['body']; //HTML Body
+		$mail->Body = $data['body']; //HTML Body
 		$mail->AltBody = $data['altbody']; //Text Body
 		//$mail->SMTPDebug = 2;
 
