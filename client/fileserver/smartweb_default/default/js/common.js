@@ -51,6 +51,30 @@ function numToString(num,length)
         return s;
     }
 }
+function logout()
+{
+    showLoading();
+
+    $.get(HTTP_SERVER+"?route=addon/login/logout",
+        function(data){
+            endLoading();
+            if(data == "true")
+            {
+                alert("Bạn đã đăng xuất thành công!");
+                //window.location = "<?php echo HTTP_SERVER?>site/default/login";
+                window.location = HTTP_SERVER;
+            }
+            else
+            {
+
+                $('#error').html(data).show('slow');
+
+
+            }
+
+        }
+    );
+}
 function goPage(url,eid) {
     $('#'+eid).load(url);
 }

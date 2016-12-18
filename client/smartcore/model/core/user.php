@@ -83,7 +83,22 @@ class ModelCoreUser extends Model
             return $arr['userid'];
         }
     }
+    public function updatecol($userid,$colname,$val)
+    {
+        $userid=$this->db->escape(@$userid);
+        $colname=$this->db->escape(@$colname);
+        $val=$this->db->escape(@$val);
 
+        $field=array(
+            $colname
+        );
+        $value=array(
+
+            $val
+        );
+        $where="userid = '".$userid."'";
+        $this->db->updateData("user",$field,$value,$where);
+    }
     public function updateUser($data)
     {
         $userid = $this->db->escape($data['userid']);

@@ -1,36 +1,33 @@
+<h1 class="title">Đăng ký thành viên</h1>
 <div>
-	<h3>Đăng ký thành viên</h3>
+
     <div id="error" class="ben-error" style="display:none"></div>
 	<form id="frmRegister" method="post">
     	
     	<table class="ben-form">
         	<tr>
             	<td><label>Tên đăng nhập</label></td>
-                <td><input type="text" id="username" name="username" class="ben-textbox" size="40"></td>
+                <td><input type="text" id="username" name="username" class="form-control" size="40"></td>
             </tr>
             <tr>
             	<td><label>Mật khẩu</label></td>
-                <td><input type="password" id="password" name="password" class="ben-textbox" size="40"></td>
+                <td><input type="password" id="password" name="password" class="form-control" size="40"></td>
             </tr>
             <tr>
             	<td><label>Xác nhận mật khẩu</label></td>
-                <td><input type="password" id="confirmpassword" name="confirmpassword" class="ben-textbox" size="40"></td>
+                <td><input type="password" id="confirmpassword" name="confirmpassword" class="form-control" size="40"></td>
             </tr>
             <tr>
             	<td><label>Họ và tên</label></td>
-                <td><input type="text" id="fullname" name="fullname" class="ben-textbox" size="40"></td>
+                <td><input type="text" id="fullname" name="fullname" class="form-control" size="40"></td>
             </tr>
             <tr>
             	<td><label>Email</label></td>
-                <td><input type="text" id="email" name="email" class="ben-textbox" size="40"></td>
-            </tr>
-            <tr>
-            	<td><label>Địa chỉ</label></td>
-                <td><input type="text" id="address" name="address" class="ben-textbox" size="40"></td>
+                <td><input type="text" id="email" name="email" class="form-control" size="40"></td>
             </tr>
             <tr>
             	<td><label>Điện thoại</label></td>
-                <td><input type="text" id="phone" name="phone" class="ben-textbox" size="40"></td>
+                <td><input type="text" id="phone" name="phone" class="form-control" size="40"></td>
             </tr>
 
             
@@ -38,21 +35,21 @@
             	<td></td>
                 <td>
                 	<div class="ben-dieukhoan">
-                    	<?php echo @$dieukhoan?>
+                    	<?php echo @$rules?>
                 	</div>
                 </td>
             </tr>
             <tr>
             	<td></td>
                 <td>
-                	<input type="checkbox" id="chkaccept" name="chkaccept" value="accept" class="ben-textbox">
+                	<input type="checkbox" id="chkaccept" name="chkaccept" value="accept" class="form-control">
                     Tôi đồng ý với điều khoản trên
                 </td>
             </tr>
             <tr>
             	<td></td>
                 <td>
-                	<input type="button" id="btnRegister" name="btnRegister" class="ben-button" value="Đăng ký">
+                	<input type="button" id="btnRegister" name="btnRegister" class="btn form-control" value="Đăng ký">
                 </td>
             </tr>
         </table>
@@ -73,7 +70,6 @@ $("#btnRegister").click(function(){
 			}
 			else
 			{
-				
 
                 toastr.error(data,"Lỗi");
 				

@@ -8,17 +8,17 @@
     	<table>
         	<tr>
             	<td class="ben-right"><label>Tên đăng nhập</label></td>
-                <td><input type="text" id="username" name="username" class="ben-textbox" size="40"></td>
+                <td><input type="text" id="username" name="username" class="form-control" size="40"></td>
             </tr>
             <tr>
             	<td class="ben-right"><label>Mã kích hoạt</label></td>
-                <td><input type="text" id="activecode" name="activecode" class="ben-textbox" size="40"></td>
+                <td><input type="text" id="activecode" name="activecode" class="form-control" size="40"></td>
             </tr>
            
             <tr>
             	<td class="ben-right"></td>
                 <td>
-                	<input type="button" id="btnActive" name="btnActive" class="ben-button" value="Kích hoạt">
+                	<input type="button" id="btnActive" name="btnActive" class="btn form-control" value="Kích hoạt">
                     
                 </td>
             </tr>

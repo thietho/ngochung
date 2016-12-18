@@ -6,7 +6,7 @@ final class MailSMTP {
 	{
 		$mail = new PHPMailer();
 		$mail->IsSMTP(); // set mailer to use SMTP
-		$mail->Host = "smtp.gmail.com"; // specify main and backup server
+		/*$mail->Host = "smtp.gmail.com"; // specify main and backup server
 		$mail->Port = 465; // set the port to use
 		$mail->SMTPAuth = true; // turn on SMTP authentication
 		$mail->SMTPSecure = 'ssl';
@@ -19,14 +19,14 @@ final class MailSMTP {
         $mail->Username = "info@mylanbeauty.net"; // your SMTP username or your gmail username
         $mail->Password = "LanTran1981";*/
 
-		/*$mail->Host = "mail.q7computer.vn"; // specify main and backup server
+		$mail->Host = "mail.q7computer.vn"; // specify main and backup server
 		$mail->Port = 25; // set the port to use
 		$mail->SMTPAuth = true; // turn on SMTP authentication
 		$mail->SMTPSecure = '';
 		$mail->Username = "info@q7computer.vn"; // your SMTP username or your gmail username
-		$mail->Password = "Q7Computer";*/
+		$mail->Password = "Q7Computer";
 		
-		$from = "thietho1982@gmail.com"; // Reply to this email
+		$from = "info@q7computer.vn"; // Reply to this email
 		@$arremail = explode(',',$data['to']);
 		$to=$arremail[0]; // Recipients email ID
 		$name= $data['name']; // Recipient's name

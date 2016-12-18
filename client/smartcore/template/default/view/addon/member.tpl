@@ -1,4 +1,6 @@
-
+<h1 class="title">
+    Tài khoản
+</h1>
 	
     <div class="ben-section-content">
     	<p>

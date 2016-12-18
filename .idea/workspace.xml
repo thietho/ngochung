@@ -2,68 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3bfcc36a-a5b5-49cb-a245-a6c1950a3801" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/smartcore/controller/addon/active.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/smartcore/template/default/view/addon/active.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/smartcore/controller/addon/activelink.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/smartcore/template/default/view/addon/activelink.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/smartcore/controller/addon/brand.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/smartcore/controller/addon/brandinfor.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/smartcore/template/default/view/addon/brandinfor.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/smartcore/controller/addon/cart.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/smartcore/template/default/view/addon/cart.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/smartcore/template/default/view/addon/cart_list.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/smartcore/controller/addon/changepass.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/smartcore/template/default/view/addon/changepass.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/smartcore/controller/addon/checkout.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/smartcore/template/default/view/addon/checkout.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/smartcore/controller/addon/checkoutcomplete.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/smartcore/template/default/view/addon/checkoutcomplete.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/component/smtpmail/class.phpmailer.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/component/smtpmail/class.smtp.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/smartcore/controller/addon/compose.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/smartcore/template/default/view/addon/emailactive.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/smartcore/controller/addon/forgotpassword.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/smartcore/template/default/view/addon/forgotpassword.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/smartcore/template/default/view/addon/game_register.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/smartcore/controller/addon/gameregister.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/smartcore/controller/addon/googsearch.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/smartcore/template/default/view/addon/googsearch.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/smartcore/controller/addon/historyorder.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/smartcore/template/default/view/addon/historyorder.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/smartcore/controller/addon/kt.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/system/library/mailsmtp.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/smartcore/controller/addon/media.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/smartcore/template/default/view/addon/media.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/smartcore/controller/addon/member.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/smartcore/template/default/view/addon/member.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/smartcore/controller/addon/memberinfor.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/smartcore/template/default/view/addon/memberinfor.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/smartcore/controller/addon/message.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/smartcore/template/default/view/addon/message.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/smartcore/template/default/view/addon/message_form.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/smartcore/template/default/view/addon/message_list.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/smartcore/template/default/view/addon/message_view.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/smartcore/controller/addon/minisize.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/smartcore/template/default/view/addon/minisize.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/smartcore/template/default/view/addon/minisizegroupbybrand.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/smartcore/controller/addon/ortherbrand.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/smartcore/template/default/view/addon/ortherbrand.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/smartcore/controller/addon/product.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/smartcore/controller/addon/request.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/smartcore/template/default/view/addon/request.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/smartcore/controller/addon/search.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/smartcore/template/default/view/addon/search.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/smartcore/controller/addon/searchproduct.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/smartcore/template/default/view/addon/searchproduct.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/logs/log.txt" afterPath="$PROJECT_DIR$/client/logs/log.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/smartcore/controller/addon/login.php" afterPath="$PROJECT_DIR$/client/smartcore/controller/addon/login.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/smartcore/template/default/view/addon/login.tpl" afterPath="$PROJECT_DIR$/client/smartcore/template/default/view/addon/login.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/smartcore/template/default/view/common/email.tpl" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\ngochung\client\smartcore\controller\addon\gameregister.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/smartcore/controller/addon/register.php" afterPath="$PROJECT_DIR$/client/smartcore/controller/addon/register.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/smartcore/template/default/view/addon/register.tpl" afterPath="$PROJECT_DIR$/client/smartcore/template/default/view/addon/register.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/system/startup.php" afterPath="$PROJECT_DIR$/client/system/startup.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/system/library/string.php" afterPath="$PROJECT_DIR$/client/system/library/string.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/smartcore/model/core/user.php" afterPath="$PROJECT_DIR$/client/smartcore/model/core/user.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/system/library/member.php" afterPath="$PROJECT_DIR$/client/system/library/member.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/smartcore/template/default/view/addon/member.tpl" afterPath="$PROJECT_DIR$/client/smartcore/template/default/view/addon/member.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/smartcore/template/default/view/addon/active.tpl" afterPath="$PROJECT_DIR$/client/smartcore/template/default/view/addon/active.tpl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/smartcore/template/default/view/common/footer.tpl" afterPath="$PROJECT_DIR$/client/smartcore/template/default/view/common/footer.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/smartcore/template/default/view/addon/register.tpl" afterPath="$PROJECT_DIR$/client/smartcore/template/default/view/addon/register.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/logs/log.txt" afterPath="$PROJECT_DIR$/client/logs/log.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/smartcore/controller/addon/forgotpassword.php" afterPath="$PROJECT_DIR$/client/smartcore/controller/addon/forgotpassword.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/fileserver/smartweb_default/default/js/common.js" afterPath="$PROJECT_DIR$/client/fileserver/smartweb_default/default/js/common.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/smartcore/template/default/view/common/header.tpl" afterPath="$PROJECT_DIR$/client/smartcore/template/default/view/common/header.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/smartcore/template/default/view/addon/forgotpassword.tpl" afterPath="$PROJECT_DIR$/client/smartcore/template/default/view/addon/forgotpassword.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/smartcore/template/default/view/page/base.tpl" afterPath="$PROJECT_DIR$/client/smartcore/template/default/view/page/base.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/smartcore/controller/module/contact.php" afterPath="$PROJECT_DIR$/client/smartcore/controller/module/contact.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/smartcore/model/core/user.php" afterPath="$PROJECT_DIR$/client/smartcore/model/core/user.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/smartcore/controller/addon/login.php" afterPath="$PROJECT_DIR$/client/smartcore/controller/addon/login.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/smartcore/controller/addon/memberinfor.php" afterPath="$PROJECT_DIR$/client/smartcore/controller/addon/memberinfor.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/smartcore/template/default/view/addon/login.tpl" afterPath="$PROJECT_DIR$/client/smartcore/template/default/view/addon/login.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/system/library/string.php" afterPath="$PROJECT_DIR$/client/system/library/string.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/smartcore/template/default/view/addon/memberinfor.tpl" afterPath="$PROJECT_DIR$/client/smartcore/template/default/view/addon/memberinfor.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/smartcore/controller/common/header.php" afterPath="$PROJECT_DIR$/client/smartcore/controller/common/header.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/system/library/mailsmtp.php" afterPath="$PROJECT_DIR$/client/system/library/mailsmtp.php" />
     </list>
     <ignored path="ngochung.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -88,34 +50,42 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="register.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/smartcore/controller/addon/register.php">
+      <file leaf-file-name="active.tpl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/smartcore/template/default/view/addon/active.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-23.192308" vertical-offset="1862" max-vertical-offset="2686">
-              <caret line="145" column="8" selection-start-line="145" selection-start-column="8" selection-end-line="145" selection-end-column="8" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="969">
+              <caret line="10" column="88" selection-start-line="10" selection-start-column="88" selection-end-line="10" selection-end-column="88" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mailsmtp.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/client/system/library/mailsmtp.php">
+      <file leaf-file-name="register.tpl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/smartcore/template/default/view/addon/register.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.56869775" vertical-offset="0" max-vertical-offset="1088">
-              <caret line="28" column="38" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="1462">
+              <caret line="66" column="16" selection-start-line="66" selection-start-column="16" selection-end-line="66" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="startup.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/system/startup.php">
+      <file leaf-file-name="login.tpl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/smartcore/template/default/view/addon/login.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="4446" max-vertical-offset="5474">
-              <caret line="296" column="21" selection-start-line="296" selection-start-column="21" selection-end-line="296" selection-end-column="21" />
-              <folding>
-                <marker date="1481994694796" expanded="true" signature="3759:3842" placeholder="SELECT * FRO..." />
-              </folding>
+            <state vertical-scroll-proportion="-0.96153843" vertical-offset="264" max-vertical-offset="1088">
+              <caret line="17" column="92" selection-start-line="17" selection-start-column="92" selection-end-line="17" selection-end-column="92" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="footer.tpl" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/client/smartcore/template/default/view/common/footer.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.1827957" vertical-offset="0" max-vertical-offset="837">
+              <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -133,14 +103,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/admin/smartcore/controller/module/news.php" />
-        <option value="$PROJECT_DIR$/client/smartcore/template/default/view/module/news_list.tpl" />
-        <option value="$PROJECT_DIR$/client/smartcore/template/default/view/module/news_detail.tpl" />
-        <option value="$PROJECT_DIR$/admin/smartcore/template/default/view/module/news_table.tpl" />
-        <option value="$PROJECT_DIR$/client/smartcore/controller/module/news.php" />
-        <option value="$PROJECT_DIR$/client/smartcore/controller/module/sitebar.php" />
-        <option value="$PROJECT_DIR$/client/smartcore/template/default/view/module/sitebar.tpl" />
-        <option value="$PROJECT_DIR$/client/smartcore/template/default/view/sitebar/blockinfomation.tpl" />
         <option value="$PROJECT_DIR$/admin/smartcore/template/default/view/module/product_list.tpl" />
         <option value="$PROJECT_DIR$/admin/smartcore/controller/module/product.php" />
         <option value="$PROJECT_DIR$/client/smartcore/controller/module/product.php" />
@@ -152,38 +114,46 @@
         <option value="$PROJECT_DIR$/admin/smartcore/model/module/product.php" />
         <option value="$PROJECT_DIR$/admin/smartcore/model/core/message.php" />
         <option value="$PROJECT_DIR$/client/smartcore/model/core/message.php" />
-        <option value="$PROJECT_DIR$/client/smartcore/template/default/view/page/base.tpl" />
         <option value="$PROJECT_DIR$/admin/smartcore/template/default/view/core/message_form.tpl" />
         <option value="$PROJECT_DIR$/admin/smartcore/template/default/view/common/mainmenu.tpl" />
         <option value="$PROJECT_DIR$/admin/system/library/document.php" />
         <option value="$PROJECT_DIR$/admin/smartcore/template/default/view/core/message_list.tpl" />
         <option value="$PROJECT_DIR$/admin/smartcore/controller/core/message.php" />
-        <option value="$PROJECT_DIR$/client/smartcore/controller/module/contact.php" />
         <option value="$PROJECT_DIR$/client/.htaccess" />
         <option value="$PROJECT_DIR$/admin/smartcore/controller/module/setting.php" />
         <option value="$PROJECT_DIR$/admin/smartcore/template/default/view/module/setting.tpl" />
-        <option value="$PROJECT_DIR$/client/smartcore/controller/addon/login.php" />
         <option value="$PROJECT_DIR$/admin/smartcore/template/default/view/module/product_form.tpl" />
         <option value="$PROJECT_DIR$/client/smartcore/template/default/view/module/infomation.tpl" />
-        <option value="$PROJECT_DIR$/client/smartcore/controller/common/header.php" />
-        <option value="$PROJECT_DIR$/client/smartcore/template/default/view/common/header.tpl" />
         <option value="$PROJECT_DIR$/client/fileserver/smartweb_default/default/css/styles.css" />
-        <option value="$PROJECT_DIR$/client/smartcore/template/default/view/addon/login.tpl" />
         <option value="$PROJECT_DIR$/client/smartcore/template/default/view/module/contact.tpl" />
-        <option value="$PROJECT_DIR$/client/smartcore/template/default/view/addon/active.tpl" />
         <option value="$PROJECT_DIR$/client/smartcore/template/default/view/addon/changepass.tpl" />
         <option value="$PROJECT_DIR$/client/smartcore/template/default/view/addon/checkout.tpl" />
         <option value="$PROJECT_DIR$/client/smartcore/template/default/view/addon/game_register.tpl" />
         <option value="$PROJECT_DIR$/client/smartcore/template/default/view/addon/message_form.tpl" />
         <option value="$PROJECT_DIR$/client/smartcore/template/default/view/addon/message_list.tpl" />
         <option value="$PROJECT_DIR$/client/smartcore/template/default/view/addon/request.tpl" />
-        <option value="$PROJECT_DIR$/client/smartcore/template/default/view/addon/register.tpl" />
-        <option value="$PROJECT_DIR$/client/system/library/string.php" />
-        <option value="$PROJECT_DIR$/client/smartcore/model/core/user.php" />
         <option value="$PROJECT_DIR$/client/system/helper/phpmailer.php" />
         <option value="$PROJECT_DIR$/client/system/startup.php" />
-        <option value="$PROJECT_DIR$/client/smartcore/controller/addon/register.php" />
         <option value="$PROJECT_DIR$/client/system/library/mailsmtp.php" />
+        <option value="$PROJECT_DIR$/client/smartcore/controller/module/contact.php" />
+        <option value="$PROJECT_DIR$/client/system/library/member.php" />
+        <option value="$PROJECT_DIR$/client/smartcore/controller/common/header.php" />
+        <option value="$PROJECT_DIR$/client/smartcore/template/default/view/common/header.tpl" />
+        <option value="$PROJECT_DIR$/client/smartcore/template/default/view/common/footer.tpl" />
+        <option value="$PROJECT_DIR$/client/smartcore/template/default/view/addon/member.tpl" />
+        <option value="$PROJECT_DIR$/client/smartcore/controller/addon/memberinfor.php" />
+        <option value="$PROJECT_DIR$/client/smartcore/model/core/user.php" />
+        <option value="$PROJECT_DIR$/client/smartcore/template/default/view/page/base.tpl" />
+        <option value="$PROJECT_DIR$/client/smartcore/controller/addon/login.php" />
+        <option value="$PROJECT_DIR$/client/fileserver/smartweb_default/default/js/common.js" />
+        <option value="$PROJECT_DIR$/client/smartcore/template/default/view/addon/memberinfor.tpl" />
+        <option value="$PROJECT_DIR$/client/smartcore/controller/addon/register.php" />
+        <option value="$PROJECT_DIR$/client/smartcore/template/default/view/addon/register.tpl" />
+        <option value="$PROJECT_DIR$/client/smartcore/template/default/view/addon/forgotpassword.tpl" />
+        <option value="$PROJECT_DIR$/client/system/library/string.php" />
+        <option value="$PROJECT_DIR$/client/smartcore/controller/addon/forgotpassword.php" />
+        <option value="$PROJECT_DIR$/client/smartcore/template/default/view/addon/active.tpl" />
+        <option value="$PROJECT_DIR$/client/smartcore/template/default/view/addon/login.tpl" />
       </list>
     </option>
   </component>
@@ -220,7 +190,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -307,33 +276,19 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="system" />
+              <option name="myItemId" value="smartcore" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="helper" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ngochung" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ngochung" />
+              <option name="myItemId" value="template" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="client" />
+              <option name="myItemId" value="default" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="component" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="smtpmail" />
+              <option name="myItemId" value="view" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -351,16 +306,73 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="component" />
+              <option name="myItemId" value="smartcore" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="securimage" />
+              <option name="myItemId" value="template" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="default" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="view" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ngochung" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ngochung" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smartcore" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="template" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="default" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ngochung" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ngochung" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smartcore" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -370,11 +382,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\xampp\htdocs\ngochung\client\smartcore\template\default\view\common" />
       <recent name="D:\xampp\htdocs\ngochung\client\component" />
       <recent name="D:\xampp\htdocs\ngochung\client\system\library" />
       <recent name="D:\xampp\htdocs\ngochung\client\smartcore\template\default\view\addon" />
       <recent name="D:\xampp\htdocs\ngochung\client\smartcore\controller\addon" />
-      <recent name="D:\xampp\htdocs\ngochung\client\fileserver\smartweb_default\default\image" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\xampp\htdocs\ngochung\admin\smartcore\template\default\view\core" />
@@ -473,122 +485,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/admin/smartcore/template/default/view/common/mainmenu.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.38590202" vertical-offset="0" max-vertical-offset="837">
-          <caret line="19" column="90" selection-start-line="19" selection-start-column="90" selection-end-line="19" selection-end-column="90" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/system/library/document.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.52807647" vertical-offset="153" max-vertical-offset="3434">
-          <caret line="35" column="25" selection-start-line="35" selection-start-column="11" selection-end-line="35" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/smartcore/template/default/view/core/message_list.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41262135" vertical-offset="34" max-vertical-offset="2584">
-          <caret line="22" column="146" selection-start-line="22" selection-start-column="134" selection-end-line="22" selection-end-column="146" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/system/library/date.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5048544" vertical-offset="5840" max-vertical-offset="6868">
-          <caret line="368" column="20" selection-start-line="368" selection-start-column="20" selection-end-line="368" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/smartcore/controller/core/message.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46714458" vertical-offset="408" max-vertical-offset="3315">
-          <caret line="47" column="118" selection-start-line="47" selection-start-column="118" selection-end-line="47" selection-end-column="118" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fileserver/.htaccess">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2244">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/.htaccess">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24" vertical-offset="0" max-vertical-offset="1972">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="14" selection-end-column="100" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/smartcore/controller/common/mainmenu.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="863">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/smartcore/controller/module/homecontent.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="840">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/smartcore/controller/home/banner.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.807693" vertical-offset="0" max-vertical-offset="714">
-          <caret line="15" column="69" selection-start-line="14" selection-start-column="8" selection-end-line="15" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/smartcore/controller/module/setting.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32497013" vertical-offset="102" max-vertical-offset="1190">
-          <caret line="22" column="83" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="83" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/smartcore/template/default/view/module/setting.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37135923" vertical-offset="51" max-vertical-offset="2295">
-          <caret line="21" column="76" selection-start-line="21" selection-start-column="76" selection-end-line="21" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/smartcore/controller/module/pagedetail.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="863">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/smartcore/controller/module/infomation.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="493">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="23" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/smartcore/template/default/view/module/infomation.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="187">
-          <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/smartcore/template/default/view/module/product_form.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-21.23077" vertical-offset="247" max-vertical-offset="4675">
           <caret line="47" column="26" selection-start-line="47" selection-start-column="26" selection-end-line="47" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/smartcore/template/default/view/common/footer.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="442">
-          <caret line="2" column="55" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="55" />
         </state>
       </provider>
     </entry>
@@ -613,20 +513,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/smartcore/controller/common/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="319" max-vertical-offset="1241">
-          <caret line="36" column="67" selection-start-line="36" selection-start-column="67" selection-end-line="36" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/smartcore/template/default/view/common/header.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.0384617" vertical-offset="30" max-vertical-offset="867">
-          <caret line="11" column="70" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/fileserver/smartweb_default/default/css/styles.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="6328" max-vertical-offset="8721">
@@ -645,13 +531,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1428">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/smartcore/template/default/view/addon/active.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.4259257" vertical-offset="339" max-vertical-offset="969">
-          <caret line="34" column="25" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -697,39 +576,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/smartcore/controller/module/contact.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.576923" vertical-offset="857" max-vertical-offset="1377">
-          <caret line="62" column="68" selection-start-line="62" selection-start-column="68" selection-end-line="62" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/smartcore/template/default/view/module/contact.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.346154" vertical-offset="630" max-vertical-offset="1173">
-          <caret line="59" column="102" selection-start-line="58" selection-start-column="12" selection-end-line="59" selection-end-column="102" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/smartcore/template/default/view/addon/register.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.961538" vertical-offset="955" max-vertical-offset="1530">
-          <caret line="76" column="0" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/system/library/member.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.9615384" vertical-offset="51" max-vertical-offset="3213">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/system/helper/class.phpmailer.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="17.653847" vertical-offset="459" max-vertical-offset="46240">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -740,26 +590,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.5" vertical-offset="562" max-vertical-offset="1139">
-          <caret line="43" column="7" selection-start-line="43" selection-start-column="7" selection-end-line="43" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/system/library/string.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.692308" vertical-offset="1741" max-vertical-offset="2346">
-          <caret line="131" column="5" selection-start-line="131" selection-start-column="5" selection-end-line="131" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/system/mail/class.phpmailer.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="494.30768" vertical-offset="12852" max-vertical-offset="62543">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -767,20 +601,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.16248506" vertical-offset="0" max-vertical-offset="837">
           <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/smartcore/controller/module/home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="546">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/smartcore/model/core/user.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-20.153847" vertical-offset="2961" max-vertical-offset="5746">
-          <caret line="205" column="5" selection-start-line="205" selection-start-column="5" selection-end-line="205" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -812,28 +632,217 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/system/startup.php">
+    <entry file="file://$PROJECT_DIR$/client/smartcore/template/default/view/common/login.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="4446" max-vertical-offset="5474">
-          <caret line="296" column="21" selection-start-line="296" selection-start-column="21" selection-end-line="296" selection-end-column="21" />
-          <folding>
-            <marker date="1481994694796" expanded="true" signature="3759:3842" placeholder="SELECT * FRO..." />
-          </folding>
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="850">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/smartcore/controller/addon/register.php">
+    <entry file="file://$PROJECT_DIR$/client/system/startup.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-23.192308" vertical-offset="1862" max-vertical-offset="2686">
-          <caret line="145" column="8" selection-start-line="145" selection-start-column="8" selection-end-line="145" selection-end-column="8" />
-          <folding />
+        <state vertical-scroll-proportion="1.1056603" vertical-offset="4446" max-vertical-offset="5474">
+          <caret line="296" column="21" selection-start-line="296" selection-start-column="21" selection-end-line="296" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/system/library/mailsmtp.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.56869775" vertical-offset="0" max-vertical-offset="1088">
-          <caret line="28" column="38" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
+        <state vertical-scroll-proportion="0.41436464" vertical-offset="251" max-vertical-offset="1088">
+          <caret line="28" column="35" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/smartcore/controller/module/contact.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9705341" vertical-offset="0" max-vertical-offset="1496">
+          <caret line="31" column="65" selection-start-line="31" selection-start-column="65" selection-end-line="31" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/smartcore/template/default/view/common/email.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="863">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/system/library/member.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-201.5" vertical-offset="847" max-vertical-offset="6188">
+          <caret line="358" column="2" selection-start-line="358" selection-start-column="2" selection-end-line="358" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/smartcore/controller/common/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.576923" vertical-offset="217" max-vertical-offset="1258">
+          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/smartcore/controller/common/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="863">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/smartcore/template/default/view/addon/member.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="510">
+          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/smartcore/model/core/user.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.12734082" vertical-offset="1122" max-vertical-offset="6001">
+          <caret line="72" column="10" selection-start-line="72" selection-start-column="10" selection-end-line="72" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/smartcore/controller/addon/memberinfor.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.076923" vertical-offset="0" max-vertical-offset="1377">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.461538" vertical-offset="289" max-vertical-offset="1139">
+          <caret line="33" column="19" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/smartcore/template/default/view/page/base.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.5" vertical-offset="98" max-vertical-offset="969">
+          <caret line="31" column="49" selection-start-line="31" selection-start-column="49" selection-end-line="31" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/smartcore/controller/addon/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-30.384615" vertical-offset="1114" max-vertical-offset="2040">
+          <caret line="112" column="5" selection-start-line="112" selection-start-column="5" selection-end-line="112" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/fileserver/smartweb_default/default/js/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="431" max-vertical-offset="1496">
+          <caret line="57" column="35" selection-start-line="57" selection-start-column="35" selection-end-line="57" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/smartcore/template/default/view/addon/memberinfor.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.346153" vertical-offset="68" max-vertical-offset="2499">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/smartcore/template/default/view/module/infomation.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="187">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/smartcore/template/default/view/module/contact.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.884615" vertical-offset="336" max-vertical-offset="1173">
+          <caret line="41" column="53" selection-start-line="41" selection-start-column="37" selection-end-line="41" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/smartcore/controller/module/home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="493">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/smartcore/controller/module/homecontent.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.461538" vertical-offset="0" max-vertical-offset="680">
+          <caret line="16" column="43" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/smartcore/controller/module/infomation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.461538" vertical-offset="0" max-vertical-offset="493">
+          <caret line="16" column="127" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="127" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/smartcore/template/default/view/common/header.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.3461537" vertical-offset="30" max-vertical-offset="969">
+          <caret line="13" column="70" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/smartcore/template/default/view/addon/forgotpassword.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.61893207" vertical-offset="0" max-vertical-offset="824">
+          <caret line="30" column="82" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/system/library/string.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8578256" vertical-offset="1662" max-vertical-offset="2499">
+          <caret line="140" column="0" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/smartcore/controller/addon/forgotpassword.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7014563" vertical-offset="510" max-vertical-offset="1955">
+          <caret line="64" column="33" selection-start-line="64" selection-start-column="33" selection-end-line="64" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/smartcore/controller/addon/register.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.020631067" vertical-offset="0" max-vertical-offset="2856">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="7" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/smartcore/template/default/view/addon/active.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="969">
+          <caret line="10" column="88" selection-start-line="10" selection-start-column="88" selection-end-line="10" selection-end-column="88" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/smartcore/template/default/view/addon/register.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="1462">
+          <caret line="66" column="16" selection-start-line="66" selection-start-column="16" selection-end-line="66" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/smartcore/template/default/view/addon/login.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.96153843" vertical-offset="264" max-vertical-offset="1088">
+          <caret line="17" column="92" selection-start-line="17" selection-start-column="92" selection-end-line="17" selection-end-column="92" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/smartcore/template/default/view/common/footer.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1827957" vertical-offset="0" max-vertical-offset="837">
+          <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
           <folding />
         </state>
       </provider>

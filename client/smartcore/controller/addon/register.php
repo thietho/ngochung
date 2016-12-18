@@ -1,4 +1,11 @@
 <?php
+/**
+ * Class ControllerModuleSetting
+ * @property ModelModuleMovies model_module_movies
+ * @property ModelModuleSetting model_module_setting
+ * @property ModelCoreSitemap model_core_sitemap
+ *
+ */
 class ControllerAddonRegister extends Controller
 {
 	private $error = array();
@@ -7,7 +14,10 @@ class ControllerAddonRegister extends Controller
 		$this->document->breadcrumb .= " » Đăng ký thành viên";
 		$this->document->title .= " - Đăng ký thành viên";
 		//$arr = array("dieu-khoan-dang-ky");
-		//$this->data['dieukhoan'] = $this->loadModule('module/information','index',$arr);
+        $this->load->model('core/sitemap');
+        $sitemap = $this->model_core_sitemap->getItem(34);
+        $this->data['rules'] = html_entity_decode($this->model_core_sitemap->getItemValue(34,'description'));
+
 		$this->id="content";
 		$this->template="addon/register.tpl";
 		$this->render();
@@ -40,8 +50,8 @@ class ControllerAddonRegister extends Controller
 			$arr = array($data,$activecode);
 			$description = $this->load->controller('addon/register','emailActive',$arr);
 			
-			$mail['from'] = "info@ngochung.net";
-			$mail['FromName'] = "Ngoc Hung";
+			//$mail['from'] = "info@ngochung.net";
+			//$mail['FromName'] = "Ngoc Hung";
 			$mail['to'] = $data['email'];
 			$mail['name'] = $data['fullname'];
 			$mail['subject'] =  "Kích hoạt tài khoản";
@@ -51,8 +61,8 @@ class ControllerAddonRegister extends Controller
 			$mail['body'] = $this->load->controller('module/contact','createEmailTemplate',$arr);
 			
 			$this->model_core_user->saveInformation($data['username'], "activecode", $activecode);
-            HelperPHPMailer::sendEmail("info@ngochung.net", $data['email'], $data['fullname'], $mail['subject'], "", $mail['body']);
-			//$this->mailsmtp->sendMail($mail);
+            //HelperPHPMailer::sendEmail("info@ngochung.net", $data['email'], $data['fullname'], $mail['subject'], "", $mail['body']);
+			$this->mailsmtp->sendMail($mail);
 			@$this->data['output'] = "true";
 		}
 		else

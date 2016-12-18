@@ -28,7 +28,9 @@
     <script type="text/javascript" src="<?php echo DIR_JS ?>jquery/jquery-ui.min.js"></script>
     <script type="text/javascript" src="<?php echo DIR_JS ?>toastr.min.js"></script>
     <script type="text/javascript" src="<?php echo DIR_JS ?>common.js"></script>
-
+    <script language="JavaScript">
+        var HTTP_SERVER = '<?php echo HTTP_SERVER?>';
+    </script>
 
     <!-- END JAVASCRIPT -->
 </head>

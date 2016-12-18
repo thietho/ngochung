@@ -1,3 +1,6 @@
+<h1 class="title">
+    Quên mật khẩu
+</h1>
 <div id="login" class="section">
 
     
@@ -8,10 +11,10 @@
             <div>
                 <p>
                     <label for="username">Email</label><br>
-                    <input type="text" class="text" id="email" name="email" />
+                    <input type="text" class="form-control" id="email" name="email" />
                 </p>
                 <p>
-                    <input type="button" class="button" id="btnquenmatkhau" name="btnquenmatkhau" value="Lấy lại mật khẩu"/>
+                    <input type="button" class="btn form-control" id="btnquenmatkhau" name="btnquenmatkhau" value="Lấy lại mật khẩu"/>
             	</p>
             </div>
         </div>
@@ -21,15 +24,16 @@
 </div>
 <script language="javascript">
 $('#btnquenmatkhau').click(function(){
-	$.post("?route=common/forgotpassword/resetPassword", $("#forgetpassword").serialize(),function(data){
+	$.post("<?php echo HTTP_SERVER?>?route=addon/forgotpassword/resetPassword", $("#forgetpassword").serialize(),function(data){
 		if(data=='true')
 		{
 			alert("Bạn vô mail để nhận mật khẩu mới");
-			window.location = '?route=common/login';
+			window.location = '<?php echo $this->document->createLink('login')?>';
 		}
 		else
 		{
-			$('.error').html(data).show('slow');
+
+            toastr.error(data,"Lỗi");
 		}
 	});
 });

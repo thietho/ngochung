@@ -1,11 +1,17 @@
 <?php
+/**
+ * Class ControllerModuleSetting
+ * @property ModelModuleMovies model_module_movies
+ * @property ModelCoreUser model_core_user
+ * @property ModelCoreSitemap model_core_sitemap
+ *
+ */
 class ControllerAddonForgotpassword extends Controller
 {
 	function index()
 	{
 		@$this->id='content';
 		@$this->template='addon/forgotpassword.tpl';
-		
 		@$this->render();
 	}
 	
@@ -24,14 +30,11 @@ class ControllerAddonForgotpassword extends Controller
 			
 			$user['password'] = md5($newpass);
 			@$this->model_core_user->changePassword($user);
-			@$this->load->helper('mail');
-			//Send mail
-			$to=$data['email'];
-			// subject
+
+
 			$subject = "Khôi phục mật khẩu";
 			// message
-			$message = "Tài khoản đăng nhập: ".$data['username']."
-						Mật khẩu mới: ".$newpass;
+
 			
 			
 			// To send HTML mail, the Content-type header must be set
@@ -58,7 +61,15 @@ class ControllerAddonForgotpassword extends Controller
 							
 							);
 			$message = @$this->string->inludeParameterToTemplate($param,$template);
-			HelperMail::sendmail($to, $subject, $message, "", "smtp");
+            $mail['to'] = $user['email'];
+            $mail['name'] = $user['fullname'];
+            $mail['subject'] =  $subject;
+            //$mail['body'] = "Mã kích hoạt: ".$activecode;
+            //$mail['body'].= "<br>Hoặc bạn click vào <a href='".$this->document->createLink('activelink')."?user=".$data['username']."&code=".md5($activecode)."'>link để kích hoạt tài khoản</a>";
+            $arr = array($message);
+            $mail['body'] = $this->load->controller('module/contact','createEmailTemplate',$arr);
+
+            $this->mailsmtp->sendMail($mail);
 			
 		}
 		else
@@ -69,7 +80,7 @@ class ControllerAddonForgotpassword extends Controller
 				@$this->data['output'] .= $item."<br>";
 			}
 		}
-		@$this->id='content';
+
 		@$this->template='common/output.tpl';
 		
 		@$this->render();
@@ -79,7 +90,7 @@ class ControllerAddonForgotpassword extends Controller
 	{
 		$err = array();
 		if(@$data['email']=="")
-			$err['email'] = "Bạn chưa nhập mật khẩu";
+			$err['email'] = "Bạn chưa nhập email";
 		else
 		{
 			@$this->load->model('core/user');

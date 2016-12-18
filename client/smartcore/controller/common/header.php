@@ -30,6 +30,7 @@ class ControllerCommonHeader extends Controller
                 $this->data['sitemaps']['login']['link'] = $this->document->createLink('login');
             }*/
         }
+
         $childs = $this->model_core_sitemap->getChild(27);
         $this->data['menusitebar'] = '';
         foreach($childs as $child)

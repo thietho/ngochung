@@ -73,4 +73,11 @@ class ControllerModuleContact extends Controller
         }
         return true;
     }
+    public function createEmailTemplate($description)
+    {
+        $this->data['description'] = $description;
+        $this->id="content";
+        $this->template="common/email.tpl";
+        $this->render();
+    }
 }

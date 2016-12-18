@@ -8,10 +8,16 @@
     </div>
     <div id="info">
         <p>
-            Địa chỉ: 67 Nguyễn Huệ, TX Hồng Ngự,Đồng Tháp
+            Địa chỉ: 77 Chu Văn An, Mỹ Long, TP Long Xuyên, An Giang
         </p>
         <p>
-            ĐT: 0676.53.77.99 | DĐ: 0888.200.366 - 0946.131.189
+            ĐT: 0763 840 144 | DĐ: 0946 131 789 - 0962 516 516
+        </p>
+        <p>
+            Cơ sở 2: 67 Nguyễn Huệ, TX Hồng Ngự, Đồng Tháp
+        </p>
+        <p>
+            ĐT: 0676 53 77 99 | DĐ: 0946 131 789 - 08 88200366
         </p>
     </div>
     <div id="copyright">

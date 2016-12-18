@@ -27,26 +27,10 @@
             	<td><label>Email</label></td>
                 <td id="email" class="text"><?php echo @$member['email']?></td>
             </tr>
-            <tr>
-            	<td><label>Địa chỉ</label></td>
-                <td id="address" class="text"><?php echo @$member['address']?></td>
-            </tr>
+
             <tr>
             	<td><label>Điện thoại</label></td>
                 <td id="phone" class="text"><?php echo @$member['phone']?></td>
-            </tr>
-            <tr>
-            	<td><label>Ngày sinh</label></td>
-                <script language="javascript">
-					$(function() {
-						$("#birthday").datepicker({
-								changeMonth: true,
-								changeYear: true,
-								dateFormat: 'dd-mm-yy'
-								});
-						});
-				 </script>
-                <td id="birthday" class="date"><?php echo @$this->date->formatMySQLDate($member['birthday'])?></td>
             </tr>
             
             

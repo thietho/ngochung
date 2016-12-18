@@ -130,4 +130,13 @@ final class String
         }
         return $randstr;
     }
+    function inludeParameterToTemplate($param,$template)
+    {
+        foreach($param as $key=>$item)
+        {
+            $template = str_replace($key,$item,$template);
+        }
+        return $template;
+    }
+
 }
