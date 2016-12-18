@@ -1,3 +1,4 @@
+<h1 class="title">Kích hoạt tài khoản</h1>
 <div>
 	<?php if(@$active){ ?>
     Tài khoản đã được kích hoạt bạn hãy <a href="<?php echo @$this->document->createLink('login')?>">đăng nhập</a> với tài khoản của bạn

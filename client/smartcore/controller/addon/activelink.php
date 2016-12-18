@@ -1,4 +1,9 @@
 <?php
+/**
+ * Class ControllerAddonActive
+ * @property ModelCoreUser model_core_user
+ *
+ */
 class ControllerAddonActivelink extends Controller
 {
 	private $error = array();
@@ -17,10 +22,10 @@ class ControllerAddonActivelink extends Controller
 	
 	public function active()
 	{
-		@$data = $this->request->get;
-		
+		$data = $this->request->get;
+		print_r($data);
 		$this->load->model("core/user");
-		$activecode = $this->model_core_user->getInformation($data['user'], "activecode");
+		echo $activecode = $this->model_core_user->getInformation($data['user'], "activecode");
 		if(@$data['code'] == md5($activecode))
 		{
 			//Kich hoat tai khoang

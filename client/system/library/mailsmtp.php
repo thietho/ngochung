@@ -44,8 +44,8 @@ final class MailSMTP {
 		$mail->Subject = $data['subject'];
 		$mail->Body = $data['body']; //HTML Body
 		$mail->AltBody = $data['altbody']; //Text Body
-		$mail->SMTPDebug = 2;
-        print_r($mail);
+		//$mail->SMTPDebug = 2;
+
 		if(!$mail->Send())
 		{
 			return false;

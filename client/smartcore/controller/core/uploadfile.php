@@ -14,7 +14,8 @@ class ControllerCoreUploadfile extends Controller
 
     public function index()
     {
-        $folder = $this->request->get['folder'];
+        $folder = $this->member->getUserName();
+        $this->data['type'] = $this->request->get['type'];
         $this->data['folder'] = $folder;
         $this->template = "core/uploadfile.tpl";
         $this->render();
@@ -28,10 +29,10 @@ class ControllerCoreUploadfile extends Controller
         $this->data['files'] = array();
         if(count($files))
         {
-            foreach ($files as $file)
+            foreach ($files as $key => $file)
             {
-                $this->data['files'][] = pathinfo($file);
-
+                $this->data['files'][$key] = pathinfo($file);
+                $this->data['files'][$key]['link'] = DIRECT_FILE_SERVER.str_replace(DIR_FILE,"",$file);
             }
         }
 

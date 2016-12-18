@@ -157,6 +157,10 @@ p
     font-size: 1.2em;
     color: #2fb457;
 }
+#elife-content a
+{
+    color: #2fb457;
+}
 #elife-banner
 {
 
@@ -398,13 +402,18 @@ p
 {
     width: 500px;
 }
+
 .btn
 {
     background: #2fb457;
     border-radius: 15px;
-    color: #ffffff;
+    color: #ffffff !important;
     padding: 5px 20px;
     font-weight: bold;
+}
+a .btn
+{
+    padding: 5px 20px;
 }
 #elife-btn-menu-mobile
 {

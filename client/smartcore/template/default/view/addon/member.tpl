@@ -13,11 +13,9 @@
         	<a href="<?php echo @$this->document->createLink('changepass')?>">Đổi mật khẩu</a>
         </p>
         <p>
-        	<a href="<?php echo @$this->document->createLink('historyorder')?>">Lịch sử mua hàng</a>
+        	<a href="<?php echo @$this->document->createLink('myfile')?>">File của tôi</a>
         </p>
-        <!--<p>
-        	<a href="<?php echo @$this->document->createLink('message')?>">Hộp thư</a>
-        </p>-->
+
         <p>
         	<a href="#" onclick="logout()">Đăng xuất</a>
         </p>

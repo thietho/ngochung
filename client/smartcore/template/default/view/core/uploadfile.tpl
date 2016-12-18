@@ -14,6 +14,7 @@
 <div class="progress" id="progress'+t+'"><div class="bar" style="width: 0%;"></div></div>
 <div id="listfile"></div>
 <script type="application/javascript">
+    var type = "<?php echo $type?>";
     $(function () {
         $('#fileupload').fileupload({
             dataType: 'json',
@@ -21,10 +22,7 @@
             done: function (e, data) {
 
                 resetProgressBar();
-                $("#<?php echo $_GET['eid']?>").val("<?php echo 'upload/'.$folder?>/"+data.files[0].name);
-                $("#lbl<?php echo $_GET['eid']?>").html("<?php echo 'upload/'.$folder?>/"+data.files[0].name);
-                $("#img<?php echo $_GET['eid']?>").attr('src',"<?php echo DIR_USERIMAGE ?>autosize-0x64/<?php echo 'upload/'.$folder?>/"+data.files[0].name);
-                $('#modal-select-file').modal('hide');
+                loadListFile();
             },
             progressall: function (e, data) {
                 //showProgress(cur,e, data)
@@ -52,15 +50,35 @@
                 progress + '%'
         );
     }
+
     $(document).ready(function(){
-        $('#listfile').load("?route=core/uploadfile/getList&folder=<?php echo $folder?>",function(){
+        loadListFile();
+    });
+    function loadListFile()
+    {
+        $('#listfile').load("?route=core/uploadfile/getList&folder=<?php echo $folder?>&type=<?php echo $type?>",function(){
+            var fbbtnSelectFile = false;
+
             $(document).ajaxComplete(function(){
-                $('.btnSelectFile').click(function(){
-                    $("#<?php echo $_GET['eid']?>").val($(this).attr('filepath'));
-                    $("#lbl<?php echo $_GET['eid']?>").html($(this).attr('filepath'));
-                    $("#img<?php echo $_GET['eid']?>").attr('src',"<?php echo DIR_USERIMAGE ?>autosize-0x64/"+$(this).attr('filepath'));
-                    $('#modal-select-file').modal('hide');
-                });
+
+                if(fbbtnSelectFile == false)
+                {
+                    fbbtnSelectFile = true;
+                    $('.btnSelectFile').click(function(){
+
+                        //window.location. = $(this).attr('link');
+                        var a = $("<a>")
+                                .attr("href", $(this).attr('link'))
+                                .attr("download", "img.png")
+                                .appendTo("body");
+
+                        a[0].click();
+
+                        a.remove();
+                    });
+
+                }
+
                 $('.btnDeleteFile').click(function(){
                     $.post("?route=core/uploadfile/delFile",{
                         filepath:$(this).attr('filepath')
@@ -73,5 +91,6 @@
                 });
             });
         });
-    });
+    }
+
 </script>

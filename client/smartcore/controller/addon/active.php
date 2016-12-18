@@ -1,4 +1,9 @@
 <?php
+/**
+ * Class ControllerAddonActive
+ * @property ModelCoreUser model_core_user
+ *
+ */
 class ControllerAddonActive extends Controller
 {
 	private $error = array();

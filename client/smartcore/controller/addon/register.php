@@ -61,7 +61,6 @@ class ControllerAddonRegister extends Controller
 			$mail['body'] = $this->load->controller('module/contact','createEmailTemplate',$arr);
 			
 			$this->model_core_user->saveInformation($data['username'], "activecode", $activecode);
-            //HelperPHPMailer::sendEmail("info@ngochung.net", $data['email'], $data['fullname'], $mail['subject'], "", $mail['body']);
 			$this->mailsmtp->sendMail($mail);
 			@$this->data['output'] = "true";
 		}

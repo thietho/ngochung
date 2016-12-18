@@ -1,5 +1,6 @@
+<h1 class="title">Kích hoạt tài khoản</h1>
 <div>
-	<h3>Kích hoạt tài khoản</h3>
+
     <p>Mã kích hoạt đã giử vào email của bạn!</p>
 </div>
 <div>
