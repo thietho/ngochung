@@ -1,7 +1,32 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/html">
 <head>
-    <title>Ngọc Hùng</title>
+
+    <!-- Document Title -->
+    <title><?php echo $title; ?></title>
+    <base href="<?php echo $base; ?>"/>
+    <?php if ($icon) { ?>
+    <link rel="shortcut icon" href="<?php echo $symbol ?>"/>
+    <?php } ?>
+
+    <!-- SEO meta -->
+    <?php if ($meta_description) { ?>
+    <meta name="description" content="<?php echo $meta_description; ?>"/>
+    <?php } ?>
+    <?php if ($meta_keywords) { ?>
+    <meta name="keywords" content="<?php echo $meta_keywords; ?>"/>
+    <?php } ?>
+    <meta name="robots" content="index,follow"/>
+
+    <!-- OG Feed meta -->
+    <link rel="canonical" href="<?php echo $this->smartweb->weburl?>"/>
+    <meta property="og:site_name" content="<?php echo $og_site_name; ?>"/>
+    <meta property="og:title" content="<?php echo $og_title; ?>"/>
+    <meta property="og:url" content="<?php echo $og_url; ?>"/>
+    <meta property="og:image" content="<?php echo $og_image; ?>"/>
+    <meta property="og:description" content="<?php echo $og_description; ?>"/>
+    <meta name="OriginalPublicationDate" content="<?php echo $og_publicdate; ?>"/>
+    <meta name="REVISION_DATE" content="<?php echo $og_revisiondate; ?>"/>
 
     <!-- META SECTION -->
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">

@@ -12,7 +12,7 @@ class ControllerAddonRegister extends Controller
 	public function index()
 	{
 		$this->document->breadcrumb .= " » Đăng ký thành viên";
-		$this->document->title .= " - Đăng ký thành viên";
+		$this->document->title = $this->config->get('config_sitename')." - Đăng ký thành viên";
 		//$arr = array("dieu-khoan-dang-ky");
         $this->load->model('core/sitemap');
         $sitemap = $this->model_core_sitemap->getItem(34);

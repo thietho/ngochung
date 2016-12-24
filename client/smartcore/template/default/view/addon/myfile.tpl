@@ -1,5 +1,5 @@
 <h1 class="title">
-    My File
+    File của tôi
 </h1>
 <div>
     <?php echo $myfile?>

@@ -1,3 +1,6 @@
+<h1 class="title">
+    Cập nhật thông tin cá nhân
+</h1>
 
 <style>
 .text

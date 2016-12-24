@@ -7,7 +7,7 @@ class ControllerAddonMemberinfor extends Controller
 		$this->document->breadcrumb .= ' » <a href="'.$this->document->createLink('member').'">Thông tin thành viên </a> » Thông tin cá nhân';
 		$this->data['DIR_UPLOADPHOTO'] = HTTP_SERVER."index.php?route=common/uploadpreview";
 		$this->getMemberInfor();
-		$this->document->title .= " - Thông tin thành viên";
+		$this->document->title = $this->config->get('config_sitename')." - Thông tin thành viên";
 		$this->id="content";
 		$this->template="addon/memberinfor.tpl";
 		$this->render();

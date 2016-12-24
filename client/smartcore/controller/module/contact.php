@@ -30,6 +30,21 @@ class ControllerModuleContact extends Controller
         {
             $data['title'] = "Thông tin liên hệ";
             $data['id'] = $this->model_core_message->save($data);
+            //
+            $description = "";
+            $description.="Họ tên: ".$data['fullname']."<br>";
+            $description.="Email: ".$data['email']."<br>";
+            $description.="Điện thoại: ".$data['phone']."<br>";
+            $description.="Ghi chú: ".$data['desscriptions']."<br>";
+
+            $mail['to'] = $this->config->get('config_contactemail');;
+            $mail['name'] = "";
+            $mail['subject'] =  $data['title'];
+            $arr = array($description);
+            $mail['body'] =  $this->load->controller('module/contact','createEmailTemplate',$arr);
+
+            $this->mailsmtp->sendMail($mail);
+
             $data['errors'] = array();
             $data['errorstext'] = '';
         } else {

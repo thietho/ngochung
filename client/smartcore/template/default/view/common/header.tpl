@@ -2,7 +2,7 @@
     <img src="<?php echo DIR_IMAGE?>btn-mobile-menu.png" width="40px">
 </div>
 <div id="elife-header">
-    <img src="<?php echo DIR_USERIMAGE ?>autosize-964x148/<?php echo $header['settingvalue']?>">
+    <img src="<?php echo DIR_USERIMAGE ?>autosize-946x148/<?php echo $header['settingvalue']?>">
 </div>
 <div id="elife-menu">
     <ul class="elife-left">

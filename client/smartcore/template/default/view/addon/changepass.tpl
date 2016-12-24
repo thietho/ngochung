@@ -1,3 +1,6 @@
+<h1 class="title">
+    Thay đổi mật khẩu
+</h1>
 <div>
 	<form id="frmChangepass" method="post">
     	<div id="error" class="ben-error" style="display:none"></div>

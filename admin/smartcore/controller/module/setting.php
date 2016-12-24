@@ -3,6 +3,7 @@
  * Class ControllerModuleSetting
  * @property ModelModuleMovies model_module_movies
  * @property ModelModuleSetting model_module_setting
+ * @property ModelCoreSite model_core_site
  *
  */
 class ControllerModuleSetting extends Controller
@@ -14,12 +15,14 @@ class ControllerModuleSetting extends Controller
         $this->load->model("module/movies");
         $this->load->model("module/setting");
         $this->load->model("core/sitemap");
+        $this->load->model("core/site");
 
         $this->data['sitemaps'] = array();
         $this->model_core_sitemap->getTree(0,$this->data['sitemaps']);
     }
     public function index()
     {
+        $this->data['site'] = $this->model_core_site->getItem(1);
         $this->data['header'] = $this->model_module_setting->getItemName('header');
 
         $this->data['banner'] = $this->model_module_setting->getItemName('banner');
@@ -41,6 +44,8 @@ class ControllerModuleSetting extends Controller
     public function save()
     {
         $data = $this->request->post;
+        $site = $data['site'];
+        $this->model_core_site->save($site);
         //Save header
         $setting['settingname'] = 'header';
         $setting['settingvalue'] = $data['header'];

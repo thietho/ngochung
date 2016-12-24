@@ -5,10 +5,76 @@
         <div class="row margin-top-15">
 
             <form class="form-horizontal" id="frmSetting">
-                <input type="hidden" name="id" id="id" value="<?php echo $item['id']?>">
-                <div class="col-md-6 col-md-offset-3">
+                <input type="hidden" name="site[id]" id="id" value="<?php echo $site['id']?>">
+                <input type="hidden" name="site[siteid]" id="siteid" value="<?php echo $site['siteid']?>">
+                <div class="col-md-6">
                     <div class="form-group">
-                        <label class="col-md-3 control-label">Header Image(964x148)</label>
+                        <label class="col-md-3 control-label">Slogan</label>
+                        <div class="col-md-9">
+                            <input type="text" class="form-control" name="site[slogan]" value="<?php echo $site['slogan']?>">
+
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">Site Name</label>
+                        <div class="col-md-9">
+                            <input type="text" class="form-control" name="site[sitename]" value="<?php echo $site['sitename']?>">
+
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">Logo</label>
+                        <div class="col-md-9">
+                            <input type="hidden" name="site[logo]" id="site-logo" value="<?php echo $header['settingvalue']?>">
+
+                            <img id="imgsite-logo" width="auto" height="64" src="<?php echo DIR_USERIMAGE ?>autosize-0x64/<?php echo $site['logo']?>" />
+
+                            <button type="button" class="btn btn-sm btn-default btn-bg btn-success btnSelectImageSite" eid="site-logo">Select</button>
+
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">Email contact</label>
+                        <div class="col-md-9">
+                            <input type="text" class="form-control" name="site[contactemail]" value="<?php echo $site['contactemail']?>">
+
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">Site URL</label>
+                        <div class="col-md-9">
+                            <input type="text" class="form-control" name="site[siteurl]" value="<?php echo $site['siteurl']?>">
+
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">Description</label>
+                        <div class="col-md-9">
+
+                            <textarea class="form-control" name="site[description]"><?php echo $site['description']?></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">Keywords</label>
+                        <div class="col-md-9">
+
+                            <textarea class="form-control" name="site[keywords]"><?php echo $site['keywords']?></textarea>
+
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">Google Analytics</label>
+                        <div class="col-md-9">
+
+                            <textarea class="form-control" name="site[googleanalytics]"><?php echo $site['googleanalytics']?></textarea>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">Header Image(946x148)</label>
                         <div class="col-md-9">
                             <input type="hidden" name="header" id="header" value="<?php echo $header['settingvalue']?>">
 
@@ -88,7 +154,7 @@
                 else
                 {
                     //toastr.options.onHidden = function() { window.location = '?route=module/movies' }
-                    toastr.success('Movies has been save', 'Save success', {timeOut: 1000})
+                    toastr.success('Setting has been save', 'Save success', {timeOut: 1000})
                 }
 
             });
@@ -100,6 +166,14 @@
         var folder = "header";
 
         $('#modal-select-file .modal-body').load('?route=core/uploadfile&folder='+folder+"&eid=header",function(){
+
+        });
+    });
+    $('.btnSelectImageSite').click(function(){
+        $('#modal-select-file').modal();
+        var folder = "site";
+
+        $('#modal-select-file .modal-body').load('?route=core/uploadfile&folder='+folder+"&eid="+$(this).attr('eid'),function(){
 
         });
     });

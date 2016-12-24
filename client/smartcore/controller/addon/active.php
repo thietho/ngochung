@@ -12,7 +12,7 @@ class ControllerAddonActive extends Controller
 		if(@$this->member->isLogged())
 			$this->response->redirect($this->document->createLink('member'));
 		$this->document->breadcrumb .= " » Kích hoạt tài khoản";
-		$this->document->title .= " - Kích hoạt tài khoản";
+		$this->document->title = $this->config->get('config_sitename')." - Kích hoạt tài khoản";
 		
 		$this->id="content";
 		$this->template="addon/active.tpl";

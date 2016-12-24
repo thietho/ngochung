@@ -47,8 +47,8 @@ $("#btnLogin").click(function(){
 			}
 			else
 			{
-				
-				$('#error').html(data).show('slow');
+                toastr.error(data,"Lỗi");
+
 				
 				
 			}

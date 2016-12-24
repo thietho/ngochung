@@ -6,7 +6,7 @@ class ControllerAddonLogin extends Controller
 	{
 		$this->document->sitebar['login'] = "hide";
 		$this->document->breadcrumb .= " » Đăng nhập";
-		$this->document->title .= " - Đăng nhập";
+		$this->document->title = $this->config->get('config_sitename')." - Đăng nhập";
 		$this->data['error'] = array();
 		
 		if(@$this->request->post['username'])
@@ -44,13 +44,12 @@ class ControllerAddonLogin extends Controller
 			else
 				$this->error['passfalse'] = "Mật khẩu không đúng";
 		}
-		else
-		{
+
 			foreach($this->error as $item)
 			{
 				@$this->data['output'] .= $item."<br>";
 			}
-		}
+
 		$this->id='content';
 		$this->template='common/output.tpl';
 		$this->render();
