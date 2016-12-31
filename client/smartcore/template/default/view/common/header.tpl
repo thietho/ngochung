@@ -30,7 +30,13 @@
         <?php foreach($sitemaps as $key => $sitemap){ ?>
         <li><a href="<?php echo $sitemap['link']?>"><?php echo $sitemap['sitemapname']?></a></li>
         <?php if($key == 1){ ?>
-        <li><a href="<?php echo $this->document->createLink('login')?>">Đăng nhập</a></li>
+        <li>
+            <?php if($this->member->getUserName() == ''){ ?>
+            <a href="<?php echo $this->document->createLink('login')?>">Đăng nhập</a>
+            <?php } else { ?>
+            <a href="<?php echo $this->document->createLink('member')?>">Tài khoản</a>
+            <?php } ?>
+        </li>
         <?php } ?>
         <?php } ?>
         <?php echo $menusitebar?>

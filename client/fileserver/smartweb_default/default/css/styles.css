@@ -431,6 +431,7 @@ a .btn
     top: 0;
     right: 0;
     background: #2fb457;
+    z-index: 10;
 }
 #elife-menu-mobile ul
 {

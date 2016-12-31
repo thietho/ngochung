@@ -27,7 +27,8 @@ class ControllerCoreUploadfile extends Controller
         $path = DIR_FILE."upload/".$folder."/";
         $files = glob($path . '*');
         $this->data['files'] = array();
-        if(count($files))
+
+        if(count($files)>0 && $files ==true)
         {
             foreach ($files as $key => $file)
             {
